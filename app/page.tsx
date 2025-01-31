@@ -57,8 +57,8 @@ export default function HomePage() {
             <CardContent className="p-6">
               <h3 className="text-xl font-bold mb-2">スペシャルゲスト登壇</h3>
               <p>
-                ICF
-                Global本部よりスペシャルゲストが登壇予定！世界の最前線で活躍するコーチや専門家によるセッションをお届けします。
+                ICF Global本部よりスペシャルゲストが登壇予定！
+                {'世界の最前線で活躍するコーチや専門家によるセッションをお届けします。'}
               </p>
             </CardContent>
           </Card>
@@ -74,7 +74,7 @@ export default function HomePage() {
             <CardContent className="p-6">
               <h3 className="text-xl font-bold mb-2">10,000人物語</h3>
               <p>
-                ICFコーチングを通じて、多くの方が"自分ならではの未来"を切り拓いていく物語を紡ぐ取り組みをスタートします。
+                ICFコーチングを通じて、多くの方が「自分ならではの未来」を切り拓いていく物語を紡ぐ取り組みをスタートします。
               </p>
             </CardContent>
           </Card>
