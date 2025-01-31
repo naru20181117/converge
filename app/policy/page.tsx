@@ -1,7 +1,9 @@
+import { TitleWithBackground } from '@/components/TitleWithBackground'
+
 export default function PolicyPage() {
   return (
     <div className="space-y-8 max-w-3xl mx-auto">
-      <h1 className="text-4xl font-bold">プライバシーポリシー</h1>
+      <TitleWithBackground title="プライバシーポリシー" backgroundText="policy" />
 
       <section className="space-y-4">
         <h2 className="text-2xl font-bold">1. 個人情報の取り扱いについて</h2>

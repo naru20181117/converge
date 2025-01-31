@@ -1,4 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { TitleWithBackground } from '@/components/TitleWithBackground'
 
 export default function SchedulePage() {
   const days = [
@@ -13,7 +14,7 @@ export default function SchedulePage() {
 
   return (
     <div className="space-y-8">
-      <h1 className="text-4xl font-bold">タイムスケジュール</h1>
+      <TitleWithBackground title="タイムスケジュール" backgroundText="schedule" />
       <p className="text-lg text-muted-foreground">詳細なスケジュールは随時更新いたします。</p>
       <div className="space-y-6">
         {days.map((day) => (

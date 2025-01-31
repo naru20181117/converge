@@ -1,9 +1,10 @@
 import { Card, CardContent } from '@/components/ui/card'
+import { TitleWithBackground } from '@/components/TitleWithBackground'
 
 export default function SponsorsPage() {
   return (
     <div className="space-y-8">
-      <h1 className="text-4xl font-bold">スポンサー</h1>
+      <TitleWithBackground title="スポンサー" backgroundText="sponsors" />
       <div className="grid gap-6 md:grid-cols-3">
         {/* プレースホルダースポンサー */}
         {Array.from({ length: 6 }).map((_, i) => (

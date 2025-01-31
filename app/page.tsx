@@ -1,6 +1,10 @@
+'use client'
 import Image from 'next/image'
+import ReactPlayer from 'react-player'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
+import { TitleWithBackground } from '@/components/TitleWithBackground'
+import { CountdownTimer } from '@/components/CountdownTimer'
 
 export default function HomePage() {
   return (
@@ -8,11 +12,13 @@ export default function HomePage() {
       <Image
         src="/2025/icf-converge-2025.png"
         alt="ICF Japan Coaching Converge 2025"
-        width={800}
-        height={600}
-        className="rounded-lg w-full object-cover max-w-4xl mx-auto"
+        width={500}
+        height={400}
+        className="rounded-lg w-full object-cover max-w-3xl mx-auto"
         priority
       />
+
+      <CountdownTimer targetDate={new Date('2025-06-15T10:00:00')} />
 
       <section className="space-y-4">
         <h1 className="text-4xl font-bold">コーチング・コンバージ2025 〜connect to X〜</h1>
@@ -78,6 +84,20 @@ export default function HomePage() {
               </p>
             </CardContent>
           </Card>
+        </div>
+      </section>
+
+      <section className="text-center space-y-4 py-6">
+        <TitleWithBackground title="ICFについて" backgroundText="ICF" />
+        <div className="mx-auto max-w-4xl bg-muted/50 p-4 rounded-xl">
+          <div className="aspect-video overflow-hidden rounded-lg">
+            <ReactPlayer
+              url="https://www.youtube.com/watch?v=oQAFJK96MRc"
+              width="100%"
+              height="100%"
+              controls
+            />
+          </div>
         </div>
       </section>
 
