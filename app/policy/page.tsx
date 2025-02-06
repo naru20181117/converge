@@ -59,7 +59,7 @@ export default function PolicyPage() {
         <h2 className="text-2xl font-bold">6. お問い合わせ</h2>
         <p>個人情報の取り扱いに関するお問い合わせは、以下の窓口までご連絡ください。</p>
         <p>ICFジャパン事務局</p>
-        <p>Mail: <a href="mailto:info@icfjapan.com" className="text-primary hover:underline">info@icfjapan.com</a></p>
+        <p>Mail: <a href="mailto:converge2025@icfjapan.com" className="text-primary hover:underline">converge2025@icfjapan.com</a></p>
       </section>
     </div>
   )
