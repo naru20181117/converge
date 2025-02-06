@@ -41,10 +41,14 @@ export default function PolicyPage() {
 
       <section className="space-y-4">
         <h2 className="text-2xl font-bold">4. 個人情報の第三者提供</h2>
-        <p>取得した個人情報は、以下の場合を除き、事前に本人の同意を得ることなく第三者に提供することはありません：</p>
+        <p>
+          取得した個人情報は、以下の場合を除き、事前に本人の同意を得ることなく第三者に提供することはありません：
+        </p>
         <ul className="list-disc list-inside space-y-2">
           <li>法令に基づく場合</li>
-          <li>参加者が希望するサービスの提供のため、必要な範囲内で業務委託先に提供する場合（例：イベント運営事業者、システム管理者など）</li>
+          <li>
+            参加者が希望するサービスの提供のため、必要な範囲内で業務委託先に提供する場合（例：イベント運営事業者、システム管理者など）
+          </li>
         </ul>
       </section>
 
@@ -59,7 +63,12 @@ export default function PolicyPage() {
         <h2 className="text-2xl font-bold">6. お問い合わせ</h2>
         <p>個人情報の取り扱いに関するお問い合わせは、以下の窓口までご連絡ください。</p>
         <p>ICFジャパン事務局</p>
-        <p>Mail: <a href="mailto:converge2025@icfjapan.com" className="text-primary hover:underline">converge2025@icfjapan.com</a></p>
+        <p>
+          Mail:{' '}
+          <a href="mailto:converge2025@icfjapan.com" className="text-primary hover:underline">
+            converge2025@icfjapan.com
+          </a>
+        </p>
       </section>
     </div>
   )

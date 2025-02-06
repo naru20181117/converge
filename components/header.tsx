@@ -19,8 +19,8 @@ export function Header() {
     <header className="border-b">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
-          <Link href="/" className="font-bold text-xl">
-            ICF Converge 2025
+          <Link href="/" className="font-bold text-lg">
+            コーチング・コンバージ 2025
           </Link>
 
           {/* デスクトップナビゲーション */}
