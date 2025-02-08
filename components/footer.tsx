@@ -44,7 +44,7 @@ export function Footer() {
               <span className="sr-only">Instagram</span>
             </a>
           </div>
-          <p className="text-sm text-muted-foreground"> 2025 ICF Japan. All rights reserved.</p>
+          <p className="text-sm text-muted-foreground">ICF Japan. All rights reserved.</p>
         </div>
       </div>
     </footer>
