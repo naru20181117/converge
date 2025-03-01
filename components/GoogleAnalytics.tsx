@@ -2,12 +2,13 @@
 
 import Script from 'next/script'
 import { usePathname, useSearchParams } from 'next/navigation'
-import { useEffect } from 'react'
+import { useEffect, useState, Suspense } from 'react'
 
 // Google Analytics測定ID
 const GA_MEASUREMENT_ID = 'G-S2506G11TB'
 
-export const GoogleAnalytics = () => {
+// 実際のトラッキングロジックを含むコンポーネント
+const GoogleAnalyticsTracking = () => {
   const pathname = usePathname()
   const searchParams = useSearchParams()
 
@@ -19,6 +20,17 @@ export const GoogleAnalytics = () => {
       })
     }
   }, [pathname, searchParams])
+
+  return null
+}
+
+export const GoogleAnalytics = () => {
+  // クライアントサイドでのみレンダリングされるようにする
+  const [isClient, setIsClient] = useState(false)
+
+  useEffect(() => {
+    setIsClient(true)
+  }, [])
 
   return (
     <>
@@ -41,6 +53,13 @@ export const GoogleAnalytics = () => {
           `,
         }}
       />
+
+      {/* useSearchParamsを使用する部分をSuspenseでラップ */}
+      {isClient && (
+        <Suspense fallback={null}>
+          <GoogleAnalyticsTracking />
+        </Suspense>
+      )}
     </>
   )
 }
