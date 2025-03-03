@@ -22,8 +22,8 @@ export function Header() {
     if (path.startsWith('/2025')) {
       return [
         { href: '/2025', label: 'ホーム' },
-        { href: '/2025/sponsors', label: 'スポンサー' },
         { href: '/2025/schedule', label: 'タイムスケジュール' },
+        { href: '/2025/speakers', label: '登壇者' },
         { href: '/2025/policy', label: 'プライバシーポリシー' },
       ]
     }
