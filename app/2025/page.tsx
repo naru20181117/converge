@@ -12,9 +12,9 @@ export default function HomePage() {
       <Image
         src="/2025/icf-converge-2025.png"
         alt="ICF Japan Coaching Converge 2025"
-        width={500}
+        width={400}
         height={400}
-        className="rounded-lg w-full object-cover max-w-3xl mx-auto"
+        className="rounded-lg w-full object-cover max-w-2xl mx-auto"
         priority
       />
 
@@ -92,6 +92,66 @@ export default function HomePage() {
       </section>
 
       <section className="text-center space-y-4 py-6">
+        <TitleWithBackground title="ICF ジャパンについて" backgroundText="ICF JAPAN" />
+        <div className="mx-auto max-w-4xl space-y-6">
+          <div className="bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
+            <div className="flex flex-col items-center gap-8">
+              <Image
+                src="/images/icf_banner.webp"
+                alt="ICF ジャパン"
+                width={400}
+                height={250}
+                className="rounded-lg object-contain"
+                priority
+              />
+              <div className="text-left space-y-4 w-full">
+                <p>
+                  2008年、主に日本在住の外国人コーチをサポートする任意団体として誕生した、ICF
+                  ジャパン。
+                  <br />
+                  2013年、世界標準のコーチングを日本に普及させるため、
+                  非営利型一般社団法人国際コーチ連盟日本支部（後に国際コーチング連盟日本支部）として生まれ変わり、現在に至ります。
+                </p>
+                <p>
+                  ICF ジャパンは、日本では唯一のICF公式認定支部として、グローバルな視点を持ち続け、
+                  プロコーチに対してICFが発信する有益な情報の日本語での提供、プロコーチが垣根なく参加できるネットワーク作り、
+                  コーチング業界外へのコーチング認知拡大の活動など、ビジネスとしてコーチングを行う方々のための支援活動を行っています。
+                </p>
+                <p>
+                  「コーチングを社会の共通言語に。」を理念に掲げ、日本のコーチング業界のプレゼンスを高め、
+                  存在価値を高めていくために世界に発信する活動にも取り組んでいます。
+                </p>
+                <p>
+                  <a
+                    href="https://icfjapan.org/"
+                    className="text-blue-600 hover:text-blue-800 underline inline-flex items-center gap-1"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    詳しい情報はこちら
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <path d="M7 7h10v10" />
+                      <path d="M7 17 17 7" />
+                    </svg>
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="text-center space-y-4 py-6">
         <TitleWithBackground title="ICFについて" backgroundText="ICF" />
         <div className="mx-auto max-w-4xl space-y-6">
           <div className="bg-muted/50 p-4 rounded-xl">
@@ -108,7 +168,7 @@ export default function HomePage() {
           <div className="bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
             <div className="flex flex-col md:flex-row items-center gap-8">
               <Image
-                src="/2025/ICF_30Years_Icon.png"
+                src="/images/ICF_30Years_Icon.png"
                 alt="ICF30周年記念"
                 width={200}
                 height={150}
