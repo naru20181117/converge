@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 import { TitleWithBackground } from '@/components/TitleWithBackground'
 import { CountdownTimer } from '@/components/CountdownTimer'
+import { Clock, Monitor, MapPin, ExternalLink, ArrowRight } from 'lucide-react'
 
 export default function HomePage() {
   return (
@@ -42,22 +43,87 @@ export default function HomePage() {
 
       <section className="grid gap-6 md:grid-cols-2">
         <Card>
-          <CardContent className="p-6 space-y-2">
+          <CardContent className="p-6 space-y-2 h-96">
             <h2 className="text-2xl font-bold">開催概要</h2>
             <p>日時：2025年6月15日（日）〜 6月21日（土） 10:00-17:00</p>
             <p>形式：ハイブリッド開催</p>
-            <ul className="list-disc list-inside">
-              <li>6月15日〜6月20日：オンライン開催</li>
-              <li>6月21日：秋葉原UDXギャラリー（オフライン）</li>
-            </ul>
-            <p>定員：最大1,000名</p>
+            <div className="grid gap-2 mt-3">
+              <div className="bg-gradient-to-r from-primary/10 to-primary/5 p-2.5 rounded-md border-l-4 border-primary shadow-sm flex items-center">
+                <div className="bg-primary text-white rounded-md w-10 h-10 flex items-center justify-center font-bold mr-3 flex-shrink-0 shadow-sm">
+                  6/15
+                </div>
+                <div className="flex-1">
+                  <div className="font-medium text-sm flex items-center">
+                    <span className="mr-2">日曜日</span>
+                    <span className="text-xs px-1.5 py-0.5 bg-white/80 rounded text-primary font-medium">
+                      DAY 1
+                    </span>
+                  </div>
+                  <div className="flex items-center text-xs font-medium text-gray-700">
+                    <Clock className="text-primary h-3.5 w-3.5 mr-1" />
+                    10:00〜17:00
+                    <span className="mx-1.5">|</span>
+                    <Monitor className="text-primary h-3.5 w-3.5 mr-1" />
+                    オンライン
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-gradient-to-r from-secondary/10 to-secondary/5 p-2.5 rounded-md border-l-4 border-secondary shadow-sm flex items-center">
+                <div className="bg-secondary text-white rounded-md w-10 h-10 flex items-center justify-center font-bold mr-3 flex-shrink-0 shadow-sm text-xs">
+                  6/16
+                  <br />
+                  〜20
+                </div>
+                <div className="flex-1">
+                  <div className="font-medium text-sm flex items-center">
+                    <span className="mr-2">平日5日間</span>
+                    <span className="text-xs px-1.5 py-0.5 bg-white/80 rounded text-secondary font-medium">
+                      WEEK
+                    </span>
+                  </div>
+                  <div className="flex items-center text-xs font-medium text-gray-700">
+                    <Clock className="text-secondary h-3.5 w-3.5 mr-1" />
+                    19:00〜21:10
+                    <span className="mx-1.5">|</span>
+                    <Monitor className="text-secondary h-3.5 w-3.5 mr-1" />
+                    オンライン
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-gradient-to-r from-accent/10 to-accent/5 p-2.5 rounded-md border-l-4 border-accent shadow-sm flex items-center">
+                <div className="bg-accent text-white rounded-md w-10 h-10 flex items-center justify-center font-bold mr-3 flex-shrink-0 shadow-sm">
+                  6/21
+                </div>
+                <div className="flex-1">
+                  <div className="font-medium text-sm flex items-center">
+                    <span className="mr-2">土曜日</span>
+                    <span className="text-xs px-1.5 py-0.5 bg-white/80 rounded text-accent font-medium">
+                      FINAL
+                    </span>
+                  </div>
+                  <div className="flex items-center text-xs font-medium text-gray-700">
+                    <Clock className="text-accent h-3.5 w-3.5 mr-1" />
+                    10:00〜17:00
+                    <span className="mx-1.5">|</span>
+                    <MapPin className="text-accent h-3.5 w-3.5 mr-1" />
+                    ハイブリッド
+                  </div>
+                  <div className="text-xs mt-1 text-gray-700 font-medium">
+                    オンライン & オフライン（秋葉原UDXギャラリー）
+                  </div>
+                </div>
+              </div>
+            </div>
           </CardContent>
         </Card>
 
         <Card>
-          <CardContent className="p-6 space-y-2">
+          <CardContent className="p-6 space-y-2 h-96">
             <h2 className="text-2xl font-bold">参加対象</h2>
-            <ul className="list-disc list-inside space-y-1">
+            <p className="text-gray-700 font-medium">定員：最大1,000名</p>
+            <ul className="list-disc list-inside space-y-1 mt-3">
               <li>コーチの方</li>
               <li>コーチングを学んでみたい・受けてみたい方</li>
               <li>社内で、人事や組織開発を担当されている方</li>
@@ -142,20 +208,7 @@ export default function HomePage() {
                     rel="noopener noreferrer"
                   >
                     詳しい情報はこちら
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    >
-                      <path d="M7 7h10v10" />
-                      <path d="M7 17 17 7" />
-                    </svg>
+                    <ExternalLink className="h-4 w-4" />
                   </a>
                 </p>
               </div>
@@ -205,20 +258,7 @@ export default function HomePage() {
                     rel="noopener noreferrer"
                   >
                     詳しい情報はこちら
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    >
-                      <path d="M7 7h10v10" />
-                      <path d="M7 17 17 7" />
-                    </svg>
+                    <ExternalLink className="h-4 w-4" />
                   </a>
                 </p>
               </div>
@@ -246,20 +286,7 @@ export default function HomePage() {
                 className="flex items-center gap-2"
               >
                 事前登録する
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <path d="M5 12h14" />
-                  <path d="m12 5 7 7-7 7" />
-                </svg>
+                <ArrowRight className="h-5 w-5" />
               </a>
             </Button>
           </div>

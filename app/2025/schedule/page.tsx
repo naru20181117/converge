@@ -9,7 +9,7 @@ export default function SchedulePage() {
     { date: '6月18日（水）', type: 'オンライン' },
     { date: '6月19日（木）', type: 'オンライン' },
     { date: '6月20日（金）', type: 'オンライン' },
-    { date: '6月21日（土）', type: 'オフライン@秋葉原UDX' },
+    { date: '6月21日（土）', type: 'オンライン & オフライン@秋葉原UDX' },
   ]
 
   return (
