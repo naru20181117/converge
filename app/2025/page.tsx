@@ -9,23 +9,36 @@ import { CountdownTimer } from '@/components/CountdownTimer'
 export default function HomePage() {
   return (
     <div className="space-y-12">
-      <Image
-        src="/2025/icf-converge-2025.png"
-        alt="ICF Japan Coaching Converge 2025"
-        width={400}
-        height={400}
-        className="rounded-lg w-full object-cover max-w-2xl mx-auto"
-        priority
-      />
+      <div className="relative py-8 px-4 bg-gradient-to-br from-gray-50 via-primary/5 to-gray-50 rounded-2xl overflow-hidden">
+        <div className="absolute inset-0 bg-grid-pattern opacity-10"></div>
+        <div className="absolute -top-20 -right-20 w-64 h-64 bg-primary/10 rounded-full blur-3xl"></div>
+        <div className="absolute -bottom-20 -left-20 w-64 h-64 bg-secondary/10 rounded-full blur-3xl"></div>
+        <div className="relative flex flex-col md:flex-row items-center justify-center gap-8 max-w-5xl mx-auto">
+          <Image
+            src="/2025/icf-converge-2025.png"
+            alt="ICF Japan Coaching Converge 2025"
+            width={450}
+            height={450}
+            className="rounded-lg object-cover z-10"
+            priority
+          />
+          <div className="z-10 text-center md:text-left space-y-4">
+            <h1 className="text-3xl md:text-4xl font-bold text-primary drop-shadow-md">
+              コーチング・コンバージ2025
+            </h1>
+            <h2 className="text-xl md:text-2xl font-semibold text-gray-800 drop-shadow-sm">
+              〜connect to X〜
+            </h2>
+            <p className="text-gray-800 font-medium drop-shadow-sm">
+              世界最大のコーチング団体ICF日本支部主催
+              <br />
+              コーチング界最大規模のカンファレンス
+            </p>
+          </div>
+        </div>
+      </div>
 
       <CountdownTimer targetDate={new Date('2025-06-15T10:00:00')} />
-
-      <section className="space-y-4">
-        <h1 className="text-4xl font-bold">コーチング・コンバージ2025 〜connect to X〜</h1>
-        <p className="text-lg text-muted-foreground">
-          世界最大のコーチング団体であるICF（国際コーチング連盟）日本支部が主催する、コーチング界最大規模のカンファレンス「コーチング・コンバージ2025」を開催いたします。
-        </p>
-      </section>
 
       <section className="grid gap-6 md:grid-cols-2">
         <Card>
@@ -123,7 +136,7 @@ export default function HomePage() {
                 </p>
                 <p>
                   <a
-                    href="https://icfjapan.org/"
+                    href="https://icfjapan.com/"
                     className="text-blue-600 hover:text-blue-800 underline inline-flex items-center gap-1"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -214,12 +227,10 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="text-center py-16 bg-gradient-to-br from-primary/10 via-secondary/10 to-primary/10 rounded-3xl my-12">
+      <section className="text-center py-16 bg-gradient-to-br from-gray-50 via-primary/5 to-gray-50 rounded-3xl my-12">
         <div className="max-w-2xl mx-auto space-y-6 px-4">
-          <h2 className="text-4xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-            参加登録
-          </h2>
-          <p className="text-lg">
+          <h2 className="text-4xl font-bold text-primary drop-shadow-md">参加登録</h2>
+          <p className="text-lg text-gray-800 drop-shadow-sm">
             最新情報の配信やチケット販売開始のご案内をお受け取りいただけます。
           </p>
           <div className="pt-4">
