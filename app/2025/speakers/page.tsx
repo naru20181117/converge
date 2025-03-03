@@ -16,6 +16,7 @@ type Speaker = {
     time: string
   }
   url?: string
+  sns_url?: string
 }
 
 export default function SpeakersPage() {
@@ -33,6 +34,8 @@ export default function SpeakersPage() {
         date: '6月15日（土）',
         time: '11:30',
       },
+      url: 'https://www.torix-corp.com/',
+      sns_url: 'https://x.com/takahashikoichi',
     },
     {
       name: '本間 正人',
@@ -46,7 +49,7 @@ export default function SpeakersPage() {
         date: '6月21日（土）',
         time: '13:00',
       },
-      url: 'https://learnology.co.jp/',
+      sns_url: 'https://learnology.co.jp/',
     },
     {
       name: '加藤 智博',
@@ -115,13 +118,47 @@ export default function SpeakersPage() {
                     >
                       <div className="flex flex-col lg:flex-row gap-8">
                         <div className="lg:w-1/4">
-                          <div className="relative w-full aspect-square mb-4">
-                            <Image
-                              src={speaker.image}
-                              alt={speaker.name}
-                              fill
-                              className="object-cover rounded-xl shadow-lg"
-                            />
+                          <div className="relative w-full aspect-square mb-4 group">
+                            {speaker.sns_url && (
+                              <Link href={speaker.sns_url} target="_blank" rel="noopener noreferrer">
+                                <div className="absolute inset-0 bg-black/30 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center z-10">
+                                  <div className="bg-white rounded-full p-2 hover:bg-gray-200 transition-colors">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" fill="currentColor"/>
+                                    </svg>
+                                  </div>
+                                </div>
+                                <Image
+                                  src={speaker.image}
+                                  alt={speaker.name}
+                                  fill
+                                  className="object-cover rounded-xl shadow-lg"
+                                />
+                              </Link>
+                            )}
+                            {!speaker.sns_url && speaker.url && (
+                              <Link href={speaker.url} target="_blank" rel="noopener noreferrer">
+                                <div className="absolute inset-0 bg-black/30 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center z-10">
+                                  <div className="bg-white rounded-full p-2 hover:bg-gray-200 transition-colors">
+                                    <Globe className="w-5 h-5" />
+                                  </div>
+                                </div>
+                                <Image
+                                  src={speaker.image}
+                                  alt={speaker.name}
+                                  fill
+                                  className="object-cover rounded-xl shadow-lg"
+                                />
+                              </Link>
+                            )}
+                            {!speaker.sns_url && !speaker.url && (
+                              <Image
+                                src={speaker.image}
+                                alt={speaker.name}
+                                fill
+                                className="object-cover rounded-xl shadow-lg"
+                              />
+                            )}
                           </div>
                           <div className="space-y-2 bg-primary/5 p-3 rounded-lg">
                             <div className="flex items-center gap-2 text-primary">
@@ -142,6 +179,21 @@ export default function SpeakersPage() {
                                   className="text-sm hover:underline"
                                 >
                                   {speaker.url}
+                                </Link>
+                              </div>
+                            )}
+                            {speaker.sns_url && (
+                              <div className="flex items-center gap-2 text-primary">
+                                <svg className="w-4 h-4 text-primary" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" fill="currentColor"/>
+                                </svg>
+                                <Link
+                                  href={speaker.sns_url}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="text-sm hover:underline"
+                                >
+                                  X
                                 </Link>
                               </div>
                             )}
