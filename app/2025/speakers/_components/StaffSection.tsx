@@ -15,7 +15,7 @@ const staffs: Staff[] = [
     name: '林 充宏(みっちー)',
     image: '/2025/staff/hayashi.jpg',
     url: 'https://crescer-mcc.com/',
-    message: '未来のよりよいコミュニティーづくりの架け橋となるコンバージにとの想いです！！',
+    message: 'よりよいコミュニティーに「つながる」場',
   },
   {
     name: 'なる',
