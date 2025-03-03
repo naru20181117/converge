@@ -74,6 +74,18 @@ const staffs: Staff[] = [
     image: '/2025/staff/ayuemon.jpg',
     message: '私たちでコーチングのある未来創造していきましょう',
   },
+  {
+    name: '藤原 悠兵',
+    image: '/2025/staff/fujiwara.jpg',
+    url: 'https://note.com/wara33',
+    message: 'ひとり一人の可能性を解き放つ',
+  },
+  {
+    name: '須藤 拓',
+    image: '/2025/staff/sudo.png',
+    url: 'https://x.com/ssttstt',
+    message: '充実した時間にしましょう！',
+  },
 ]
 
 export const StaffSection = () => {
