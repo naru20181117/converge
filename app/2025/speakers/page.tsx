@@ -63,68 +63,111 @@ export default function SpeakersPage() {
     },
   ]
 
+  // 日付でスピーカーをグループ化
+  const speakersByDate = speakers.reduce(
+    (acc, speaker) => {
+      const date = speaker.datetime.date
+      if (!acc[date]) {
+        acc[date] = []
+      }
+      acc[date].push(speaker)
+      return acc
+    },
+    {} as Record<string, Speaker[]>
+  )
+
+  // 日付順にソート（6月15日、6月21日など）
+  const sortedDates = Object.keys(speakersByDate).sort((a, b) => {
+    const dateA = parseInt(a.match(/\d+/)![0])
+    const dateB = parseInt(b.match(/\d+/)![0])
+    return dateA - dateB
+  })
+
   return (
     <div className="space-y-40">
       <section>
         <TitleWithBackground title="登壇者" backgroundText="speakers" />
-        <div className="mt-12 space-y-24">
-          {speakers.map((speaker) => (
-            <div
-              key={speaker.name}
-              className="bg-white/50 backdrop-blur-sm rounded-2xl p-8 shadow-lg"
-            >
-              <div className="flex flex-col lg:flex-row gap-12">
-                <div className="lg:w-1/3">
-                  <div className="relative w-full aspect-square mb-6">
-                    <Image
-                      src={speaker.image}
-                      alt={speaker.name}
-                      fill
-                      className="object-cover rounded-xl shadow-lg"
-                    />
-                  </div>
-                  <div className="space-y-2">
-                    <div className="flex items-center gap-2 text-primary">
-                      <Calendar className="w-4 h-4" />
-                      <span className="text-sm">{speaker.datetime.date}</span>
-                    </div>
-                    <div className="flex items-center gap-2 text-primary">
-                      <Clock className="w-4 h-4" />
-                      <span className="text-sm">{speaker.datetime.time}</span>
-                    </div>
-                    {speaker.url && (
-                      <div className="flex items-center gap-2 text-primary">
-                        <Globe className="w-4 h-4" />
-                        <Link
-                          href={speaker.url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-sm hover:underline"
-                        >
-                          {speaker.url}
-                        </Link>
+
+        <div className="mt-12 space-y-16">
+          {sortedDates.map((date) => (
+            <div key={date} className="space-y-12">
+              <div className="relative mb-8">
+                <div className="flex items-center">
+                  <h2 className="text-3xl font-bold text-primary bg-gradient-to-r from-primary/10 to-transparent px-6 py-2 rounded-lg shadow-sm relative z-10">
+                    {date}
+                  </h2>
+                  <div className="h-0.5 bg-primary/30 flex-grow ml-4"></div>
+                </div>
+              </div>
+
+              <div className="space-y-10">
+                {speakersByDate[date]
+                  // 時間順にソート
+                  .sort((a, b) => {
+                    const timeA = parseInt(a.datetime.time.replace(':', ''))
+                    const timeB = parseInt(b.datetime.time.replace(':', ''))
+                    return timeA - timeB
+                  })
+                  .map((speaker) => (
+                    <div
+                      key={speaker.name}
+                      className="bg-white/50 backdrop-blur-sm rounded-2xl p-6 shadow-lg border-l-4 border-primary"
+                    >
+                      <div className="flex flex-col lg:flex-row gap-8">
+                        <div className="lg:w-1/4">
+                          <div className="relative w-full aspect-square mb-4">
+                            <Image
+                              src={speaker.image}
+                              alt={speaker.name}
+                              fill
+                              className="object-cover rounded-xl shadow-lg"
+                            />
+                          </div>
+                          <div className="space-y-2 bg-primary/5 p-3 rounded-lg">
+                            <div className="flex items-center gap-2 text-primary">
+                              <Calendar className="w-4 h-4" />
+                              <span className="text-sm font-medium">{speaker.datetime.date}</span>
+                            </div>
+                            <div className="flex items-center gap-2 text-primary">
+                              <Clock className="w-4 h-4" />
+                              <span className="text-sm font-medium">{speaker.datetime.time}</span>
+                            </div>
+                            {speaker.url && (
+                              <div className="flex items-center gap-2 text-primary">
+                                <Globe className="w-4 h-4" />
+                                <Link
+                                  href={speaker.url}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="text-sm hover:underline"
+                                >
+                                  {speaker.url}
+                                </Link>
+                              </div>
+                            )}
+                          </div>
+                        </div>
+                        <div className="lg:w-3/4 space-y-4">
+                          <div>
+                            <h3 className="text-2xl font-bold mb-1">{speaker.name}</h3>
+                            <p className="text-lg font-medium text-primary">{speaker.role}</p>
+                          </div>
+                          <div className="bg-primary/5 rounded-xl p-4">
+                            <h4 className="text-lg font-bold text-primary mb-1">講演テーマ</h4>
+                            <p className="text-base leading-relaxed">{speaker.title}</p>
+                          </div>
+                          <div className="space-y-3">
+                            <h4 className="text-lg font-bold text-primary">プロフィール</h4>
+                            {speaker.description.split('\n\n').map((paragraph, i) => (
+                              <p key={i} className="text-sm leading-relaxed text-gray-700">
+                                {paragraph}
+                              </p>
+                            ))}
+                          </div>
+                        </div>
                       </div>
-                    )}
-                  </div>
-                </div>
-                <div className="lg:w-2/3 space-y-6">
-                  <div>
-                    <h3 className="text-3xl font-bold mb-2">{speaker.name}</h3>
-                    <p className="text-xl font-medium text-primary">{speaker.role}</p>
-                  </div>
-                  <div className="bg-primary/5 rounded-xl p-6">
-                    <h4 className="text-xl font-bold text-primary mb-2">講演テーマ</h4>
-                    <p className="text-lg leading-relaxed">{speaker.title}</p>
-                  </div>
-                  <div className="space-y-4">
-                    <h4 className="text-xl font-bold text-primary">プロフィール</h4>
-                    {speaker.description.split('\n\n').map((paragraph, i) => (
-                      <p key={i} className="text-base leading-relaxed text-gray-700">
-                        {paragraph}
-                      </p>
-                    ))}
-                  </div>
-                </div>
+                    </div>
+                  ))}
               </div>
             </div>
           ))}
