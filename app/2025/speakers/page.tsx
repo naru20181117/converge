@@ -1,7 +1,8 @@
 import { TitleWithBackground } from '@/components/TitleWithBackground'
 import { StaffSection } from './_components/StaffSection'
 import Image from 'next/image'
-import { Calendar, Clock } from 'lucide-react'
+import { Calendar, Clock, Globe } from 'lucide-react'
+import Link from 'next/link'
 
 type Speaker = {
   name: string
@@ -14,6 +15,7 @@ type Speaker = {
     date: string
     time: string
   }
+  url?: string
 }
 
 export default function SpeakersPage() {
@@ -33,6 +35,20 @@ export default function SpeakersPage() {
       },
     },
     {
+      name: '本間 正人',
+      role: '「学習学」提唱者、京都芸術大学 元・副学長',
+      title: '（仮）「産官学におけるコーチングの力―社会を変革する新たな可能性」',
+      organization: 'Learnology',
+      image: '/2025/speakers/honnma.jpg',
+      description:
+        '「学習学」の提唱者。京都芸術大学 元・副学長。1959年東京都中野区生まれ。松下政経塾3期生として入塾し、松下幸之助の経営哲学を学び、国連、内外政策研究会で実務研修。その後、ミネソタ大学から成人教育学Ph.D.取得。日本でコーチングやキャリア教育の普及、地域の教育力向上などにつとめてきた。\n\n「研修講師塾」「調和塾」を主宰し、誰もが最新学習歴を更新し続ける「学習する地球社会のビジョン」構築を目指す。NHK教育テレビでビジネス英語講師、民放ニュース番組のコメンテーターとしても活動。著書は80冊。単独著書１冊目は『良い政治家の見分け方』（ディスカヴァー21、1996年）。最新刊は『100年学習時代』（BOW BOOKS）。',
+      datetime: {
+        date: '6月21日（土）',
+        time: '13:00',
+      },
+      url: 'https://learnology.co.jp/',
+    },
+    {
       name: '加藤 智博',
       role: '立命館守山中学校・高等学校教諭',
       title: '日本の教育の未来に、コーチングはどう活かせるか？ 〜教育現場の最前線〜',
@@ -41,7 +57,7 @@ export default function SpeakersPage() {
       description:
         '2020年3月まで学校教育改革で注目を集めた東京・千代田区立麹町中学校で、工藤勇一元校長のもと生活指導主任と学年主任を兼務。注目を集めた学校教育改革の現場で、中心的役割を担う。2020年4月から立命館守山中学校・高等学校に実践の場を移す。\n\n生徒指導・生徒支援にコーチング的なアプローチを導入し、子どもの「自律」や「主体性」、「自己決定する力」を育む教育実践を行っている。他にも、脳神経科学やマインドフルネス、ポジティブ心理学等の知見を教育現場に導入。また、学校改革や組織開発・組織変革に関する専門性も併せ持つ。\n\n共著に「自律と尊重を育む学校」（時事通信社）がある。',
       datetime: {
-        date: '6月21日（日）',
+        date: '6月21日（土）',
         time: '14:00',
       },
     },
@@ -76,6 +92,19 @@ export default function SpeakersPage() {
                       <Clock className="w-4 h-4" />
                       <span className="text-sm">{speaker.datetime.time}</span>
                     </div>
+                    {speaker.url && (
+                      <div className="flex items-center gap-2 text-primary">
+                        <Globe className="w-4 h-4" />
+                        <Link
+                          href={speaker.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-sm hover:underline"
+                        >
+                          {speaker.url}
+                        </Link>
+                      </div>
+                    )}
                   </div>
                 </div>
                 <div className="lg:w-2/3 space-y-6">
