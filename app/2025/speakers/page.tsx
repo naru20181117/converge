@@ -49,7 +49,7 @@ export default function SpeakersPage() {
         date: '6月21日（土）',
         time: '13:00',
       },
-      sns_url: 'https://learnology.co.jp/',
+      url: 'https://learnology.co.jp/',
     },
     {
       name: '加藤 智博',
@@ -120,11 +120,24 @@ export default function SpeakersPage() {
                         <div className="lg:w-1/4">
                           <div className="relative w-full aspect-square mb-4 group">
                             {speaker.sns_url && (
-                              <Link href={speaker.sns_url} target="_blank" rel="noopener noreferrer">
+                              <Link
+                                href={speaker.sns_url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                              >
                                 <div className="absolute inset-0 bg-black/30 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center z-10">
                                   <div className="bg-white rounded-full p-2 hover:bg-gray-200 transition-colors">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                      <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" fill="currentColor"/>
+                                    <svg
+                                      width="20"
+                                      height="20"
+                                      viewBox="0 0 24 24"
+                                      fill="none"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                      <path
+                                        d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+                                        fill="currentColor"
+                                      />
                                     </svg>
                                   </div>
                                 </div>
@@ -179,21 +192,6 @@ export default function SpeakersPage() {
                                   className="text-sm hover:underline"
                                 >
                                   {speaker.url}
-                                </Link>
-                              </div>
-                            )}
-                            {speaker.sns_url && (
-                              <div className="flex items-center gap-2 text-primary">
-                                <svg className="w-4 h-4 text-primary" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" fill="currentColor"/>
-                                </svg>
-                                <Link
-                                  href={speaker.sns_url}
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                  className="text-sm hover:underline"
-                                >
-                                  X
                                 </Link>
                               </div>
                             )}
