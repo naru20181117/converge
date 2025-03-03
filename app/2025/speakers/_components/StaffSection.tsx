@@ -63,6 +63,17 @@ const staffs: Staff[] = [
     image: '/2025/staff/cotton.png',
     message: 'ONENESS！！',
   },
+  {
+    name: 'そでこ（袖川航平）',
+    image: '/2025/staff/sodeko.png',
+    url: 'https://x.com/sodekooo',
+    message: 'コーチングが最高に盛り上がる1週間に。',
+  },
+  {
+    name: 'あゆえもん♪(藤生あゆみ)',
+    image: '/2025/staff/ayuemon.jpg',
+    message: '私たちでコーチングのある未来創造していきましょう',
+  },
 ]
 
 export const StaffSection = () => {
