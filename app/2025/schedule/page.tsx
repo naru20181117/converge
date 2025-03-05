@@ -26,7 +26,7 @@ export default function SchedulePage() {
                 <Monitor className="h-4 w-4" />
                 <span>オンライン開催</span>
                 <Clock className="h-4 w-4 ml-2" />
-                <span>10:00～17:00</span>
+                <span>10:00～17:30</span>
               </div>
             </div>
           </AccordionTrigger>
@@ -53,7 +53,9 @@ export default function SchedulePage() {
                       10:30-11:30
                     </div>
                     <div>
-                      <h4 className="text-sm font-semibold">ICFグローバル代表からの基調講演</h4>
+                      <h4 className="text-sm font-semibold">
+                        大阪ガスの挑戦：日系企業唯一のCIO(Coaching in Organizations)
+                      </h4>
                       <p className="text-sm text-muted-foreground mt-1"></p>
                     </div>
                   </div>
@@ -64,9 +66,11 @@ export default function SchedulePage() {
                     </div>
                     <div>
                       <h4 className="text-sm font-semibold">
-                        講演①: 「ICFコーチングと多様な業種の連携」
+                        高橋 浩一氏：「問い」で、相手の心を動かす。
                       </h4>
-                      <p className="text-sm text-muted-foreground mt-1"></p>
+                      <p className="text-sm text-muted-foreground mt-1">
+                        ～「無敗営業」の著者と考える、「個」のキャリアを加速させるコミュニケーション戦略～
+                      </p>
                     </div>
                   </div>
 
@@ -85,7 +89,7 @@ export default function SchedulePage() {
                     </div>
                     <div>
                       <h4 className="text-sm font-semibold">
-                        講演②: 「ICFコーチングと多様な業種の連携」※ゲスト
+                        ゲスト講演: 「ICFコーチングと多様な業種の連携」
                       </h4>
                       <p className="text-sm text-muted-foreground mt-1"></p>
                     </div>
@@ -94,6 +98,18 @@ export default function SchedulePage() {
                   <div className="p-3 grid grid-cols-[auto_1fr] gap-3">
                     <div className="text-sm font-medium text-muted-foreground whitespace-nowrap">
                       14:30-15:30
+                    </div>
+                    <div>
+                      <h4 className="text-sm font-semibold">ICFグローバル代表からの基調講演</h4>
+                      <p className="text-sm text-muted-foreground mt-1">
+                        代表の自己紹介、ICFグローバルコーチングのトレンド、日本のICFコーチングの可能性と日本のコーチング業界への期待について
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="p-3 grid grid-cols-[auto_1fr] gap-3">
+                    <div className="text-sm font-medium text-muted-foreground whitespace-nowrap">
+                      15:30-16:30
                     </div>
                     <div>
                       <h4 className="text-sm font-semibold">
@@ -105,7 +121,7 @@ export default function SchedulePage() {
 
                   <div className="p-3 grid grid-cols-[auto_1fr] gap-3">
                     <div className="text-sm font-medium text-muted-foreground whitespace-nowrap">
-                      15:30-16:30
+                      16:30-17:30
                     </div>
                     <div>
                       <h4 className="text-sm font-semibold">
@@ -370,7 +386,7 @@ export default function SchedulePage() {
                 <MapPin className="h-4 w-4 ml-2" />
                 <span>秋葉原UDX（ハイブリッド開催）</span>
                 <Clock className="h-4 w-4 ml-2" />
-                <span>10:00～17:00</span>
+                <span>10:00～18:00</span>
               </div>
             </div>
           </AccordionTrigger>
@@ -415,7 +431,7 @@ export default function SchedulePage() {
                     </div>
                     <div>
                       <h4 className="text-sm font-semibold">
-                        講演③: 「ICFコーチングと多様な業種の連携」※ゲスト
+                        本間 正人氏： 産官学におけるコーチングの力―社会を変革する新たな可能性
                       </h4>
                       <p className="text-sm text-muted-foreground mt-1"></p>
                     </div>
@@ -427,7 +443,8 @@ export default function SchedulePage() {
                     </div>
                     <div>
                       <h4 className="text-sm font-semibold">
-                        講演④: 「ICFコーチングと多様な業種の連携」※ゲスト
+                        加藤 智博氏： 日本の教育の未来に、コーチングはどう活かせるか？
+                        〜教育現場の最前線〜
                       </h4>
                       <p className="text-sm text-muted-foreground mt-1"></p>
                     </div>
@@ -447,7 +464,9 @@ export default function SchedulePage() {
                       15:15-16:45
                     </div>
                     <div>
-                      <h4 className="text-sm font-semibold">プラクティス and 初めてのコーチング</h4>
+                      <h4 className="text-sm font-semibold">
+                        プラクティス(コーチング実践) and 初めてのコーチング
+                      </h4>
                       <p className="text-sm text-muted-foreground mt-1"></p>
                     </div>
                   </div>
@@ -460,12 +479,25 @@ export default function SchedulePage() {
                       <h4 className="text-sm font-semibold">クロージングセレモニー</h4>
                     </div>
                   </div>
+
+                  <div className="p-3 grid grid-cols-[auto_1fr] gap-3">
+                    <div className="text-sm font-medium text-muted-foreground whitespace-nowrap">
+                      17:00-18:00
+                    </div>
+                    <div>
+                      <h4 className="text-sm font-semibold">懇親会・交流タイム(自由参加)</h4>
+                    </div>
+                  </div>
                 </div>
               </Card>
             </div>
           </AccordionContent>
         </AccordionItem>
       </Accordion>
+
+      <p className="text-sm text-muted-foreground mt-8 italic">
+        ※スケジュール詳細は、今後一部変更となる可能性がございます。何卒ご理解・ご了承いただけますと幸いです。
+      </p>
     </div>
   )
 }
