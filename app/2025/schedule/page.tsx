@@ -1,3 +1,5 @@
+'use client'
+
 import { Card } from '@/components/ui/card'
 import { TitleWithBackground } from '@/components/TitleWithBackground'
 import { Clock, Monitor, MapPin } from 'lucide-react'
@@ -7,8 +9,28 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from '@/components/ui/accordion'
+import { useEffect, useState } from 'react'
 
 export default function SchedulePage() {
+  const [activeSection, setActiveSection] = useState<string | undefined>(undefined)
+
+  useEffect(() => {
+    const hash = window.location.hash.slice(1)
+    if (hash) {
+      setActiveSection(hash)
+    }
+  }, [])
+
+  const handleAccordionChange = (value: string) => {
+    setActiveSection(value)
+    // URLのハッシュを更新
+    if (value) {
+      window.history.pushState(null, '', `#${value}`)
+    } else {
+      window.history.pushState(null, '', window.location.pathname)
+    }
+  }
+
   return (
     <div className="space-y-8 max-w-4xl mx-auto">
       <TitleWithBackground title="タイムスケジュール" backgroundText="schedule" />
@@ -16,9 +38,15 @@ export default function SchedulePage() {
         各日のプログラム詳細です。初日と最終日は終日開催、平日は夜間のセッションとなります。
       </p>
 
-      <Accordion type="single" collapsible className="w-full">
+      <Accordion
+        type="single"
+        collapsible
+        className="w-full"
+        value={activeSection}
+        onValueChange={handleAccordionChange}
+      >
         {/* 初日（日曜日） */}
-        <AccordionItem value="day1">
+        <AccordionItem value="day1" id="day1">
           <AccordionTrigger>
             <div className="flex flex-col sm:flex-row sm:items-center gap-2 text-left">
               <h2 className="text-2xl font-bold">6月15日（日）- 初日</h2>
@@ -137,7 +165,7 @@ export default function SchedulePage() {
         </AccordionItem>
 
         {/* 平日セッション */}
-        <AccordionItem value="weekdays">
+        <AccordionItem value="weekdays" id="weekdays">
           <AccordionTrigger>
             <div className="flex flex-col sm:flex-row sm:items-center gap-2 text-left">
               <h2 className="text-2xl font-bold">平日セッション（6/16～6/20）</h2>
@@ -376,7 +404,7 @@ export default function SchedulePage() {
         </AccordionItem>
 
         {/* 最終日（土曜日） */}
-        <AccordionItem value="lastday">
+        <AccordionItem value="lastday" id="lastday">
           <AccordionTrigger>
             <div className="flex flex-col sm:flex-row sm:items-center gap-2 text-left">
               <h2 className="text-2xl font-bold">6月21日（土）- 最終日</h2>

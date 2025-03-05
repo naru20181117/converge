@@ -6,6 +6,7 @@ import { Card, CardContent } from '@/components/ui/card'
 import { TitleWithBackground } from '@/components/TitleWithBackground'
 import { CountdownTimer } from '@/components/CountdownTimer'
 import { Clock, Monitor, MapPin, ExternalLink, ArrowRight } from 'lucide-react'
+import Link from 'next/link'
 
 export default function HomePage() {
   return (
@@ -45,76 +46,82 @@ export default function HomePage() {
         <Card>
           <CardContent className="p-6 space-y-2 h-96">
             <h2 className="text-2xl font-bold">開催概要</h2>
-            <p>日時：2025年6月15日（日）〜 6月21日（土） 10:00-17:00</p>
+            <p>日時：2025年6月15日（日）〜 6月21日（土）</p>
             <p>形式：ハイブリッド開催</p>
             <div className="grid gap-2 mt-3">
-              <div className="bg-gradient-to-r from-primary/10 to-primary/5 p-2.5 rounded-md border-l-4 border-primary shadow-sm flex items-center">
-                <div className="bg-primary text-white rounded-md w-10 h-10 flex items-center justify-center font-bold mr-3 flex-shrink-0 shadow-sm">
-                  6/15
-                </div>
-                <div className="flex-1">
-                  <div className="font-medium text-sm flex items-center">
-                    <span className="mr-2">日曜日</span>
-                    <span className="text-xs px-1.5 py-0.5 bg-white/80 rounded text-primary font-medium">
-                      DAY 1
-                    </span>
+              <Link href="/2025/schedule#day1" className="block">
+                <div className="bg-gradient-to-r from-primary/10 to-primary/5 p-2.5 rounded-md border-l-4 border-primary shadow-sm flex items-center hover:bg-primary/20 transition-colors">
+                  <div className="bg-primary text-white rounded-md w-10 h-10 flex items-center justify-center font-bold mr-3 flex-shrink-0 shadow-sm">
+                    6/15
                   </div>
-                  <div className="flex items-center text-xs font-medium text-gray-700">
-                    <Clock className="text-primary h-3.5 w-3.5 mr-1" />
-                    10:00〜17:00
-                    <span className="mx-1.5">|</span>
-                    <Monitor className="text-primary h-3.5 w-3.5 mr-1" />
-                    オンライン
+                  <div className="flex-1">
+                    <div className="font-medium text-sm flex items-center">
+                      <span className="mr-2">日曜日</span>
+                      <span className="text-xs px-1.5 py-0.5 bg-white/80 rounded text-primary font-medium">
+                        DAY 1
+                      </span>
+                    </div>
+                    <div className="flex items-center text-xs font-medium text-gray-700">
+                      <Clock className="text-primary h-3.5 w-3.5 mr-1" />
+                      10:00〜17:30
+                      <span className="mx-1.5">|</span>
+                      <Monitor className="text-primary h-3.5 w-3.5 mr-1" />
+                      オンライン
+                    </div>
                   </div>
                 </div>
-              </div>
+              </Link>
 
-              <div className="bg-gradient-to-r from-secondary/10 to-secondary/5 p-2.5 rounded-md border-l-4 border-secondary shadow-sm flex items-center">
-                <div className="bg-secondary text-white rounded-md w-10 h-10 flex items-center justify-center font-bold mr-3 flex-shrink-0 shadow-sm text-xs">
-                  6/16
-                  <br />
-                  〜20
-                </div>
-                <div className="flex-1">
-                  <div className="font-medium text-sm flex items-center">
-                    <span className="mr-2">平日5日間</span>
-                    <span className="text-xs px-1.5 py-0.5 bg-white/80 rounded text-secondary font-medium">
-                      WEEK
-                    </span>
+              <Link href="/2025/schedule#weekdays" className="block">
+                <div className="bg-gradient-to-r from-secondary/10 to-secondary/5 p-2.5 rounded-md border-l-4 border-secondary shadow-sm flex items-center hover:bg-secondary/20 transition-colors">
+                  <div className="bg-secondary text-white rounded-md w-10 h-10 flex items-center justify-center font-bold mr-3 flex-shrink-0 shadow-sm text-xs">
+                    6/16
+                    <br />
+                    〜20
                   </div>
-                  <div className="flex items-center text-xs font-medium text-gray-700">
-                    <Clock className="text-secondary h-3.5 w-3.5 mr-1" />
-                    19:00〜21:10
-                    <span className="mx-1.5">|</span>
-                    <Monitor className="text-secondary h-3.5 w-3.5 mr-1" />
-                    オンライン
+                  <div className="flex-1">
+                    <div className="font-medium text-sm flex items-center">
+                      <span className="mr-2">平日5日間</span>
+                      <span className="text-xs px-1.5 py-0.5 bg-white/80 rounded text-secondary font-medium">
+                        WEEK
+                      </span>
+                    </div>
+                    <div className="flex items-center text-xs font-medium text-gray-700">
+                      <Clock className="text-secondary h-3.5 w-3.5 mr-1" />
+                      19:00〜21:10
+                      <span className="mx-1.5">|</span>
+                      <Monitor className="text-secondary h-3.5 w-3.5 mr-1" />
+                      オンライン
+                    </div>
                   </div>
                 </div>
-              </div>
+              </Link>
 
-              <div className="bg-gradient-to-r from-accent/10 to-accent/5 p-2.5 rounded-md border-l-4 border-accent shadow-sm flex items-center">
-                <div className="bg-accent text-white rounded-md w-10 h-10 flex items-center justify-center font-bold mr-3 flex-shrink-0 shadow-sm">
-                  6/21
+              <Link href="/2025/schedule#lastday" className="block">
+                <div className="bg-gradient-to-r from-accent/10 to-accent/5 p-2.5 rounded-md border-l-4 border-accent shadow-sm flex items-center hover:bg-accent/20 transition-colors">
+                  <div className="bg-accent text-white rounded-md w-10 h-10 flex items-center justify-center font-bold mr-3 flex-shrink-0 shadow-sm">
+                    6/21
+                  </div>
+                  <div className="flex-1">
+                    <div className="font-medium text-sm flex items-center">
+                      <span className="mr-2">土曜日</span>
+                      <span className="text-xs px-1.5 py-0.5 bg-white/80 rounded text-accent font-medium">
+                        FINAL
+                      </span>
+                    </div>
+                    <div className="flex items-center text-xs font-medium text-gray-700">
+                      <Clock className="text-accent h-3.5 w-3.5 mr-1" />
+                      10:00〜18:00
+                      <span className="mx-1.5">|</span>
+                      <MapPin className="text-accent h-3.5 w-3.5 mr-1" />
+                      ハイブリッド
+                    </div>
+                    <div className="text-xs mt-1 text-gray-700 font-medium">
+                      オンライン & オフライン（秋葉原UDXギャラリー）
+                    </div>
+                  </div>
                 </div>
-                <div className="flex-1">
-                  <div className="font-medium text-sm flex items-center">
-                    <span className="mr-2">土曜日</span>
-                    <span className="text-xs px-1.5 py-0.5 bg-white/80 rounded text-accent font-medium">
-                      FINAL
-                    </span>
-                  </div>
-                  <div className="flex items-center text-xs font-medium text-gray-700">
-                    <Clock className="text-accent h-3.5 w-3.5 mr-1" />
-                    10:00〜17:00
-                    <span className="mx-1.5">|</span>
-                    <MapPin className="text-accent h-3.5 w-3.5 mr-1" />
-                    ハイブリッド
-                  </div>
-                  <div className="text-xs mt-1 text-gray-700 font-medium">
-                    オンライン & オフライン（秋葉原UDXギャラリー）
-                  </div>
-                </div>
-              </div>
+              </Link>
             </div>
           </CardContent>
         </Card>
