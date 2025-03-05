@@ -152,15 +152,24 @@ export default function SchedulePage() {
                       </div>
                     </div>
 
-                    <div className="p-3 grid grid-cols-[auto_1fr] gap-3">
-                      <div className="text-sm font-medium text-muted-foreground whitespace-nowrap">
+                    {/* 同時開催セッショングループ - 20:10-21:10 */}
+                    <div className="p-3">
+                      <div className="text-sm font-medium text-muted-foreground whitespace-nowrap mb-2">
                         20:10-21:10
                       </div>
-                      <div>
-                        <h4 className="text-sm font-semibold">エムビーシーシー合同会社</h4>
-                        <p className="text-sm text-muted-foreground mt-1">
-                          1on1の効果を上げるマインドフルコーチングの基本技能「共感コミュニケーション」
-                        </p>
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-3 bg-muted/30 rounded-lg p-2">
+                        <div className="bg-background rounded p-2 border border-border">
+                          <h4 className="text-sm font-semibold">エムビーシーシー合同会社</h4>
+                          <p className="text-sm text-muted-foreground mt-1">
+                            1on1の効果を上げるマインドフルコーチングの基本技能「共感コミュニケーション」
+                          </p>
+                        </div>
+                        <div className="bg-background rounded p-2 border border-border">
+                          <h4 className="text-sm font-semibold">ライフコーチワールド</h4>
+                          <p className="text-sm text-muted-foreground mt-1">
+                            ICF認定資格試験の不合格体験から学んだMCC合格への道
+                          </p>
+                        </div>
                       </div>
                     </div>
 
@@ -184,51 +193,45 @@ export default function SchedulePage() {
                 <h3 className="text-xl font-semibold">6月17日（火）</h3>
                 <Card className="overflow-hidden">
                   <div className="grid grid-cols-1 divide-y">
-                    <div className="p-3 grid grid-cols-[auto_1fr] gap-3">
-                      <div className="text-sm font-medium text-muted-foreground whitespace-nowrap">
+                    {/* 同時開催セッショングループ - 19:00-20:00 */}
+                    <div className="p-3">
+                      <div className="text-sm font-medium text-muted-foreground whitespace-nowrap mb-2">
                         19:00-20:00
                       </div>
-                      <div>
-                        <h4 className="text-sm font-semibold">ホールシステムコーチング</h4>
-                        <p className="text-sm text-muted-foreground mt-1">
-                          可能性へのアプローチ　～幸せ脳・身体～個人の能力開発
-                        </p>
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-3 bg-muted/30 rounded-lg p-2">
+                        <div className="bg-background rounded p-2 border border-border">
+                          <h4 className="text-sm font-semibold">ホールシステムコーチング</h4>
+                          <p className="text-sm text-muted-foreground mt-1">
+                            可能性へのアプローチ　～幸せ脳・身体～個人の能力開発
+                          </p>
+                        </div>
+                        <div className="bg-background rounded p-2 border border-border">
+                          <h4 className="text-sm font-semibold">コーチングプラットフォーム</h4>
+                          <p className="text-sm text-muted-foreground mt-1">
+                            自己基盤を学びＩＣＦコア・コンピテンシーを体現できるコーチとして成長しよう！コア・コンピテンシー『A　基盤を整える』と自己基盤
+                          </p>
+                        </div>
                       </div>
                     </div>
 
-                    <div className="p-3 grid grid-cols-[auto_1fr] gap-3">
-                      <div className="text-sm font-medium text-muted-foreground whitespace-nowrap">
-                        19:00-20:00
-                      </div>
-                      <div>
-                        <h4 className="text-sm font-semibold">コーチングプラットフォーム</h4>
-                        <p className="text-sm text-muted-foreground mt-1">
-                          自己基盤を学びＩＣＦコア・コンピテンシーを体現できるコーチとして成長しよう！コア・コンピテンシー『A　基盤を整える』と自己基盤
-                        </p>
-                      </div>
-                    </div>
-
-                    <div className="p-3 grid grid-cols-[auto_1fr] gap-3">
-                      <div className="text-sm font-medium text-muted-foreground whitespace-nowrap">
+                    {/* 同時開催セッショングループ - 20:10-21:10 */}
+                    <div className="p-3">
+                      <div className="text-sm font-medium text-muted-foreground whitespace-nowrap mb-2">
                         20:10-21:10
                       </div>
-                      <div>
-                        <h4 className="text-sm font-semibold">ヘルスコーチ・ジャパン</h4>
-                        <p className="text-sm text-muted-foreground mt-1">
-                          現場で活かせるメンタルコーチング×セルフマネジメントトレーニング（自己理解）
-                        </p>
-                      </div>
-                    </div>
-
-                    <div className="p-3 grid grid-cols-[auto_1fr] gap-3">
-                      <div className="text-sm font-medium text-muted-foreground whitespace-nowrap">
-                        20:10-21:10
-                      </div>
-                      <div>
-                        <h4 className="text-sm font-semibold">ライフコーチワールド</h4>
-                        <p className="text-sm text-muted-foreground mt-1">
-                          ライフコーチング体験ワークショップ
-                        </p>
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-3 bg-muted/30 rounded-lg p-2">
+                        <div className="bg-background rounded p-2 border border-border">
+                          <h4 className="text-sm font-semibold">ヘルスコーチ・ジャパン</h4>
+                          <p className="text-sm text-muted-foreground mt-1">
+                            現場で活かせるメンタルコーチング×セルフマネジメントトレーニング（自己理解）
+                          </p>
+                        </div>
+                        <div className="bg-background rounded p-2 border border-border">
+                          <h4 className="text-sm font-semibold">ライフコーチワールド</h4>
+                          <p className="text-sm text-muted-foreground mt-1">
+                            ライフコーチング体験ワークショップ
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -240,63 +243,51 @@ export default function SchedulePage() {
                 <h3 className="text-xl font-semibold">6月18日（水）</h3>
                 <Card className="overflow-hidden">
                   <div className="grid grid-cols-1 divide-y">
-                    <div className="p-3 grid grid-cols-[auto_1fr] gap-3">
-                      <div className="text-sm font-medium text-muted-foreground whitespace-nowrap">
+                    {/* 同時開催セッショングループ - 19:00-20:00 */}
+                    <div className="p-3">
+                      <div className="text-sm font-medium text-muted-foreground whitespace-nowrap mb-2">
                         19:00-20:00
                       </div>
-                      <div>
-                        <h4 className="text-sm font-semibold">銀座コーチングスクール</h4>
-                        <p className="text-sm text-muted-foreground mt-1">
-                          経営コンサルタントが活かすコーチング
-                        </p>
+                      <div className="grid grid-cols-1 md:grid-cols-3 gap-3 bg-muted/30 rounded-lg p-2">
+                        <div className="bg-background rounded p-2 border border-border">
+                          <h4 className="text-sm font-semibold">銀座コーチングスクール</h4>
+                          <p className="text-sm text-muted-foreground mt-1">
+                            経営コンサルタントが活かすコーチング
+                          </p>
+                        </div>
+                        <div className="bg-background rounded p-2 border border-border">
+                          <h4 className="text-sm font-semibold">ホールシステムコーチング</h4>
+                          <p className="text-sm text-muted-foreground mt-1">
+                            チームコーチング～１対１のコーチングを超えて～組織・チームの能力開発Weメソッド®
+                          </p>
+                        </div>
+                        <div className="bg-background rounded p-2 border border-border">
+                          <h4 className="text-sm font-semibold">共創コーチ®養成スクール</h4>
+                          <p className="text-sm text-muted-foreground mt-1">
+                            Good Coachingを生み出す共創の作り方
+                          </p>
+                        </div>
                       </div>
                     </div>
 
-                    <div className="p-3 grid grid-cols-[auto_1fr] gap-3">
-                      <div className="text-sm font-medium text-muted-foreground whitespace-nowrap">
-                        19:00-20:00
-                      </div>
-                      <div>
-                        <h4 className="text-sm font-semibold">ホールシステムコーチング</h4>
-                        <p className="text-sm text-muted-foreground mt-1">
-                          チームコーチング～１対１のコーチングを超えて～組織・チームの能力開発Weメソッド®
-                        </p>
-                      </div>
-                    </div>
-
-                    <div className="p-3 grid grid-cols-[auto_1fr] gap-3">
-                      <div className="text-sm font-medium text-muted-foreground whitespace-nowrap">
-                        19:00-20:00
-                      </div>
-                      <div>
-                        <h4 className="text-sm font-semibold">共創コーチ®養成スクール</h4>
-                        <p className="text-sm text-muted-foreground mt-1">
-                          Good Coachingを生み出す共創の作り方
-                        </p>
-                      </div>
-                    </div>
-
-                    <div className="p-3 grid grid-cols-[auto_1fr] gap-3">
-                      <div className="text-sm font-medium text-muted-foreground whitespace-nowrap">
+                    {/* 同時開催セッショングループ - 20:10-21:10 */}
+                    <div className="p-3">
+                      <div className="text-sm font-medium text-muted-foreground whitespace-nowrap mb-2">
                         20:10-21:10
                       </div>
-                      <div>
-                        <h4 className="text-sm font-semibold">コーチングプラスワン</h4>
-                        <p className="text-sm text-muted-foreground mt-1">
-                          人生の転機に役立つマインドセットコーチング
-                        </p>
-                      </div>
-                    </div>
-
-                    <div className="p-3 grid grid-cols-[auto_1fr] gap-3">
-                      <div className="text-sm font-medium text-muted-foreground whitespace-nowrap">
-                        20:10-21:10
-                      </div>
-                      <div>
-                        <h4 className="text-sm font-semibold">ヘルスコーチ・ジャパン</h4>
-                        <p className="text-sm text-muted-foreground mt-1">
-                          現場で活かせるヘルスコーチング×セルフマネジメントトレーニング（他者理解）
-                        </p>
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-3 bg-muted/30 rounded-lg p-2">
+                        <div className="bg-background rounded p-2 border border-border">
+                          <h4 className="text-sm font-semibold">コーチングプラスワン</h4>
+                          <p className="text-sm text-muted-foreground mt-1">
+                            人生の転機に役立つマインドセットコーチング
+                          </p>
+                        </div>
+                        <div className="bg-background rounded p-2 border border-border">
+                          <h4 className="text-sm font-semibold">ヘルスコーチ・ジャパン</h4>
+                          <p className="text-sm text-muted-foreground mt-1">
+                            現場で活かせるヘルスコーチング×セルフマネジメントトレーニング（他者理解）
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -320,27 +311,24 @@ export default function SchedulePage() {
                       </div>
                     </div>
 
-                    <div className="p-3 grid grid-cols-[auto_1fr] gap-3">
-                      <div className="text-sm font-medium text-muted-foreground whitespace-nowrap">
+                    {/* 同時開催セッショングループ - 20:10-21:10 */}
+                    <div className="p-3">
+                      <div className="text-sm font-medium text-muted-foreground whitespace-nowrap mb-2">
                         20:10-21:10
                       </div>
-                      <div>
-                        <h4 className="text-sm font-semibold">コーチングプラスワン</h4>
-                        <p className="text-sm text-muted-foreground mt-1">
-                          ～ACC×PCC×MCC　そのコーチング、どう違う?～
-                        </p>
-                      </div>
-                    </div>
-
-                    <div className="p-3 grid grid-cols-[auto_1fr] gap-3">
-                      <div className="text-sm font-medium text-muted-foreground whitespace-nowrap">
-                        20:10-21:10
-                      </div>
-                      <div>
-                        <h4 className="text-sm font-semibold">銀座コーチングスクール</h4>
-                        <p className="text-sm text-muted-foreground mt-1">
-                          キャリア支援とコーチングがつながる未来：人材開発の新たな可能性
-                        </p>
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-3 bg-muted/30 rounded-lg p-2">
+                        <div className="bg-background rounded p-2 border border-border">
+                          <h4 className="text-sm font-semibold">コーチングプラスワン</h4>
+                          <p className="text-sm text-muted-foreground mt-1">
+                            ～ACC×PCC×MCC　そのコーチング、どう違う?～
+                          </p>
+                        </div>
+                        <div className="bg-background rounded p-2 border border-border">
+                          <h4 className="text-sm font-semibold">銀座コーチングスクール</h4>
+                          <p className="text-sm text-muted-foreground mt-1">
+                            キャリア支援とコーチングがつながる未来：人材開発の新たな可能性
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </div>
