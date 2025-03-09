@@ -63,7 +63,7 @@ export default function HomePage() {
                     </div>
                     <div className="flex items-center text-xs font-medium text-gray-700">
                       <Clock className="text-primary h-3.5 w-3.5 mr-1" />
-                      10:00〜17:30
+                      10:00〜17:00
                       <span className="mx-1.5">|</span>
                       <Monitor className="text-primary h-3.5 w-3.5 mr-1" />
                       オンライン
