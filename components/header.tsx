@@ -56,12 +56,8 @@ export function Header() {
           <div className="flex items-center gap-4">
             {showRegisterButton && (
               <Button asChild>
-                <a
-                  href="https://forms.gle/BySAsHjWZhQR2t7QA"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  事前登録
+                <a href="https://lin.ee/pyGQFYZ" target="_blank" rel="noopener noreferrer">
+                  LINE登録
                 </a>
               </Button>
             )}

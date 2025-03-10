@@ -526,6 +526,47 @@ export default function SchedulePage() {
       <p className="text-sm text-muted-foreground mt-8 italic">
         ※スケジュール詳細は、今後一部変更となる可能性がございます。何卒ご理解・ご了承いただけますと幸いです。
       </p>
+
+      <section className="mt-16 text-center py-12 bg-gradient-to-br from-gray-50 via-primary/5 to-gray-50 rounded-3xl">
+        <div className="max-w-2xl mx-auto space-y-6 px-4">
+          <h2 className="text-3xl font-bold text-primary drop-shadow-md">チケット購入</h2>
+          <p className="text-lg text-gray-800">
+            ICF Japan Coaching Converge 2025のチケットをご購入いただけます。
+            <br />
+            早期割引や複数日程参加の割引もございます。
+          </p>
+          <div className="pt-4 flex flex-col items-center">
+            <a
+              href="https://converge2025.peatix.com/view"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-gradient-to-r from-primary to-secondary hover:opacity-90 transition-opacity text-white text-lg px-8 py-4 rounded-full shadow-lg"
+            >
+              <span>チケットを購入する</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="lucide lucide-ticket"
+              >
+                <path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z" />
+                <path d="M13 5v2" />
+                <path d="M13 17v2" />
+                <path d="M13 11v2" />
+              </svg>
+            </a>
+            <p className="text-sm text-muted-foreground mt-4">
+              Peatixサイトに移動し、ご希望の参加日程を選択してください
+            </p>
+          </div>
+        </div>
+      </section>
     </div>
   )
 }

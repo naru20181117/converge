@@ -278,7 +278,7 @@ export default function HomePage() {
         <div className="max-w-2xl mx-auto space-y-6 px-4">
           <h2 className="text-4xl font-bold text-primary drop-shadow-md">参加登録</h2>
           <p className="text-lg text-gray-800 drop-shadow-sm">
-            最新情報の配信やチケット販売開始のご案内をお受け取りいただけます。
+            最新情報の配信やチケット販売開始のご案内をLINEでお受け取りいただけます。
           </p>
           <div className="pt-4">
             <Button
@@ -287,12 +287,12 @@ export default function HomePage() {
               className="bg-gradient-to-r from-primary to-secondary hover:opacity-90 transition-opacity text-white text-lg px-8 py-6 shadow-lg"
             >
               <a
-                href="https://forms.gle/BySAsHjWZhQR2t7QA"
+                href="https://lin.ee/pyGQFYZ"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2"
               >
-                事前登録する
+                LINE登録する
                 <ArrowRight className="h-5 w-5" />
               </a>
             </Button>
