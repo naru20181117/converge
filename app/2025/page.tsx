@@ -44,8 +44,19 @@ export default function HomePage() {
 
       <section className="grid gap-6 md:grid-cols-2">
         <Card>
-          <CardContent className="p-6 space-y-2 h-96">
-            <h2 className="text-2xl font-bold">開催概要</h2>
+          <CardContent className="p-6 space-y-2">
+            <div className="flex justify-between items-center">
+              <h2 className="text-2xl font-bold">開催概要</h2>
+              <div className="flex justify-start">
+                <Link
+                  href="/2025/schedule"
+                  className="text-sm text-primary flex items-center gap-1 hover:underline"
+                >
+                  タイムスケジュールを確認
+                  <ArrowRight className="h-3.5 w-3.5" />
+                </Link>
+              </div>
+            </div>
             <p>日時：2025年6月15日（日）〜 6月21日（土）</p>
             <p>形式：ハイブリッド開催</p>
             <div className="grid gap-2 mt-3">
@@ -127,7 +138,7 @@ export default function HomePage() {
         </Card>
 
         <Card>
-          <CardContent className="p-6 space-y-2 h-96">
+          <CardContent className="p-6 space-y-2">
             <h2 className="text-2xl font-bold">参加対象</h2>
             <p className="text-gray-700 font-medium">定員：最大1,000名</p>
             <ul className="list-disc list-inside space-y-1 mt-3">
@@ -153,6 +164,15 @@ export default function HomePage() {
                 ICF Global本部よりスペシャルゲストが登壇予定！
                 世界の最前線で活躍するコーチや専門家によるセッションをお届けします。
               </p>
+              <div className="flex justify-start mt-4">
+                <Link
+                  href="/2025/speakers"
+                  className="text-md text-primary flex items-center gap-1 hover:underline"
+                >
+                  登壇者を確認する
+                  <ArrowRight className="h-3.5 w-3.5" />
+                </Link>
+              </div>
             </CardContent>
           </Card>
           <Card>

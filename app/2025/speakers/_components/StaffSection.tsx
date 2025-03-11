@@ -24,15 +24,22 @@ const staffs: Staff[] = [
     message: '「コーチングを民主化する」を掲げて活動中！',
   },
   {
-    name: 'さいき さちこ',
-    image: '/2025/staff/saiki.jpg',
-    message: '現地ボランティアスタッフ担当頑張ります！',
+    name: '栂村 雅美',
+    image: '/2025/staff/tsugamura.jpeg',
+    url: 'https://www.thecoaches.co.jp/find_coach/tsugamura_masami/',
+    message: 'ココロが満たされる豊かな場に。',
   },
   {
     name: '佐藤 大樹',
     image: '/2025/staff/sato.jpg',
     url: 'https://www.facebook.com/taiju.sato',
     message: '日本のコーチングを盛り上げる1週間に！',
+  },
+  {
+    name: '杉嶋 奈津子（なっち）',
+    image: '/2025/staff/sugishima.jpg',
+    url: 'https://coacham.biz/',
+    message: '私たち自らめいっぱい楽しみましょう～🥰',
   },
   {
     name: '福澤 博貴',
@@ -47,16 +54,9 @@ const staffs: Staff[] = [
     message: 'コーチングを一緒に盛り上げましょう！',
   },
   {
-    name: '栂村 雅美',
-    image: '/2025/staff/tsugamura.jpeg',
-    url: 'https://www.thecoaches.co.jp/find_coach/tsugamura_masami/',
-    message: 'ココロが満たされる豊かな場に。',
-  },
-  {
-    name: '杉嶋 奈津子（なっち）',
-    image: '/2025/staff/sugishima.jpg',
-    url: 'https://coacham.biz/',
-    message: '私たち自らめいっぱい楽しみましょう～🥰',
+    name: 'さいき さちこ',
+    image: '/2025/staff/saiki.jpg',
+    message: '現地ボランティアスタッフ担当頑張ります！',
   },
   {
     name: 'コットン',
