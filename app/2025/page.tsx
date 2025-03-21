@@ -197,6 +197,96 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section className="text-center py-12 bg-gradient-to-br from-gray-50 via-primary/5 to-gray-50 rounded-3xl my-12">
+        <div className="max-w-4xl mx-auto space-y-6 px-4">
+          <h2 className="text-4xl font-bold text-primary drop-shadow-md">チケット価格</h2>
+          <p className="text-lg text-gray-800 mb-6">
+            早期割引や会員割引をご利用いただけます。お早めのご購入がお得です。
+          </p>
+
+          <div className="overflow-x-auto">
+            <table className="w-full border-collapse rounded-lg overflow-hidden shadow-lg">
+              <thead>
+                <tr className="bg-primary text-white">
+                  <th className="px-4 py-3 text-left">種別</th>
+                  <th className="px-4 py-3 text-center">締め切り</th>
+                  <th className="px-4 py-3 text-center">価格</th>
+                  <th className="px-4 py-3 text-center">ICF会員価格</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="bg-white border-b border-gray-200 hover:bg-primary/5 transition-colors">
+                  <td className="px-4 py-4 font-medium">
+                    <div>超早割・一般</div>
+                  </td>
+                  <td className="px-4 py-4 text-center">3/31</td>
+                  <td className="px-4 py-4 text-center font-bold">¥9,800</td>
+                  <td className="px-4 py-4 text-center font-bold text-primary">¥4,800</td>
+                </tr>
+                <tr className="bg-gray-50 border-b border-gray-200 hover:bg-primary/5 transition-colors">
+                  <td className="px-4 py-4 font-medium">
+                    <div>早割・一般</div>
+                  </td>
+                  <td className="px-4 py-4 text-center">5/14</td>
+                  <td className="px-4 py-4 text-center font-bold">¥12,800</td>
+                  <td className="px-4 py-4 text-center font-bold text-primary">¥7,800</td>
+                </tr>
+                <tr className="bg-white border-b border-gray-200 hover:bg-primary/5 transition-colors">
+                  <td className="px-4 py-4 font-medium">一般</td>
+                  <td className="px-4 py-4 text-center">6/8</td>
+                  <td className="px-4 py-4 text-center font-bold">¥14,800</td>
+                  <td className="px-4 py-4 text-center font-bold text-primary">¥9,800</td>
+                </tr>
+                <tr className="bg-gray-50 hover:bg-primary/5 transition-colors">
+                  <td className="px-4 py-4 font-medium">U24</td>
+                  <td className="px-4 py-4 text-center">6/8</td>
+                  <td className="px-4 py-4 text-center font-bold">¥5,000</td>
+                  <td className="px-4 py-4 text-center font-bold text-primary">無料</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div className="text-sm text-gray-600 mt-4 px-4">
+            <p>※価格はすべて税込です</p>
+            <p>※U24は24歳以下の方が対象です（学生証など年齢確認できる書類が必要）</p>
+            <p>
+              ※ICF会員は会員割引が適用されます（
+              <a href="/2025/questions" className="text-primary hover:underline">
+                適用方法はこちら
+              </a>
+              ）
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="text-center py-16 bg-gradient-to-br from-gray-50 via-primary/5 to-gray-50 rounded-3xl my-12">
+        <div className="max-w-2xl mx-auto space-y-6 px-4">
+          <h2 className="text-4xl font-bold text-primary drop-shadow-md">参加登録</h2>
+          <p className="text-lg text-gray-800 drop-shadow-sm">
+            最新情報の配信やチケット販売開始のご案内をLINEでお受け取りいただけます。
+          </p>
+          <div className="pt-4">
+            <Button
+              size="lg"
+              asChild
+              className="bg-gradient-to-r from-primary to-secondary hover:opacity-90 transition-opacity text-white text-lg px-8 py-6 shadow-lg"
+            >
+              <a
+                href="https://lin.ee/pyGQFYZ"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2"
+              >
+                LINE登録する
+                <ArrowRight className="h-5 w-5" />
+              </a>
+            </Button>
+          </div>
+        </div>
+      </section>
+
       <section className="text-center space-y-4 py-6">
         <TitleWithBackground title="ICF ジャパンについて" backgroundText="ICF JAPAN" />
         <div className="mx-auto max-w-4xl space-y-6">
@@ -290,32 +380,6 @@ export default function HomePage() {
                 </p>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="text-center py-16 bg-gradient-to-br from-gray-50 via-primary/5 to-gray-50 rounded-3xl my-12">
-        <div className="max-w-2xl mx-auto space-y-6 px-4">
-          <h2 className="text-4xl font-bold text-primary drop-shadow-md">参加登録</h2>
-          <p className="text-lg text-gray-800 drop-shadow-sm">
-            最新情報の配信やチケット販売開始のご案内をLINEでお受け取りいただけます。
-          </p>
-          <div className="pt-4">
-            <Button
-              size="lg"
-              asChild
-              className="bg-gradient-to-r from-primary to-secondary hover:opacity-90 transition-opacity text-white text-lg px-8 py-6 shadow-lg"
-            >
-              <a
-                href="https://lin.ee/pyGQFYZ"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2"
-              >
-                LINE登録する
-                <ArrowRight className="h-5 w-5" />
-              </a>
-            </Button>
           </div>
         </div>
       </section>
