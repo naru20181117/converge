@@ -245,6 +245,9 @@ export default function HomePage() {
                 </tr>
               </tbody>
             </table>
+            <p className="mt-4 text-sm text-gray-600 italic">
+              ※チケット購入者限定でオンライン配信のアーカイブをご視聴いただけます。
+            </p>
           </div>
 
           <div className="text-sm text-gray-600 mt-4 px-4">
@@ -279,7 +282,7 @@ export default function HomePage() {
                 rel="noopener noreferrer"
                 className="flex items-center gap-2"
               >
-                LINE登録する
+                お申込みは情報はLINEから
                 <ArrowRight className="h-5 w-5" />
               </a>
             </Button>
