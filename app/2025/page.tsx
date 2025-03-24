@@ -245,8 +245,15 @@ export default function HomePage() {
                 </tr>
               </tbody>
             </table>
-            <p className="mt-4 text-sm text-gray-600 italic">
-              ※チケット購入者限定でオンライン配信のアーカイブをご視聴いただけます。
+          </div>
+
+          <div className="mt-4 bg-primary/10 p-3 rounded-lg border border-primary/20">
+            <p className="font-medium flex items-center gap-2">
+              <ExternalLink className="h-4 w-4 text-primary flex-shrink-0" />
+              <span className="font-bold">
+                <span className="text-primary">特典：</span>
+                全セッションのアーカイブ視聴が可能です
+              </span>
             </p>
           </div>
 
@@ -268,7 +275,7 @@ export default function HomePage() {
         <div className="max-w-2xl mx-auto space-y-6 px-4">
           <h2 className="text-4xl font-bold text-primary drop-shadow-md">参加登録</h2>
           <p className="text-lg text-gray-800 drop-shadow-sm">
-            最新情報の配信やチケット販売開始のご案内をLINEでお受け取りいただけます。
+            チケットの購入、最新情報、クーポン受け取りはすべて公式LINEより可能です！
           </p>
           <div className="pt-4">
             <Button
@@ -282,7 +289,7 @@ export default function HomePage() {
                 rel="noopener noreferrer"
                 className="flex items-center gap-2"
               >
-                お申込みは情報はLINEから
+                チケット購入はLINEから
                 <ArrowRight className="h-5 w-5" />
               </a>
             </Button>

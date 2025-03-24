@@ -38,6 +38,16 @@ export default function SchedulePage() {
         各日のプログラム詳細です。初日と最終日は終日開催、平日は夜間のセッションとなります。
       </p>
 
+      <div className="bg-primary/10 p-4 rounded-lg border border-primary/20 mb-6">
+        <p className="font-medium flex items-center gap-2">
+          <Clock className="h-5 w-5 text-primary flex-shrink-0" />
+          <span className="font-bold">
+            <span className="text-primary">特典：</span>
+            全セッションのアーカイブ視聴が可能です
+          </span>
+        </p>
+      </div>
+
       <Accordion
         type="single"
         collapsible
@@ -294,7 +304,7 @@ export default function SchedulePage() {
                       <div className="border-l-4 border-secondary/20 pl-3">
                         <h4 className="text-sm font-semibold">銀座コーチングスクール</h4>
                         <p className="text-sm text-muted-foreground mt-1">
-                          多様性を活かすコーチング ～組織の成長を促す実践的アプローチ～
+                          経営コンサルタントが活かすコーチング
                         </p>
                       </div>
                     </div>
@@ -362,7 +372,7 @@ export default function SchedulePage() {
                       <div className="border-l-4 border-secondary/20 pl-3">
                         <h4 className="text-sm font-semibold">銀座コーチングスクール</h4>
                         <p className="text-sm text-muted-foreground mt-1">
-                          経営コンサルタントが活かすコーチング
+                          多様性を活かすコーチング ～組織の成長を促す実践的アプローチ～
                         </p>
                       </div>
                     </div>
