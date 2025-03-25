@@ -223,7 +223,9 @@ export default function SchedulePage() {
                         20:10-21:10
                       </div>
                       <div className="border-l-4 border-secondary/20 pl-3">
-                        <h4 className="text-sm font-semibold">バランストグロースト</h4>
+                        <h4 className="text-sm font-semibold">
+                          バランスト・グロース・コンサルティング株式会社
+                        </h4>
                         <p className="text-sm text-muted-foreground mt-1">
                           「対立の炎にとどまる
                           〜対立を超えてイノベーションを生み出すチームコーチの重要性」
@@ -496,7 +498,9 @@ export default function SchedulePage() {
                         20:10-21:10
                       </div>
                       <div className="border-l-4 border-secondary/20 pl-3">
-                        <h4 className="text-sm font-semibold">バランストグロースト</h4>
+                        <h4 className="text-sm font-semibold">
+                          バランスト・グロース・コンサルティング株式会社
+                        </h4>
                         <p className="text-sm text-muted-foreground mt-1">
                           「もし地球がクライアントだったら？
                           個人からチーム、組織、社会を変えるコーチング」
