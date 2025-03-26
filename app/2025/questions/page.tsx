@@ -249,7 +249,7 @@ export default function QuestionsPage() {
                 <ul className="list-disc list-inside mt-2 space-y-1 text-sm">
                   <li>
                     <span className="font-medium">コア・コンピテンシー(CC):</span>{' '}
-                    ICFコア・コンピテンシーに直接関連する上級のコーチトレーニング
+                    ICFコア・コンピテンシーに直接関連するトレーニング
                   </li>
                   <li>
                     <span className="font-medium">リソース・ディベロップメント(RD):</span>{' '}
