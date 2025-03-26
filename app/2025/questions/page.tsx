@@ -231,6 +231,34 @@ export default function QuestionsPage() {
               </div>
             </AccordionContent>
           </AccordionItem>
+
+          <AccordionItem value="item-4">
+            <AccordionTrigger className="text-lg font-medium">
+              CCE単位を取得することはできますか？
+            </AccordionTrigger>
+            <AccordionContent className="space-y-4 pt-4">
+              <p>単位取得ができるように調整中です。随時更新していくのでお待ちください。</p>
+
+              <div className="mt-4 p-4 bg-muted rounded-lg">
+                <p className="font-medium">CCEについて:</p>
+                <p className="mt-2 text-sm">
+                  CCE（Continuing Coach
+                  Education）は、ICF認定資格を持つコーチが3年ごとの資格更新に際して必要となる継続コーチ専門教育です。資格更新には40時間のCCE受講履歴が必要となります。
+                </p>
+                <p className="mt-2 text-sm">CCEは以下の2つのカテゴリーに分けられています:</p>
+                <ul className="list-disc list-inside mt-2 space-y-1 text-sm">
+                  <li>
+                    <span className="font-medium">コア・コンピテンシー(CC):</span>{' '}
+                    ICFコア・コンピテンシーに直接関連する上級のコーチトレーニング
+                  </li>
+                  <li>
+                    <span className="font-medium">リソース・ディベロップメント(RD):</span>{' '}
+                    コーチの専門性養成に役立つICFコア・コンピテンシー以外のトレーニング（CCE40時間の内、RDは16時間まで認められます）
+                  </li>
+                </ul>
+              </div>
+            </AccordionContent>
+          </AccordionItem>
         </Accordion>
         <p className="text-sm">
           コーチング・コンバージ2025に関するよくある質問をまとめました。
