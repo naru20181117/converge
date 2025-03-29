@@ -160,6 +160,89 @@ export default function QuestionsPage() {
             </AccordionContent>
           </AccordionItem>
 
+          <AccordionItem value="item-5">
+            <AccordionTrigger className="text-lg font-medium">
+              クーポン取得ができません。解決方法を教えてください。
+            </AccordionTrigger>
+            <AccordionContent className="space-y-4 pt-4">
+              <p>
+                クーポン取得ができない場合、以下の原因が考えられます。それぞれの対応策をご確認ください。
+              </p>
+
+              <div className="mt-4 space-y-6">
+                <div className="p-4 border border-l-4 border-l-amber-500 rounded bg-amber-50">
+                  <h3 className="font-medium">1. ICF会員になったばかりの場合</h3>
+                  <p className="mt-2">
+                    ICF会員に新しく登録された場合や会員情報を更新した場合、データベースへの反映まで時間がかかることがあります。12時間から24時間程度お待ちいただき、再度クーポン取得をお試しください。
+                  </p>
+                </div>
+
+                <div className="p-4 border border-l-4 border-l-blue-500 rounded bg-blue-50">
+                  <h3 className="font-medium">2. ICF会員情報の登録ミス</h3>
+                  <ul className="list-disc list-inside mt-2 space-y-3">
+                    <li>
+                      <span className="font-medium">チャプター設定の確認:</span>
+                      <p className="mt-1 ml-6">
+                        ICF会員登録時に「Japanチャプター」以外を選択している場合、日本のイベント割引が適用されないことがあります。
+                        <a
+                          href="https://coachingfederation.org/profile"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-primary hover:underline block mt-1"
+                        >
+                          ICF会員プロフィールページ
+                        </a>
+                        からチャプター設定を確認し、必要に応じて「ICF Japan
+                        Chapter」に変更してください。
+                      </p>
+                    </li>
+                    <li>
+                      <span className="font-medium">登録メールアドレスの確認:</span>
+                      <p className="mt-1 ml-6">
+                        ICF会員登録時に登録したメールアドレスが正しいことを確認してください。
+                        メールアドレスに誤りがあると、クーポンを受け取ることができません。
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="p-4 border border-l-4 border-l-green-500 rounded bg-green-50">
+                  <h3 className="font-medium">3. メールが届かない場合</h3>
+                  <p className="mt-2">
+                    クーポンコードを含むメールが見当たらない場合、以下をご確認ください：
+                  </p>
+                  <ul className="list-disc list-inside mt-2 space-y-1">
+                    <li>迷惑メールフォルダを確認してください</li>
+                    <li>
+                      <span className="font-medium">送信元アドレス：</span>
+                      <code className="bg-muted px-1 py-0.5 rounded">
+                        send@no-reply.brighty.site
+                      </code>{' '}
+                      からのメールを探してください
+                    </li>
+                    <li>メールフィルターで拒否設定されていないか確認してください</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="mt-4 p-4 bg-muted rounded-lg">
+                <p className="font-medium">それでも解決しない場合：</p>
+                <p className="mt-2">
+                  上記の対応を試しても問題が解決しない場合は、
+                  <a
+                    href="https://lin.ee/pyGQFYZ"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-primary hover:underline"
+                  >
+                    公式LINEアカウント
+                  </a>
+                  にてお問い合わせください。その際、会員番号とともに具体的な状況をお知らせいただけると迅速に対応できます。
+                </p>
+              </div>
+            </AccordionContent>
+          </AccordionItem>
+
           <AccordionItem value="item-2">
             <AccordionTrigger className="text-lg font-medium">
               オンラインでの参加方法について教えてください。
