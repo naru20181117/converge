@@ -153,7 +153,13 @@ export default function SchedulePage() {
                       <h4 className="text-sm font-semibold">
                         ネットワーキングセッション & クロージング
                       </h4>
-                      <p className="text-sm text-muted-foreground mt-1"></p>
+                      <p className="text-sm text-muted-foreground mt-1">
+                        コーチング・プラクティス(～17:00まで)
+                      </p>
+                      <p className="text-sm text-muted-foreground mt-1">
+                        ※ネットワーキングセッション & クロージング
+                        の裏時間で、コーチング・プラクティスを実施。ただし、コーチングプラクティスは、15:30-17:00となります。
+                      </p>
                     </div>
                   </div>
                 </div>
