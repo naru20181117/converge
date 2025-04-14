@@ -40,7 +40,7 @@ export default function SpeakersPage() {
     {
       name: '中竹 竜二',
       role: '株式会社チームボックス 代表取締役 / 日本オリンピック委員会 サービスマネージャー',
-      title: 'coming soon',
+      title: 'コーチとしてのアンラーン',
       organization: '株式会社チームボックス',
       image: '/2025/speakers/nakatake.jpg',
       description:
