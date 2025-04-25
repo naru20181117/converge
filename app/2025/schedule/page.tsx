@@ -418,8 +418,10 @@ export default function SchedulePage() {
                         19:00-20:00
                       </div>
                       <div className="border-l-4 border-primary/20 pl-3">
-                        <h4 className="text-sm font-semibold">TCA</h4>
-                        <p className="text-sm text-muted-foreground mt-1">Coming Soon ~</p>
+                        <h4 className="text-sm font-semibold">東京コーチング協会</h4>
+                        <p className="text-sm text-muted-foreground mt-1">
+                          組織やチームの意思を引き出す、「組織コーチング」の未来
+                        </p>
                       </div>
                     </div>
 
@@ -529,8 +531,10 @@ export default function SchedulePage() {
                         20:10-21:10
                       </div>
                       <div className="border-l-4 border-secondary/20 pl-3">
-                        <h4 className="text-sm font-semibold">TCA</h4>
-                        <p className="text-sm text-muted-foreground mt-1">Coming Soon ~</p>
+                        <h4 className="text-sm font-semibold">東京コーチング協会</h4>
+                        <p className="text-sm text-muted-foreground mt-1">
+                          職場で「つながり」をつくるコーチングの４つの視点～ケン・ウィルバーの４象限を活用して～
+                        </p>
                       </div>
                     </div>
                   </div>
