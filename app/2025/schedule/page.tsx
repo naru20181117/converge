@@ -579,9 +579,10 @@ export default function SchedulePage() {
                     </div>
                     <div>
                       <h4 className="text-sm font-semibold">
-                        Code&CCチームによるコンテンツ: ICFコーチングの習得意欲の喚起
+                        世界から注目を集めるCode＆CC研究会がお届けする
+                        質の高いコーチングで社会をアップデート
                       </h4>
-                      <p className="text-sm text-muted-foreground mt-1"></p>
+                      <p className="text-sm text-muted-foreground mt-1">〜話す 学ぶ 楽しむ〜</p>
                     </div>
                   </div>
 
@@ -634,9 +635,11 @@ export default function SchedulePage() {
                     </div>
                     <div>
                       <h4 className="text-sm font-semibold">
-                        プラクティス(コーチング実践) and 初めてのコーチング
+                        Code＆CC研究会がお届けする ICFコーチングのデモンストレーション
                       </h4>
-                      <p className="text-sm text-muted-foreground mt-1"></p>
+                      <p className="text-sm text-muted-foreground mt-1">
+                        会話・対話・コーチングセッション
+                      </p>
                     </div>
                   </div>
 
