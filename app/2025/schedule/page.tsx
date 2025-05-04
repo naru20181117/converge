@@ -198,6 +198,35 @@ export default function SchedulePage() {
                       </div>
                     </div>
 
+                    <div className="p-3 grid grid-cols-[90px_1fr] gap-3 border-t-0 bg-muted/5">
+                      <div className="text-sm font-medium text-muted-foreground whitespace-nowrap opacity-0">
+                        19:00-20:00
+                      </div>
+                      <div className="border-l-4 border-primary/20 pl-3">
+                        <h4 className="text-sm font-semibold">ICFジャパン</h4>
+                        <p className="text-sm text-muted-foreground mt-1">
+                          Sharpen Your Coaching Edge: Best Practices for Core Competencies #3 & #8
+                        </p>
+                        <div className="mt-2 p-2 bg-yellow-50 border border-yellow-200 rounded-md text-xs text-yellow-800">
+                          <p>
+                            本コンテンツは英語のみで実施、ディスカッションを行います。参加希望の方は別途下記Peatixで参加登録を行ってください。
+                          </p>
+                          <p className="mt-1">
+                            &ldquo;For those who want to attend this English session, please
+                            register as a free ticket on Peatix event page too.&rdquo;
+                          </p>
+                          <a
+                            href="https://peatix.com/event/4398074/view"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-primary hover:underline mt-1 inline-block"
+                          >
+                            https://peatix.com/event/4398074/view
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+
                     <div className="p-3 grid grid-cols-[90px_1fr] gap-3 border-t">
                       <div className="text-sm font-medium text-muted-foreground whitespace-nowrap">
                         20:10-21:10
@@ -310,7 +339,7 @@ export default function SchedulePage() {
                       <div className="border-l-4 border-secondary/20 pl-3">
                         <h4 className="text-sm font-semibold">銀座コーチングスクール</h4>
                         <p className="text-sm text-muted-foreground mt-1">
-                          経営コンサルタントが活かすコーチング
+                          組織やチームの意思を引き出す、「組織コーチング」の未来
                         </p>
                       </div>
                     </div>
