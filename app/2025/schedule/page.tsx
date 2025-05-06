@@ -190,7 +190,7 @@ export default function SchedulePage() {
                       <div className="text-sm font-medium text-muted-foreground whitespace-nowrap">
                         19:00-20:00
                       </div>
-                      <div className="border-l-4 border-primary/20 pl-3">
+                      <div className="border-l-2 border-primary/70 pl-3">
                         <h4 className="text-sm font-semibold">共創コーチ®養成スクール</h4>
                         <p className="text-sm text-muted-foreground mt-1">
                           コーチングと教育の関係性～ICFコアコンピテンシーと教育～
@@ -202,7 +202,7 @@ export default function SchedulePage() {
                       <div className="text-sm font-medium text-muted-foreground whitespace-nowrap opacity-0">
                         19:00-20:00
                       </div>
-                      <div className="border-l-4 border-primary/20 pl-3">
+                      <div className="border-l-2 border-primary/70 pl-3">
                         <h4 className="text-sm font-semibold">ICFジャパン</h4>
                         <p className="text-sm text-muted-foreground mt-1">
                           Sharpen Your Coaching Edge: Best Practices for Core Competencies #3 & #8
@@ -231,7 +231,7 @@ export default function SchedulePage() {
                       <div className="text-sm font-medium text-muted-foreground whitespace-nowrap">
                         20:10-21:10
                       </div>
-                      <div className="border-l-4 border-secondary/20 pl-3">
+                      <div className="border-l-2 border-secondary/70 pl-3">
                         <h4 className="text-sm font-semibold">エムビーシーシー合同会社</h4>
                         <p className="text-sm text-muted-foreground mt-1">
                           たった一つを変えるだけで社内の1on1が活性化する～職場におけるマインドフルリスニングの在り方と進め方～
@@ -243,7 +243,7 @@ export default function SchedulePage() {
                       <div className="text-sm font-medium text-muted-foreground whitespace-nowrap opacity-0">
                         20:10-21:10
                       </div>
-                      <div className="border-l-4 border-secondary/20 pl-3">
+                      <div className="border-l-2 border-secondary/70 pl-3">
                         <h4 className="text-sm font-semibold">ライフコーチワールド</h4>
                         <p className="text-sm text-muted-foreground mt-1">
                           ICF認定資格試験の不合格体験から学んだMCC合格への道
@@ -255,7 +255,7 @@ export default function SchedulePage() {
                       <div className="text-sm font-medium text-muted-foreground whitespace-nowrap opacity-0">
                         20:10-21:10
                       </div>
-                      <div className="border-l-4 border-secondary/20 pl-3">
+                      <div className="border-l-2 border-secondary/70 pl-3">
                         <h4 className="text-sm font-semibold">
                           バランスト・グロース・コンサルティング株式会社
                         </h4>
@@ -278,7 +278,7 @@ export default function SchedulePage() {
                       <div className="text-sm font-medium text-muted-foreground whitespace-nowrap">
                         19:00-20:00
                       </div>
-                      <div className="border-l-4 border-primary/20 pl-3">
+                      <div className="border-l-2 border-primary/70 pl-3">
                         <h4 className="text-sm font-semibold">ホールシステムコーチング</h4>
                         <p className="text-sm text-muted-foreground mt-1">
                           可能性へのアプローチ　～幸せ脳・身体～個人の能力開発
@@ -290,7 +290,7 @@ export default function SchedulePage() {
                       <div className="text-sm font-medium text-muted-foreground whitespace-nowrap opacity-0">
                         19:00-20:00
                       </div>
-                      <div className="border-l-4 border-primary/20 pl-3">
+                      <div className="border-l-2 border-primary/70 pl-3">
                         <h4 className="text-sm font-semibold">コーチングプラットフォーム</h4>
                         <p className="text-sm text-muted-foreground mt-1">
                           自己基盤を学びＩＣＦコア・コンピテンシーを体現できるコーチとして成長しよう！コア・コンピテンシー『A　基盤を整える』と自己基盤
@@ -302,7 +302,7 @@ export default function SchedulePage() {
                       <div className="text-sm font-medium text-muted-foreground whitespace-nowrap opacity-0">
                         19:00-20:00
                       </div>
-                      <div className="border-l-4 border-primary/20 pl-3">
+                      <div className="border-l-2 border-primary/70 pl-3">
                         <h4 className="text-sm font-semibold">CRR globalJapan</h4>
                         <p className="text-sm text-muted-foreground mt-1">Coming Soon ~</p>
                       </div>
@@ -312,7 +312,7 @@ export default function SchedulePage() {
                       <div className="text-sm font-medium text-muted-foreground whitespace-nowrap">
                         20:10-21:10
                       </div>
-                      <div className="border-l-4 border-secondary/20 pl-3">
+                      <div className="border-l-2 border-secondary/70 pl-3">
                         <h4 className="text-sm font-semibold">ヘルスコーチ・ジャパン</h4>
                         <p className="text-sm text-muted-foreground mt-1">
                           現場で活かせるメンタルコーチング×セルフマネジメントトレーニング（自己理解）
@@ -324,7 +324,7 @@ export default function SchedulePage() {
                       <div className="text-sm font-medium text-muted-foreground whitespace-nowrap opacity-0">
                         20:10-21:10
                       </div>
-                      <div className="border-l-4 border-secondary/20 pl-3">
+                      <div className="border-l-2 border-secondary/70 pl-3">
                         <h4 className="text-sm font-semibold">ライフコーチワールド</h4>
                         <p className="text-sm text-muted-foreground mt-1">
                           ライフコーチング体験ワークショップ
@@ -336,7 +336,7 @@ export default function SchedulePage() {
                       <div className="text-sm font-medium text-muted-foreground whitespace-nowrap opacity-0">
                         20:10-21:10
                       </div>
-                      <div className="border-l-4 border-secondary/20 pl-3">
+                      <div className="border-l-2 border-secondary/70 pl-3">
                         <h4 className="text-sm font-semibold">銀座コーチングスクール</h4>
                         <p className="text-sm text-muted-foreground mt-1">
                           組織やチームの意思を引き出す、「組織コーチング」の未来
@@ -356,7 +356,7 @@ export default function SchedulePage() {
                       <div className="text-sm font-medium text-muted-foreground whitespace-nowrap">
                         19:00-20:00
                       </div>
-                      <div className="border-l-4 border-primary/20 pl-3">
+                      <div className="border-l-2 border-primary/70 pl-3">
                         <h4 className="text-sm font-semibold">ホールシステムコーチング</h4>
                         <p className="text-sm text-muted-foreground mt-1">
                           チームコーチング～１対１のコーチングを超えて～組織・チームの能力開発Weメソッド®
@@ -368,7 +368,7 @@ export default function SchedulePage() {
                       <div className="text-sm font-medium text-muted-foreground whitespace-nowrap opacity-0">
                         19:00-20:00
                       </div>
-                      <div className="border-l-4 border-primary/20 pl-3">
+                      <div className="border-l-2 border-primary/70 pl-3">
                         <h4 className="text-sm font-semibold">共創コーチ®養成スクール</h4>
                         <p className="text-sm text-muted-foreground mt-1">
                           Good Coachingを生み出す共創の作り方
@@ -380,7 +380,7 @@ export default function SchedulePage() {
                       <div className="text-sm font-medium text-muted-foreground whitespace-nowrap">
                         20:10-21:10
                       </div>
-                      <div className="border-l-4 border-secondary/20 pl-3">
+                      <div className="border-l-2 border-secondary/70 pl-3">
                         <h4 className="text-sm font-semibold">コーチングプラスワン</h4>
                         <p className="text-sm text-muted-foreground mt-1">
                           人生の転機に役立つマインドセットコーチング
@@ -392,7 +392,7 @@ export default function SchedulePage() {
                       <div className="text-sm font-medium text-muted-foreground whitespace-nowrap opacity-0">
                         20:10-21:10
                       </div>
-                      <div className="border-l-4 border-secondary/20 pl-3">
+                      <div className="border-l-2 border-secondary/70 pl-3">
                         <h4 className="text-sm font-semibold">ヘルスコーチ・ジャパン</h4>
                         <p className="text-sm text-muted-foreground mt-1">
                           現場で活かせるヘルスコーチング×セルフマネジメントトレーニング（他者理解）
@@ -404,7 +404,7 @@ export default function SchedulePage() {
                       <div className="text-sm font-medium text-muted-foreground whitespace-nowrap opacity-0">
                         20:10-21:10
                       </div>
-                      <div className="border-l-4 border-secondary/20 pl-3">
+                      <div className="border-l-2 border-secondary/70 pl-3">
                         <h4 className="text-sm font-semibold">銀座コーチングスクール</h4>
                         <p className="text-sm text-muted-foreground mt-1">
                           多様性を活かすコーチング ～組織の成長を促す実践的アプローチ～
@@ -424,7 +424,7 @@ export default function SchedulePage() {
                       <div className="text-sm font-medium text-muted-foreground whitespace-nowrap">
                         19:00-20:00
                       </div>
-                      <div className="border-l-4 border-primary/20 pl-3">
+                      <div className="border-l-2 border-primary/70 pl-3">
                         <h4 className="text-sm font-semibold">コーチングプラットフォーム</h4>
                         <p className="text-sm text-muted-foreground mt-1">
                           自己基盤を学びＩＣＦコア・コンピテンシーを体現できるコーチとして成長しよう！コア・コンピテンシー『B　関係性をともに築く』と自己基盤
@@ -436,7 +436,7 @@ export default function SchedulePage() {
                       <div className="text-sm font-medium text-muted-foreground whitespace-nowrap opacity-0">
                         19:00-20:00
                       </div>
-                      <div className="border-l-4 border-primary/20 pl-3">
+                      <div className="border-l-2 border-primary/70 pl-3">
                         <h4 className="text-sm font-semibold">CTIジャパン</h4>
                         <p className="text-sm text-muted-foreground mt-1">Coming Soon ~</p>
                       </div>
@@ -446,7 +446,7 @@ export default function SchedulePage() {
                       <div className="text-sm font-medium text-muted-foreground whitespace-nowrap opacity-0">
                         19:00-20:00
                       </div>
-                      <div className="border-l-4 border-primary/20 pl-3">
+                      <div className="border-l-2 border-primary/70 pl-3">
                         <h4 className="text-sm font-semibold">東京コーチング協会</h4>
                         <p className="text-sm text-muted-foreground mt-1">
                           組織やチームの意思を引き出す、「組織コーチング」の未来
@@ -458,7 +458,7 @@ export default function SchedulePage() {
                       <div className="text-sm font-medium text-muted-foreground whitespace-nowrap">
                         20:10-21:10
                       </div>
-                      <div className="border-l-4 border-secondary/20 pl-3">
+                      <div className="border-l-2 border-secondary/70 pl-3">
                         <h4 className="text-sm font-semibold">コーチングプラスワン</h4>
                         <p className="text-sm text-muted-foreground mt-1">
                           ～ACC×PCC×MCC　そのコーチング、どう違う?～
@@ -470,7 +470,7 @@ export default function SchedulePage() {
                       <div className="text-sm font-medium text-muted-foreground whitespace-nowrap opacity-0">
                         20:10-21:10
                       </div>
-                      <div className="border-l-4 border-secondary/20 pl-3">
+                      <div className="border-l-2 border-secondary/70 pl-3">
                         <h4 className="text-sm font-semibold">銀座コーチングスクール</h4>
                         <p className="text-sm text-muted-foreground mt-1">
                           キャリア支援とコーチングがつながる未来：人材開発の新たな可能性
@@ -482,7 +482,7 @@ export default function SchedulePage() {
                       <div className="text-sm font-medium text-muted-foreground whitespace-nowrap opacity-0">
                         20:10-21:10
                       </div>
-                      <div className="border-l-4 border-secondary/20 pl-3">
+                      <div className="border-l-2 border-secondary/70 pl-3">
                         <h4 className="text-sm font-semibold">CTIジャパン</h4>
                         <p className="text-sm text-muted-foreground mt-1">Coming Soon ~</p>
                       </div>
@@ -500,7 +500,7 @@ export default function SchedulePage() {
                       <div className="text-sm font-medium text-muted-foreground whitespace-nowrap">
                         19:00-20:00
                       </div>
-                      <div className="border-l-4 border-primary/20 pl-3">
+                      <div className="border-l-2 border-primary/70 pl-3">
                         <h4 className="text-sm font-semibold">CRR globalJapan</h4>
                         <p className="text-sm text-muted-foreground mt-1">Coming Soon ~</p>
                       </div>
@@ -510,7 +510,7 @@ export default function SchedulePage() {
                       <div className="text-sm font-medium text-muted-foreground whitespace-nowrap opacity-0">
                         19:00-20:00
                       </div>
-                      <div className="border-l-4 border-primary/20 pl-3">
+                      <div className="border-l-2 border-primary/70 pl-3">
                         <h4 className="text-sm font-semibold">CTIジャパン</h4>
                         <p className="text-sm text-muted-foreground mt-1">Coming Soon ~</p>
                       </div>
@@ -520,7 +520,7 @@ export default function SchedulePage() {
                       <div className="text-sm font-medium text-muted-foreground whitespace-nowrap opacity-0">
                         19:00-20:00
                       </div>
-                      <div className="border-l-4 border-primary/20 pl-3">
+                      <div className="border-l-2 border-primary/70 pl-3">
                         <h4 className="text-sm font-semibold">コーチングプラスワン</h4>
                         <p className="text-sm text-muted-foreground mt-1">
                           プロフェッショナルシリーズ　コーチのための初耳学①　～～感情のしつけ方〜〜
@@ -532,7 +532,7 @@ export default function SchedulePage() {
                       <div className="text-sm font-medium text-muted-foreground whitespace-nowrap">
                         20:10-21:10
                       </div>
-                      <div className="border-l-4 border-secondary/20 pl-3">
+                      <div className="border-l-2 border-secondary/70 pl-3">
                         <h4 className="text-sm font-semibold">
                           バランスト・グロース・コンサルティング株式会社
                         </h4>
@@ -547,7 +547,7 @@ export default function SchedulePage() {
                       <div className="text-sm font-medium text-muted-foreground whitespace-nowrap opacity-0">
                         20:10-21:10
                       </div>
-                      <div className="border-l-4 border-secondary/20 pl-3">
+                      <div className="border-l-2 border-secondary/70 pl-3">
                         <h4 className="text-sm font-semibold">コーチングプラスワン</h4>
                         <p className="text-sm text-muted-foreground mt-1">
                           プロフェッショナルシリーズ　コーチのための初耳学②　～～ライブ!!メンターコーチング〜〜
@@ -559,7 +559,7 @@ export default function SchedulePage() {
                       <div className="text-sm font-medium text-muted-foreground whitespace-nowrap opacity-0">
                         20:10-21:10
                       </div>
-                      <div className="border-l-4 border-secondary/20 pl-3">
+                      <div className="border-l-2 border-secondary/70 pl-3">
                         <h4 className="text-sm font-semibold">東京コーチング協会</h4>
                         <p className="text-sm text-muted-foreground mt-1">
                           職場で「つながり」をつくるコーチングの４つの視点～ケン・ウィルバーの４象限を活用して～
@@ -662,12 +662,24 @@ export default function SchedulePage() {
                     <div className="text-sm font-medium text-muted-foreground whitespace-nowrap">
                       15:15-16:45
                     </div>
-                    <div>
+                    <div className="border-l-4 border-primary pl-3">
                       <h4 className="text-sm font-semibold">
                         Code＆CC研究会がお届けする ICFコーチングのデモンストレーション
                       </h4>
                       <p className="text-sm text-muted-foreground mt-1">
                         会話・対話・コーチングセッション
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="p-3 grid grid-cols-[90px_1fr] gap-3 border-t-0 bg-muted/5">
+                    <div className="text-sm font-medium text-muted-foreground whitespace-nowrap opacity-0">
+                      15:15-16:45
+                    </div>
+                    <div className="border-l-4 border-primary pl-3">
+                      <h4 className="text-sm font-semibold">プラクティス(コーチング実践)</h4>
+                      <p className="text-sm text-muted-foreground mt-1">
+                        参加者同士によるコーチング実践セッション
                       </p>
                     </div>
                   </div>
