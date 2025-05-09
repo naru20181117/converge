@@ -127,7 +127,7 @@ export default function SchedulePage() {
                     </div>
                     <div>
                       <h4 className="text-sm font-semibold">
-                        ゲスト講演: 「ICFコーチングと多様な業種の連携」
+                        中竹 竜二氏：コーチとしてのアンラーン
                       </h4>
                       <p className="text-sm text-muted-foreground mt-1"></p>
                     </div>
