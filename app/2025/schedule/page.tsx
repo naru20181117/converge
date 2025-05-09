@@ -147,16 +147,23 @@ export default function SchedulePage() {
 
                   <div className="p-3 grid grid-cols-[90px_1fr] gap-3">
                     <div className="text-sm font-medium text-muted-foreground whitespace-nowrap">
-                      15:30-16:30
+                      15:30-16:00
+                    </div>
+                    <div>
+                      <h4 className="text-sm font-semibold">クロージング</h4>
+                    </div>
+                  </div>
+
+                  <div className="p-3 grid grid-cols-[90px_1fr] gap-3">
+                    <div className="text-sm font-medium text-muted-foreground whitespace-nowrap">
+                      16:00-17:30
                     </div>
                     <div>
                       <h4 className="text-sm font-semibold">
-                        ネットワーキングセッション&クロージング /
-                        コーチング・プラクティス(～17:00まで)
+                        ネットワーキング or コーチングプラクティス
                       </h4>
                       <p className="text-sm text-muted-foreground mt-1">
-                        ※ネットワーキングセッション&クロージング
-                        の裏時間で、コーチング・プラクティスを実施。ただし、コーチングプラクティスは、15:30-17:00となります。
+                        ※クロージングのあとは、ネットワーキングかコーチングプラクティスに分かれてご参加いただきます。ネットワーキングは自由解散。コーチングプラクティスは17:30までの開催。
                       </p>
                     </div>
                   </div>
