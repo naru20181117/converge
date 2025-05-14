@@ -94,7 +94,7 @@ export default function SchedulePage() {
                       <div className="flex justify-between items-start">
                         <h4 className="text-sm font-semibold">ICFグローバル代表からの基調講演</h4>
                         <span className="text-xs bg-blue-100 text-blue-800 px-2 py-0.5 rounded">
-                          RD:1.0
+                          RD 1.0単位
                         </span>
                       </div>
                       <p className="text-sm text-muted-foreground mt-1">
@@ -148,7 +148,7 @@ export default function SchedulePage() {
                           プロボノチームによるコンテンツ: コーチングセッションの効果と良さ
                         </h4>
                         <span className="text-xs bg-blue-100 text-blue-800 px-2 py-0.5 rounded">
-                          CC:0.5 RD:0.5
+                          CC 0.5単位 RD 0.5単位
                         </span>
                       </div>
                       <p className="text-sm text-muted-foreground mt-1"></p>
@@ -174,7 +174,7 @@ export default function SchedulePage() {
                           ネットワーキング or コーチングプラクティス
                         </h4>
                         <span className="text-xs bg-blue-100 text-blue-800 px-2 py-0.5 rounded">
-                          CC:1.5
+                          CC 1.5単位
                         </span>
                       </div>
                       <p className="text-sm text-muted-foreground mt-1">
@@ -635,7 +635,7 @@ export default function SchedulePage() {
                           質の高いコーチングで社会をアップデート
                         </h4>
                         <span className="text-xs bg-blue-100 text-blue-800 px-2 py-0.5 rounded">
-                          CC:1.5
+                          CC 1.5単位
                         </span>
                       </div>
                       <p className="text-sm text-muted-foreground mt-1">〜話す×学ぶ×楽しむ〜</p>
@@ -695,7 +695,7 @@ export default function SchedulePage() {
                           Code＆CC研究会がお届けする ICFコーチングのデモンストレーション
                         </h4>
                         <span className="text-xs bg-blue-100 text-blue-800 px-2 py-0.5 rounded">
-                          CC:1.5
+                          CC 1.5単位
                         </span>
                       </div>
                       <p className="text-sm text-muted-foreground mt-1">
@@ -712,7 +712,7 @@ export default function SchedulePage() {
                       <div className="flex justify-between items-start">
                         <h4 className="text-sm font-semibold">プラクティス(コーチング実践)</h4>
                         <span className="text-xs bg-blue-100 text-blue-800 px-2 py-0.5 rounded">
-                          CC:1.5
+                          CC 1.5単位
                         </span>
                       </div>
                       <p className="text-sm text-muted-foreground mt-1">
