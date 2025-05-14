@@ -91,7 +91,12 @@ export default function SchedulePage() {
                       10:30-11:30
                     </div>
                     <div>
-                      <h4 className="text-sm font-semibold">ICFグローバル代表からの基調講演</h4>
+                      <div className="flex justify-between items-start">
+                        <h4 className="text-sm font-semibold">ICFグローバル代表からの基調講演</h4>
+                        <span className="text-xs bg-blue-100 text-blue-800 px-2 py-0.5 rounded">
+                          RD:1.0
+                        </span>
+                      </div>
                       <p className="text-sm text-muted-foreground mt-1">
                         代表の自己紹介、ICFグローバルコーチングのトレンド、日本のICFコーチングの可能性と日本のコーチング業界への期待について
                       </p>
@@ -138,9 +143,14 @@ export default function SchedulePage() {
                       14:30-15:30
                     </div>
                     <div>
-                      <h4 className="text-sm font-semibold">
-                        プロボノチームによるコンテンツ: コーチングセッションの効果と良さ
-                      </h4>
+                      <div className="flex justify-between items-start">
+                        <h4 className="text-sm font-semibold">
+                          プロボノチームによるコンテンツ: コーチングセッションの効果と良さ
+                        </h4>
+                        <span className="text-xs bg-blue-100 text-blue-800 px-2 py-0.5 rounded">
+                          CC:0.5 RD:0.5
+                        </span>
+                      </div>
                       <p className="text-sm text-muted-foreground mt-1"></p>
                     </div>
                   </div>
@@ -159,9 +169,14 @@ export default function SchedulePage() {
                       16:00-17:30
                     </div>
                     <div>
-                      <h4 className="text-sm font-semibold">
-                        ネットワーキング or コーチングプラクティス
-                      </h4>
+                      <div className="flex justify-between items-start">
+                        <h4 className="text-sm font-semibold">
+                          ネットワーキング or コーチングプラクティス
+                        </h4>
+                        <span className="text-xs bg-blue-100 text-blue-800 px-2 py-0.5 rounded">
+                          CC:1.5
+                        </span>
+                      </div>
                       <p className="text-sm text-muted-foreground mt-1">
                         ※クロージングのあとは、ネットワーキングかコーチングプラクティスに分かれてご参加いただきます。ネットワーキングは自由解散。コーチングプラクティスは17:30までの開催。
                       </p>
@@ -614,11 +629,16 @@ export default function SchedulePage() {
                       10:30-12:00
                     </div>
                     <div>
-                      <h4 className="text-sm font-semibold">
-                        世界から注目を集めるCode＆CC研究会がお届けする
-                        質の高いコーチングで社会をアップデート
-                      </h4>
-                      <p className="text-sm text-muted-foreground mt-1">〜話す 学ぶ 楽しむ〜</p>
+                      <div className="flex justify-between items-start">
+                        <h4 className="text-sm font-semibold">
+                          世界から注目を集めるCode＆CC研究会がお届けする
+                          質の高いコーチングで社会をアップデート
+                        </h4>
+                        <span className="text-xs bg-blue-100 text-blue-800 px-2 py-0.5 rounded">
+                          CC:1.5
+                        </span>
+                      </div>
+                      <p className="text-sm text-muted-foreground mt-1">〜話す×学ぶ×楽しむ〜</p>
                     </div>
                   </div>
 
@@ -670,9 +690,14 @@ export default function SchedulePage() {
                       15:15-16:45
                     </div>
                     <div className="border-l-4 border-primary pl-3">
-                      <h4 className="text-sm font-semibold">
-                        Code＆CC研究会がお届けする ICFコーチングのデモンストレーション
-                      </h4>
+                      <div className="flex justify-between items-start">
+                        <h4 className="text-sm font-semibold">
+                          Code＆CC研究会がお届けする ICFコーチングのデモンストレーション
+                        </h4>
+                        <span className="text-xs bg-blue-100 text-blue-800 px-2 py-0.5 rounded">
+                          CC:1.5
+                        </span>
+                      </div>
                       <p className="text-sm text-muted-foreground mt-1">
                         会話・対話・コーチングセッション
                       </p>
@@ -684,7 +709,12 @@ export default function SchedulePage() {
                       15:15-16:45
                     </div>
                     <div className="border-l-4 border-primary pl-3">
-                      <h4 className="text-sm font-semibold">プラクティス(コーチング実践)</h4>
+                      <div className="flex justify-between items-start">
+                        <h4 className="text-sm font-semibold">プラクティス(コーチング実践)</h4>
+                        <span className="text-xs bg-blue-100 text-blue-800 px-2 py-0.5 rounded">
+                          CC:1.5
+                        </span>
+                      </div>
                       <p className="text-sm text-muted-foreground mt-1">
                         参加者同士によるコーチング実践セッション
                       </p>
