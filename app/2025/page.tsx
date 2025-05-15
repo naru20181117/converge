@@ -232,9 +232,19 @@ export default function HomePage() {
                 </tr>
                 <tr className="bg-gray-50 border-b border-gray-200 hover:bg-primary/5 transition-colors">
                   <td className="px-4 py-4 font-medium">
-                    <div>早割・一般</div>
+                    <div className="flex items-center justify-center gap-2">
+                      <span className="text-xs px-1.5 py-0.5 bg-primary/80 text-white rounded">
+                        期間延長
+                      </span>
+                      <span>早割・一般</span>
+                    </div>
                   </td>
-                  <td className="px-4 py-4 text-center">5/14</td>
+                  <td className="px-4 py-4 text-center">
+                    <div>
+                      <span className="line-through text-gray-400 text-xs">5/14</span>
+                      <span className="font-bold text-primary ml-1">5/27(火)</span>
+                    </div>
+                  </td>
                   <td className="px-4 py-4 text-center font-bold">¥12,800</td>
                   <td className="px-4 py-4 text-center font-bold text-primary">¥7,800</td>
                 </tr>
