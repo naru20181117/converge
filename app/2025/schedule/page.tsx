@@ -159,7 +159,7 @@ export default function SchedulePage() {
                     <div className="text-sm font-medium text-muted-foreground whitespace-nowrap">
                       15:30-16:00
                     </div>
-                    <div>
+                    <div className="border-l-4 border-secondary pl-3">
                       <h4 className="text-sm font-semibold">クロージング</h4>
                     </div>
                   </div>
@@ -168,18 +168,27 @@ export default function SchedulePage() {
                     <div className="text-sm font-medium text-muted-foreground whitespace-nowrap">
                       16:00-17:30
                     </div>
-                    <div>
+
+                    <div className="border-l-4 border-primary pl-3">
                       <div className="flex justify-between items-start">
-                        <h4 className="text-sm font-semibold">
-                          ネットワーキング or コーチングプラクティス
-                        </h4>
+                        <h4 className="text-sm font-semibold">コーチングプラクティス</h4>
                         <span className="text-xs bg-blue-100 text-blue-800 px-2 py-0.5 rounded">
                           CC 1.5単位
                         </span>
                       </div>
-                      <p className="text-sm text-muted-foreground mt-1">
-                        ※クロージングのあとは、ネットワーキングかコーチングプラクティスに分かれてご参加いただきます。ネットワーキングは自由解散。コーチングプラクティスは17:30までの開催。
-                      </p>
+                      <p className="text-sm text-muted-foreground mt-1">※17:30までの開催</p>
+                    </div>
+                  </div>
+
+                  <div className="p-3 grid grid-cols-[90px_1fr] gap-3 border-t-0 bg-muted/5">
+                    <div className="text-sm font-medium text-muted-foreground whitespace-nowrap opacity-0">
+                      16:00-17:30
+                    </div>
+                    <div className="border-l-4 border-primary pl-3">
+                      <div className="flex justify-between items-start">
+                        <h4 className="text-sm font-semibold">ネットワーキング</h4>
+                      </div>
+                      <p className="text-sm text-muted-foreground mt-1">※自由解散</p>
                     </div>
                   </div>
                 </div>
