@@ -342,6 +342,37 @@ export default function QuestionsPage() {
               </div>
             </AccordionContent>
           </AccordionItem>
+
+          <AccordionItem value="item-6">
+            <AccordionTrigger className="text-lg font-medium">
+              CCE取得のための参加条件はありますか？
+            </AccordionTrigger>
+            <AccordionContent className="space-y-4 pt-4">
+              <p>
+                CCE単位の取得をご希望の方は、各プログラム参加時に以下の条件を満たす必要があります。
+              </p>
+
+              <div className="mt-4 p-4 border border-l-4 border-l-blue-500 rounded bg-blue-50">
+                <h3 className="font-medium">＜CCE取得を希望される方へ＞</h3>
+                <p className="mt-2">
+                  CCE（継続コーチ専門教育）単位の取得をご希望の方は、各プログラム参加中に以下の点にご留意ください。
+                </p>
+                <ul className="list-disc list-inside mt-2 space-y-2">
+                  <li>フルネーム（英語表記）でのご参加</li>
+                  <li>ビデオをオンにしてご参加</li>
+                  <li>プログラムの最初から最後まで継続してご参加</li>
+                </ul>
+              </div>
+
+              <div className="mt-4 p-4 bg-muted rounded-lg">
+                <p className="font-medium">注意事項:</p>
+                <ul className="list-disc list-inside mt-2 space-y-1">
+                  <li>上記条件を満たさない場合、CCE単位が付与されないことがあります。</li>
+                  <li>各セッションのCCE単位取得については、プログラムの担当者へご確認ください。</li>
+                </ul>
+              </div>
+            </AccordionContent>
+          </AccordionItem>
         </Accordion>
         <p className="text-sm">
           コーチング・コンバージ2025に関するよくある質問をまとめました。
