@@ -22,6 +22,20 @@ type Speaker = {
 export default function SpeakersPage() {
   const speakers: Speaker[] = [
     {
+      name: 'マグダレナ・ノウィツカ・ムック（Magdalena Nowicka Mook）',
+      role: '国際コーチング連盟（ICF） CEO',
+      title: '日本のICFコーチングの可能性と日本のコーチング業界への期待について',
+      organization: '国際コーチング連盟（ICF）',
+      image: '/2025/speakers/magda.jpg',
+      description:
+        '国際コーチング連盟（ICF）のCEOとして、グローバルな戦略立案と組織成長を牽引。ICF理事会および6つのファミリー組織と連携し、世界55,000人を超える会員と50,000人以上の認定コーチを擁する、世界最大のコーチングコミュニティを築き上げている。\n\nThinkers50による「グローバル・インフルエンス分野No.1コーチ」選出、「コーチング＆メンタリング部門」優秀賞ファイナリスト、「組織文化分野 世界トップ30グル」第10位など、数々の国際的評価を受けている。\nプロフェッショナル・コーチおよびシステム・ファシリテーターとしての専門的な訓練も受けており、世界的なリーダーシップを発揮している。',
+      datetime: {
+        date: '6月15日（日）',
+        time: '10:30',
+      },
+      url: 'https://coachingfederation.org/',
+    },
+    {
       name: '高橋 浩一',
       role: 'TORiX株式会社 代表取締役',
       title:
@@ -128,6 +142,7 @@ export default function SpeakersPage() {
                   .map((speaker) => (
                     <div
                       key={speaker.name}
+                      id={speaker.name.includes('マグダレナ') ? 'magda' : undefined}
                       className="bg-white/50 backdrop-blur-sm rounded-2xl p-6 shadow-lg border-l-4 border-primary"
                     >
                       <div className="flex flex-col lg:flex-row gap-8">
