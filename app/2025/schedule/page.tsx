@@ -382,7 +382,7 @@ export default function SchedulePage() {
                       <div className="border-l-2 border-secondary/70 pl-3">
                         <h4 className="text-sm font-semibold">銀座コーチングスクール</h4>
                         <p className="text-sm text-muted-foreground mt-1">
-                          組織やチームの意思を引き出す、「組織コーチング」の未来
+                          多様性を活かすコーチング ~組織の成長を促す実践的アプローチ~
                         </p>
                       </div>
                     </div>
@@ -460,7 +460,7 @@ export default function SchedulePage() {
                       <div className="border-l-2 border-secondary/70 pl-3">
                         <h4 className="text-sm font-semibold">銀座コーチングスクール</h4>
                         <p className="text-sm text-muted-foreground mt-1">
-                          多様性を活かすコーチング ～組織の成長を促す実践的アプローチ～
+                          経営コンサルタントが活かすコーチング
                         </p>
                       </div>
                     </div>
