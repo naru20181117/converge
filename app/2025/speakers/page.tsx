@@ -80,6 +80,18 @@ export default function SpeakersPage() {
       url: 'https://learnology.co.jp/',
     },
     {
+      name: '東　由紀',
+      role: 'コカ・コーラ ボトラーズジャパン株式会社　執行役員 CHRO',
+      title: 'HRトップが語る、人事戦略におけるエグゼクティブコーチング',
+      organization: 'コカ・コーラ ボトラーズジャパン株式会社',
+      image: '/2025/speakers/Yuki Higashi.jpg',
+      description: '',
+      datetime: {
+        date: '6月16日（月）',
+        time: '19:00',
+      },
+    },
+    {
       name: '加藤 智博',
       role: '立命館守山中学校・高等学校教諭',
       title: '日本の教育の未来に、コーチングはどう活かせるか？ 〜教育現場の最前線〜',
