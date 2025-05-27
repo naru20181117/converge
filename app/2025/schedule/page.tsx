@@ -490,16 +490,6 @@ export default function SchedulePage() {
                         19:00-20:00
                       </div>
                       <div className="border-l-2 border-primary/70 pl-3">
-                        <h4 className="text-sm font-semibold">CTIジャパン</h4>
-                        <p className="text-sm text-muted-foreground mt-1">Coming Soon ~</p>
-                      </div>
-                    </div>
-
-                    <div className="p-3 grid grid-cols-[90px_1fr] gap-3 border-t-0 bg-muted/5">
-                      <div className="text-sm font-medium text-muted-foreground whitespace-nowrap opacity-0">
-                        19:00-20:00
-                      </div>
-                      <div className="border-l-2 border-primary/70 pl-3">
                         <h4 className="text-sm font-semibold">東京コーチング協会</h4>
                         <p className="text-sm text-muted-foreground mt-1">
                           組織やチームの意思を引き出す、「組織コーチング」の未来
@@ -530,16 +520,6 @@ export default function SchedulePage() {
                         </p>
                       </div>
                     </div>
-
-                    <div className="p-3 grid grid-cols-[90px_1fr] gap-3 border-t-0 bg-muted/5">
-                      <div className="text-sm font-medium text-muted-foreground whitespace-nowrap opacity-0">
-                        20:10-21:10
-                      </div>
-                      <div className="border-l-2 border-secondary/70 pl-3">
-                        <h4 className="text-sm font-semibold">CTIジャパン</h4>
-                        <p className="text-sm text-muted-foreground mt-1">Coming Soon ~</p>
-                      </div>
-                    </div>
                   </div>
                 </Card>
               </div>
@@ -558,16 +538,6 @@ export default function SchedulePage() {
                         <p className="text-sm text-muted-foreground mt-1">
                           ファシリテーションとチームコーチングの違い～チームコーチングのバイオニア：システムコーチングとは～
                         </p>
-                      </div>
-                    </div>
-
-                    <div className="p-3 grid grid-cols-[90px_1fr] gap-3 border-t-0 bg-muted/5">
-                      <div className="text-sm font-medium text-muted-foreground whitespace-nowrap opacity-0">
-                        19:00-20:00
-                      </div>
-                      <div className="border-l-2 border-primary/70 pl-3">
-                        <h4 className="text-sm font-semibold">CTIジャパン</h4>
-                        <p className="text-sm text-muted-foreground mt-1">Coming Soon ~</p>
                       </div>
                     </div>
 
