@@ -208,10 +208,18 @@ export default function HomePage() {
             <table className="w-full border-collapse rounded-lg overflow-hidden shadow-lg">
               <thead>
                 <tr className="bg-primary text-white">
-                  <th className="px-4 py-3 text-left">種別</th>
-                  <th className="px-4 py-3 text-center">締め切り</th>
-                  <th className="px-4 py-3 text-center">価格</th>
-                  <th className="px-4 py-3 text-center">ICF会員価格</th>
+                  <th className="px-4 py-3 text-left" style={{ minWidth: '280px' }}>
+                    種別
+                  </th>
+                  <th className="px-4 py-3 text-center" style={{ width: '100px' }}>
+                    締め切り
+                  </th>
+                  <th className="px-4 py-3 text-center" style={{ width: '100px' }}>
+                    価格
+                  </th>
+                  <th className="px-4 py-3 text-center" style={{ width: '120px' }}>
+                    ICF会員価格
+                  </th>
                 </tr>
               </thead>
               <tbody>
@@ -230,35 +238,81 @@ export default function HomePage() {
                     ¥4,800
                   </td>
                 </tr>
-                <tr className="bg-gray-50 border-b border-gray-200 hover:bg-primary/5 transition-colors">
+                <tr className="bg-gray-50 border-b border-gray-200 hover:bg-primary/5 transition-colors text-gray-400">
                   <td className="px-4 py-4 font-medium">
                     <div className="flex items-center justify-center gap-2">
-                      <span className="text-xs px-1.5 py-0.5 bg-primary/80 text-white rounded">
-                        期間延長
+                      <span className="text-xs px-1.5 py-0.5 bg-gray-500 text-white rounded">
+                        終了
                       </span>
-                      <span>早割・一般</span>
+                      <span className="line-through">早割・一般</span>
                     </div>
                   </td>
                   <td className="px-4 py-4 text-center">
                     <div>
                       <span className="line-through text-gray-400 text-xs">5/14</span>
-                      <span className="font-bold text-primary ml-1">5/27(火)</span>
+                      <span className="line-through text-gray-400 ml-1">5/27(火)</span>
                     </div>
                   </td>
-                  <td className="px-4 py-4 text-center font-bold">¥12,800</td>
-                  <td className="px-4 py-4 text-center font-bold text-primary">¥7,800</td>
+                  <td className="px-4 py-4 text-center font-bold line-through">¥12,800</td>
+                  <td className="px-4 py-4 text-center font-bold text-gray-400 line-through">
+                    ¥7,800
+                  </td>
                 </tr>
                 <tr className="bg-white border-b border-gray-200 hover:bg-primary/5 transition-colors">
                   <td className="px-4 py-4 font-medium">一般</td>
-                  <td className="px-4 py-4 text-center">6/8</td>
+                  <td className="px-4 py-4 text-center">6/15</td>
                   <td className="px-4 py-4 text-center font-bold">¥14,800</td>
                   <td className="px-4 py-4 text-center font-bold text-primary">¥9,800</td>
                 </tr>
-                <tr className="bg-gray-50 hover:bg-primary/5 transition-colors">
+                <tr className="bg-gray-50 border-b border-gray-200 hover:bg-primary/5 transition-colors">
                   <td className="px-4 py-4 font-medium">U24</td>
-                  <td className="px-4 py-4 text-center">6/8</td>
+                  <td className="px-4 py-4 text-center">6/15</td>
                   <td className="px-4 py-4 text-center font-bold">¥5,000</td>
                   <td className="px-4 py-4 text-center font-bold text-primary">無料</td>
+                </tr>
+                <tr className="bg-gray-50 border-b border-gray-200 hover:bg-primary/5 transition-colors">
+                  <td className="px-4 py-4 font-medium">
+                    <div className="flex flex-col items-center justify-center gap-1">
+                      <span className="text-sm font-medium">【限定チケット】</span>
+                      <span>
+                        初日+最終日+HRトップが語るエグゼクティブコーチング回(2日目)のみ参加可能
+                      </span>
+                      <span className="text-xs text-gray-600 bg-gray-100 px-2 py-0.5 rounded">
+                        ※アーカイブ配信なし
+                      </span>
+                    </div>
+                  </td>
+                  <td className="px-4 py-4 text-center">6/15</td>
+                  <td className="px-4 py-4 text-center font-bold">¥4,800</td>
+                  <td className="px-4 py-4 text-center font-bold text-gray-500">適用外</td>
+                </tr>
+                <tr className="bg-white border-b border-gray-200 hover:bg-primary/5 transition-colors">
+                  <td className="px-4 py-4 font-medium">
+                    <div className="flex flex-col items-center justify-center gap-1">
+                      <span className="text-sm font-medium">【1日参加チケット】</span>
+                      <span>初日(6/15)のみ参加可能</span>
+                      <span className="text-xs text-gray-600 bg-gray-100 px-2 py-0.5 rounded">
+                        ※アーカイブ配信なし
+                      </span>
+                    </div>
+                  </td>
+                  <td className="px-4 py-4 text-center">6/15</td>
+                  <td className="px-4 py-4 text-center font-bold">¥3,000</td>
+                  <td className="px-4 py-4 text-center font-bold text-gray-500">適用外</td>
+                </tr>
+                <tr className="bg-gray-50 hover:bg-primary/5 transition-colors">
+                  <td className="px-4 py-4 font-medium">
+                    <div className="flex flex-col items-center justify-center gap-1">
+                      <span className="text-sm font-medium">【1日参加チケット】</span>
+                      <span>最終日(6/21)のみ参加可能</span>
+                      <span className="text-xs text-gray-600 bg-gray-100 px-2 py-0.5 rounded">
+                        ※アーカイブ配信なし
+                      </span>
+                    </div>
+                  </td>
+                  <td className="px-4 py-4 text-center">6/15</td>
+                  <td className="px-4 py-4 text-center font-bold">¥3,000</td>
+                  <td className="px-4 py-4 text-center font-bold text-gray-500">適用外</td>
                 </tr>
               </tbody>
             </table>
@@ -269,8 +323,17 @@ export default function HomePage() {
               <ExternalLink className="h-4 w-4 text-primary flex-shrink-0" />
               <span className="font-bold">
                 <span className="text-primary">特典：</span>
-                全セッションのアーカイブ視聴が可能です
+                一般・U24チケットは全セッションのアーカイブ視聴が可能です
               </span>
+            </p>
+          </div>
+
+          <div className="mt-4 bg-yellow-50 p-4 rounded-lg border border-yellow-200 text-left">
+            <p className="font-medium text-yellow-800 mb-2">
+              【限定チケットに関する重要なお知らせ】
+            </p>
+            <p className="text-sm text-gray-700 leading-relaxed">
+              2日目のみ参加可能の限定チケット、および1日参加チケットは、アーカイブ配信は視聴できません。ICF会員割引は適用外となります。それぞれ、指定日付、指定コンテンツのみに参加可能です。指定以外のコンテンツにも参加されたい場合は、標準の参加チケットをお買い求めください。
             </p>
           </div>
 
