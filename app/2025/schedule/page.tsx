@@ -43,7 +43,7 @@ export default function SchedulePage() {
           <Clock className="h-5 w-5 text-primary flex-shrink-0" />
           <span className="font-bold">
             <span className="text-primary">特典：</span>
-            全セッションのアーカイブ視聴が可能です
+            一般・U24チケットは全セッションのアーカイブ視聴が可能です
           </span>
         </p>
       </div>
