@@ -363,7 +363,7 @@ export default function SchedulePage() {
                       </div>
                       <div className="border-l-2 border-primary/70 pl-3">
                         <div className="flex justify-between items-start">
-                          <h4 className="text-sm font-semibold">CRR globalJapan</h4>
+                          <h4 className="text-sm font-semibold">CRR Global Japan</h4>
                           <span className="text-xs bg-blue-100 text-blue-800 px-2 py-0.5 rounded">
                             CC 1.0単位
                           </span>
@@ -584,7 +584,7 @@ export default function SchedulePage() {
                         19:00-20:00
                       </div>
                       <div className="border-l-2 border-primary/70 pl-3">
-                        <h4 className="text-sm font-semibold">CRR globalJapan</h4>
+                        <h4 className="text-sm font-semibold">CRR Global Japan</h4>
                         <p className="text-sm text-muted-foreground mt-1">
                           ファシリテーションとチームコーチングの違い～チームコーチングのバイオニア：システムコーチングとは～
                         </p>
