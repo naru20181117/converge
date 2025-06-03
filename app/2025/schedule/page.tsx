@@ -345,12 +345,7 @@ export default function SchedulePage() {
                         19:00-20:00
                       </div>
                       <div className="border-l-2 border-primary/70 pl-3">
-                        <div className="flex justify-between items-start">
-                          <h4 className="text-sm font-semibold">コーチングプラットフォーム</h4>
-                          <span className="text-xs bg-blue-100 text-blue-800 px-2 py-0.5 rounded">
-                            CC 1.0単位
-                          </span>
-                        </div>
+                        <h4 className="text-sm font-semibold">コーチングプラットフォーム</h4>
                         <p className="text-sm text-muted-foreground mt-1">
                           自己基盤を学びＩＣＦコア・コンピテンシーを体現できるコーチとして成長しよう！コア・コンピテンシー『A　基盤を整える』と自己基盤
                         </p>
@@ -518,12 +513,7 @@ export default function SchedulePage() {
                         19:00-20:00
                       </div>
                       <div className="border-l-2 border-primary/70 pl-3">
-                        <div className="flex justify-between items-start">
-                          <h4 className="text-sm font-semibold">コーチングプラットフォーム</h4>
-                          <span className="text-xs bg-blue-100 text-blue-800 px-2 py-0.5 rounded">
-                            CC 1.0単位
-                          </span>
-                        </div>
+                        <h4 className="text-sm font-semibold">コーチングプラットフォーム</h4>
                         <p className="text-sm text-muted-foreground mt-1">
                           自己基盤を学びＩＣＦコア・コンピテンシーを体現できるコーチとして成長しよう！コア・コンピテンシー『B　関係性をともに築く』と自己基盤
                         </p>
