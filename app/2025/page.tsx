@@ -258,17 +258,35 @@ export default function HomePage() {
                     ¥7,800
                   </td>
                 </tr>
-                <tr className="bg-white border-b border-gray-200 hover:bg-primary/5 transition-colors">
-                  <td className="px-4 py-4 font-medium">一般</td>
-                  <td className="px-4 py-4 text-center">6/15</td>
-                  <td className="px-4 py-4 text-center font-bold">¥14,800</td>
-                  <td className="px-4 py-4 text-center font-bold text-primary">¥9,800</td>
+                <tr className="bg-white/50 border-b border-gray-200 hover:bg-primary/5 transition-colors text-gray-400">
+                  <td className="px-4 py-4 font-medium">
+                    <div className="flex items-center justify-center gap-2">
+                      <span className="text-xs px-1.5 py-0.5 bg-gray-500 text-white rounded">
+                        終了
+                      </span>
+                      <span className="line-through">一般</span>
+                    </div>
+                  </td>
+                  <td className="px-4 py-4 text-center line-through">6/8</td>
+                  <td className="px-4 py-4 text-center font-bold line-through">¥14,800</td>
+                  <td className="px-4 py-4 text-center font-bold text-gray-400 line-through">
+                    ¥9,800
+                  </td>
                 </tr>
-                <tr className="bg-gray-50 border-b border-gray-200 hover:bg-primary/5 transition-colors">
-                  <td className="px-4 py-4 font-medium">U24</td>
-                  <td className="px-4 py-4 text-center">6/15</td>
-                  <td className="px-4 py-4 text-center font-bold">¥5,000</td>
-                  <td className="px-4 py-4 text-center font-bold text-primary">無料</td>
+                <tr className="bg-gray-50 border-b border-gray-200 hover:bg-primary/5 transition-colors text-gray-400">
+                  <td className="px-4 py-4 font-medium">
+                    <div className="flex items-center justify-center gap-2">
+                      <span className="text-xs px-1.5 py-0.5 bg-gray-500 text-white rounded">
+                        終了
+                      </span>
+                      <span className="line-through">U24</span>
+                    </div>
+                  </td>
+                  <td className="px-4 py-4 text-center line-through">6/8</td>
+                  <td className="px-4 py-4 text-center font-bold line-through">¥5,000</td>
+                  <td className="px-4 py-4 text-center font-bold text-gray-400 line-through">
+                    無料
+                  </td>
                 </tr>
                 <tr className="bg-gray-50 border-b border-gray-200 hover:bg-primary/5 transition-colors">
                   <td className="px-4 py-4 font-medium">
@@ -282,7 +300,7 @@ export default function HomePage() {
                       </span>
                     </div>
                   </td>
-                  <td className="px-4 py-4 text-center">6/15</td>
+                  <td className="px-4 py-4 text-center">6/14</td>
                   <td className="px-4 py-4 text-center font-bold">¥4,800</td>
                   <td className="px-4 py-4 text-center font-bold text-gray-500">適用外</td>
                 </tr>
@@ -296,11 +314,25 @@ export default function HomePage() {
                       </span>
                     </div>
                   </td>
-                  <td className="px-4 py-4 text-center">6/15</td>
+                  <td className="px-4 py-4 text-center">6/14 23:59</td>
                   <td className="px-4 py-4 text-center font-bold">¥3,000</td>
                   <td className="px-4 py-4 text-center font-bold text-gray-500">適用外</td>
                 </tr>
-                <tr className="bg-gray-50 hover:bg-primary/5 transition-colors">
+                <tr className="bg-gray-50 border-b border-gray-200 hover:bg-primary/5 transition-colors">
+                  <td className="px-4 py-4 font-medium">
+                    <div className="flex flex-col items-center justify-center gap-1">
+                      <span className="text-sm font-medium">【1日参加チケット】</span>
+                      <span>平日1日分のみ参加可能</span>
+                      <span className="text-xs text-gray-600 bg-gray-100 px-2 py-0.5 rounded">
+                        ※アーカイブ配信なし
+                      </span>
+                    </div>
+                  </td>
+                  <td className="px-4 py-4 text-center">前日 23:59</td>
+                  <td className="px-4 py-4 text-center font-bold">¥3,000</td>
+                  <td className="px-4 py-4 text-center font-bold text-gray-500">適用外</td>
+                </tr>
+                <tr className="bg-white hover:bg-primary/5 transition-colors">
                   <td className="px-4 py-4 font-medium">
                     <div className="flex flex-col items-center justify-center gap-1">
                       <span className="text-sm font-medium">【1日参加チケット】</span>
@@ -310,7 +342,7 @@ export default function HomePage() {
                       </span>
                     </div>
                   </td>
-                  <td className="px-4 py-4 text-center">6/15</td>
+                  <td className="px-4 py-4 text-center">6/20 23:59</td>
                   <td className="px-4 py-4 text-center font-bold">¥3,000</td>
                   <td className="px-4 py-4 text-center font-bold text-gray-500">適用外</td>
                 </tr>
@@ -318,22 +350,22 @@ export default function HomePage() {
             </table>
           </div>
 
-          <div className="mt-4 bg-primary/10 p-3 rounded-lg border border-primary/20">
-            <p className="font-medium flex items-center gap-2">
-              <ExternalLink className="h-4 w-4 text-primary flex-shrink-0" />
-              <span className="font-bold">
-                <span className="text-primary">特典：</span>
-                一般・U24チケットは全セッションのアーカイブ視聴が可能です
-              </span>
+          <div className="mt-4 bg-red-50 p-4 rounded-lg border border-red-200">
+            <p className="font-medium text-red-800 mb-2">
+              【重要】1週間通しチケット（一般・U24）の販売終了について
+            </p>
+            <p className="text-sm text-gray-700 leading-relaxed">
+              1週間通しで参加できるチケット（アーカイブ配信1ヶ月前後付き）は、6月8日をもって販売を締め切りました。
             </p>
           </div>
 
-          <div className="mt-4 bg-yellow-50 p-4 rounded-lg border border-yellow-200 text-left">
-            <p className="font-medium text-yellow-800 mb-2">
-              【限定チケットに関する重要なお知らせ】
+          <div className="mt-4 bg-blue-50 p-4 rounded-lg border border-blue-200 text-left">
+            <p className="font-medium text-blue-800 mb-2">【現在販売中】1日参加チケットについて</p>
+            <p className="text-sm text-gray-700 leading-relaxed mb-2">
+              各日の1日参加チケットのみ、現在も販売しています。それぞれ、当日の前日23:59まで購入可能です。
             </p>
             <p className="text-sm text-gray-700 leading-relaxed">
-              2日目のみ参加可能の限定チケット、および1日参加チケットは、アーカイブ配信は視聴できません。ICF会員割引は適用外となります。それぞれ、指定日付、指定コンテンツのみに参加可能です。指定以外のコンテンツにも参加されたい場合は、標準の参加チケットをお買い求めください。
+              ※1日参加チケットは、アーカイブ配信は視聴できません。CCE発行対象外となります。ICF会員割引は適用外となります。指定日付、指定コンテンツのみに参加可能です。
             </p>
           </div>
 
@@ -341,9 +373,9 @@ export default function HomePage() {
             <p>※価格はすべて税込です</p>
             <p>※U24は24歳以下の方が対象です（学生証など年齢確認できる書類が必要）</p>
             <p>
-              ※ICF会員は会員割引が適用されます（
+              ※ICF会員の皆様は、5,000円引きとなります。お申込み画面にて、割引コード（公式LINEより入手可能）をご入力ください（
               <a href="/2025/questions" className="text-primary hover:underline">
-                適用方法はこちら
+                詳細はこちら
               </a>
               ）
             </p>

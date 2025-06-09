@@ -24,7 +24,7 @@ export default function QuestionsPage() {
               ICF会員の割引の方法を教えてください。
             </AccordionTrigger>
             <AccordionContent className="space-y-4 pt-4">
-              <p>ICF会員の方は、イベント参加費の割引が適用されます。以下の手順で進めてください。</p>
+              <p>ICF会員の皆様は、5,000円引きとなります。以下の手順で進めてください。</p>
               <ol className="list-decimal list-inside space-y-3">
                 <li>
                   公式LINEを登録する
