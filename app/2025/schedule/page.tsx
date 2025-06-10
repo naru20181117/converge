@@ -1,7 +1,7 @@
 'use client'
 
 import { TitleWithBackground } from '@/components/TitleWithBackground'
-import { Clock, Monitor, MapPin } from 'lucide-react'
+import { Clock, Monitor, MapPin, Download } from 'lucide-react'
 import {
   Accordion,
   AccordionContent,
@@ -59,21 +59,32 @@ export default function SchedulePage() {
         </p>
       </div>
 
-      <div className="mb-4 flex items-center justify-center gap-2">
-        <label htmlFor="level-filter" className="block text-sm font-medium mb-2">
-          対象レベルで絞り込み
-        </label>
-        <select
-          id="level-filter"
-          value={selectedLevel}
-          onChange={(e) => setSelectedLevel(e.target.value as SessionLevel | 'all')}
-          className="w-full max-w-xs px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+      <div className="mb-6 flex flex-col sm:flex-row gap-4 items-start sm:items-center justify-between">
+        <div className="flex items-center gap-2">
+          <label htmlFor="level-filter" className="text-sm font-medium">
+            対象レベルで絞り込み
+          </label>
+          <select
+            id="level-filter"
+            value={selectedLevel}
+            onChange={(e) => setSelectedLevel(e.target.value as SessionLevel | 'all')}
+            className="px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+          >
+            <option value="all">すべて表示</option>
+            <option value="初級">初級</option>
+            <option value="中級">中級</option>
+            <option value="全対象">全対象</option>
+          </select>
+        </div>
+
+        <a
+          href="/2025/コーチングコンバージ2025%20コンテンツ一覧表%20.pdf"
+          download="コーチングコンバージ2025-コンテンツ一覧表.pdf"
+          className="inline-flex items-center gap-2 bg-secondary hover:bg-secondary/90 text-white px-4 py-2 rounded-md transition-colors"
         >
-          <option value="all">すべて表示</option>
-          <option value="初級">初級</option>
-          <option value="中級">中級</option>
-          <option value="全対象">全対象</option>
-        </select>
+          <Download className="h-4 w-4" />
+          スケジュールPDF
+        </a>
       </div>
 
       <Accordion
