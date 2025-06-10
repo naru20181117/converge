@@ -1,5 +1,7 @@
 // ICF Japan 2025 スケジュール用型定義
 
+export type SessionLevel = '初級' | '中級' | '全対象'
+
 export interface SessionBase {
   title: string
   description?: string
@@ -9,6 +11,7 @@ export interface SessionBase {
   link?: string
   linkLabel?: string
   sub?: string
+  level?: SessionLevel // セッションの対象レベル
 }
 
 export interface TimeSlot {

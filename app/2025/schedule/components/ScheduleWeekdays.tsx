@@ -1,14 +1,32 @@
 import React from 'react'
-import { WeekdaySchedule } from '../types'
+import { WeekdaySchedule, SessionLevel } from '../types'
 
 interface ScheduleWeekdaysProps {
   data: WeekdaySchedule[]
+  levelFilter?: SessionLevel | 'all'
 }
 
-export const ScheduleWeekdays: React.FC<ScheduleWeekdaysProps> = ({ data }) => {
+export const ScheduleWeekdays: React.FC<ScheduleWeekdaysProps> = ({
+  data,
+  levelFilter = 'all',
+}) => {
+  const filteredData = data
+    .map((day) => ({
+      ...day,
+      slots: day.slots
+        .map((slot) => ({
+          ...slot,
+          sessions: slot.sessions.filter(
+            (session) => levelFilter === 'all' || session.level === levelFilter
+          ),
+        }))
+        .filter((slot) => slot.sessions.length > 0),
+    }))
+    .filter((day) => day.slots.length > 0)
+
   return (
     <div className="space-y-8">
-      {data.map((day, dayIndex) => (
+      {filteredData.map((day, dayIndex) => (
         <div key={`day-${dayIndex}`} className="border rounded-lg overflow-hidden bg-white">
           <div className="px-4 py-2 bg-muted/10 border-b">
             <h3 className="text-lg font-semibold">{day.date}</h3>
@@ -37,11 +55,18 @@ export const ScheduleWeekdays: React.FC<ScheduleWeekdaysProps> = ({ data }) => {
                         <div className={`border-l-2 ${borderColorClass} pl-3`}>
                           <div className="flex justify-between items-start">
                             <h4 className="text-sm font-semibold">{session.title}</h4>
-                            {session.unit && (
-                              <span className="text-xs bg-blue-100 text-blue-800 px-2 py-0.5 rounded ml-2">
-                                {session.unit}
-                              </span>
-                            )}
+                            <div className="flex gap-1 ml-2">
+                              {session.level && (
+                                <span className="text-xs bg-green-100 text-green-800 px-2 py-0.5 rounded">
+                                  {session.level}
+                                </span>
+                              )}
+                              {session.unit && (
+                                <span className="text-xs bg-blue-100 text-blue-800 px-2 py-0.5 rounded">
+                                  {session.unit}
+                                </span>
+                              )}
+                            </div>
                           </div>
                           {session.description && (
                             <p className="text-sm text-muted-foreground mt-1">

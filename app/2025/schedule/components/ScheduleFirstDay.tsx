@@ -1,14 +1,27 @@
 import React from 'react'
-import { FirstDaySchedule } from '../types'
+import { FirstDaySchedule, SessionLevel } from '../types'
 
 interface ScheduleFirstDayProps {
   data: FirstDaySchedule
+  levelFilter?: SessionLevel | 'all'
 }
 
-export const ScheduleFirstDay: React.FC<ScheduleFirstDayProps> = ({ data }) => {
+export const ScheduleFirstDay: React.FC<ScheduleFirstDayProps> = ({
+  data,
+  levelFilter = 'all',
+}) => {
+  const filteredData = data
+    .map((timeSlot) => ({
+      ...timeSlot,
+      sessions: timeSlot.sessions.filter(
+        (session) => levelFilter === 'all' || session.level === levelFilter
+      ),
+    }))
+    .filter((timeSlot) => timeSlot.sessions.length > 0)
+
   return (
     <div className="space-y-4">
-      {data.map((timeSlot, index) => (
+      {filteredData.map((timeSlot, index) => (
         <div
           key={`first-day-${timeSlot.time}-${index}`}
           className="border rounded-lg overflow-hidden"
@@ -28,11 +41,18 @@ export const ScheduleFirstDay: React.FC<ScheduleFirstDayProps> = ({ data }) => {
                 <div className={session.bg || 'border-l-2 border-primary/70 pl-3'}>
                   <div className="flex justify-between items-start">
                     <h4 className="text-sm font-semibold">{session.title}</h4>
-                    {session.unit && (
-                      <span className="text-xs bg-blue-100 text-blue-800 px-2 py-0.5 rounded ml-2">
-                        {session.unit}
-                      </span>
-                    )}
+                    <div className="flex gap-1 ml-2">
+                      {session.level && (
+                        <span className="text-xs bg-green-100 text-green-800 px-2 py-0.5 rounded">
+                          {session.level}
+                        </span>
+                      )}
+                      {session.unit && (
+                        <span className="text-xs bg-blue-100 text-blue-800 px-2 py-0.5 rounded">
+                          {session.unit}
+                        </span>
+                      )}
+                    </div>
                   </div>
                   {session.description && (
                     <p className="text-sm text-muted-foreground mt-1">{session.description}</p>

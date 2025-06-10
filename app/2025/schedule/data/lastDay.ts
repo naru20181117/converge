@@ -8,6 +8,7 @@ const lastDay: LastDaySchedule = [
       {
         title: '開会と一週間の振り返り',
         description: '理事からの挨拶',
+        level: '全対象',
       },
     ],
   },
@@ -19,6 +20,7 @@ const lastDay: LastDaySchedule = [
           '世界から注目を集めるCode＆CC研究会がお届けする 質の高いコーチングで社会をアップデート',
         unit: 'CC 1.5単位',
         description: '〜話す×学ぶ×楽しむ〜',
+        level: '中級',
       },
     ],
   },
@@ -27,6 +29,7 @@ const lastDay: LastDaySchedule = [
     sessions: [
       {
         title: '昼休憩',
+        level: '全対象',
       },
     ],
   },
@@ -35,6 +38,7 @@ const lastDay: LastDaySchedule = [
     sessions: [
       {
         title: '本間 正人氏： 産官学におけるコーチングの力―社会を変革する新たな可能性',
+        level: '全対象',
       },
     ],
   },
@@ -44,6 +48,7 @@ const lastDay: LastDaySchedule = [
       {
         title:
           '加藤 智博氏： 日本の教育の未来に、コーチングはどう活かせるか？ 〜教育現場の最前線〜',
+        level: '全対象',
       },
     ],
   },
@@ -52,6 +57,7 @@ const lastDay: LastDaySchedule = [
     sessions: [
       {
         title: '休憩',
+        level: '全対象',
       },
     ],
   },
@@ -62,11 +68,13 @@ const lastDay: LastDaySchedule = [
         title: 'Code＆CC研究会がお届けする ICFコーチングのデモンストレーション',
         unit: 'CC 1.5単位',
         description: '会話・対話・コーチングセッション',
+        level: '全対象',
       },
       {
         title: 'プラクティス(コーチング実践)',
         unit: 'CC 1.5単位',
         description: '参加者同士によるコーチング実践セッション',
+        level: '中級',
       },
     ],
   },
@@ -75,6 +83,7 @@ const lastDay: LastDaySchedule = [
     sessions: [
       {
         title: 'クロージングセレモニー',
+        level: '全対象',
       },
     ],
   },
@@ -84,6 +93,7 @@ const lastDay: LastDaySchedule = [
       {
         title: '懇親会・交流タイム',
         note: '自由参加',
+        level: '全対象',
       },
     ],
   },

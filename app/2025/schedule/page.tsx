@@ -9,6 +9,7 @@ import {
   AccordionTrigger,
 } from '@/components/ui/accordion'
 import { useEffect, useState } from 'react'
+import { SessionLevel } from './types'
 
 // データのインポート
 import { firstDay } from './data/firstDay'
@@ -22,6 +23,7 @@ import ScheduleLastDay from './components/ScheduleLastDay'
 
 export default function SchedulePage() {
   const [activeSection, setActiveSection] = useState<string | undefined>(undefined)
+  const [selectedLevel, setSelectedLevel] = useState<SessionLevel | 'all'>('all')
 
   useEffect(() => {
     const hash = window.location.hash.slice(1)
@@ -57,6 +59,23 @@ export default function SchedulePage() {
         </p>
       </div>
 
+      <div className="mb-4 flex items-center justify-center gap-2">
+        <label htmlFor="level-filter" className="block text-sm font-medium mb-2">
+          対象レベルで絞り込み
+        </label>
+        <select
+          id="level-filter"
+          value={selectedLevel}
+          onChange={(e) => setSelectedLevel(e.target.value as SessionLevel | 'all')}
+          className="w-full max-w-xs px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+        >
+          <option value="all">すべて表示</option>
+          <option value="初級">初級</option>
+          <option value="中級">中級</option>
+          <option value="全対象">全対象</option>
+        </select>
+      </div>
+
       <Accordion
         type="single"
         collapsible
@@ -78,7 +97,7 @@ export default function SchedulePage() {
             </div>
           </AccordionTrigger>
           <AccordionContent>
-            <ScheduleFirstDay data={firstDay} />
+            <ScheduleFirstDay data={firstDay} levelFilter={selectedLevel} />
           </AccordionContent>
         </AccordionItem>
 
@@ -96,7 +115,7 @@ export default function SchedulePage() {
             </div>
           </AccordionTrigger>
           <AccordionContent>
-            <ScheduleWeekdays data={weekdays} />
+            <ScheduleWeekdays data={weekdays} levelFilter={selectedLevel} />
           </AccordionContent>
         </AccordionItem>
 
@@ -116,7 +135,7 @@ export default function SchedulePage() {
             </div>
           </AccordionTrigger>
           <AccordionContent>
-            <ScheduleLastDay data={lastDay} />
+            <ScheduleLastDay data={lastDay} levelFilter={selectedLevel} />
           </AccordionContent>
         </AccordionItem>
       </Accordion>
