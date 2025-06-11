@@ -331,6 +331,53 @@ export default function QuestionsPage() {
               </AccordionContent>
             </AccordionItem>
 
+            <AccordionItem value="item-ovice">
+              <AccordionTrigger className="text-lg font-medium">
+                オンライン交流タイムで使用するoViceの使い方を教えてください。
+              </AccordionTrigger>
+              <AccordionContent className="space-y-4 pt-4">
+                <p>
+                  オンライン交流タイムでは、バーチャル空間プラットフォーム「oVice」を使用します。
+                  oViceでは、参加者同士が自由に移動しながら自然な交流を楽しむことができます。
+                </p>
+                <p>詳しい使い方については、以下のガイドをご確認ください：</p>
+                <div className="mt-4 p-4 bg-gradient-to-br from-blue-50 via-blue-25 to-blue-50 rounded-lg border border-blue-200">
+                  <div className="text-center space-y-3">
+                    <h3 className="font-medium text-blue-900">oVice使い方ガイド</h3>
+                    <a
+                      href="https://docs.google.com/presentation/d/1xHTcKJR-tG6UEyv7Ef4KaTT8XV1YO59AAfIZxL66ff4/edit?slide=id.g33bd7fefd38_2_85#slide=id.g33bd7fefd38_2_85"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 text-blue-700 hover:text-blue-800 hover:underline transition-colors"
+                    >
+                      <span>oVice操作説明書を見る</span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      >
+                        <path d="m9 18 6-6-6-6" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div className="mt-4 p-4 bg-muted rounded-lg">
+                  <p className="font-medium">oVice参加時のポイント:</p>
+                  <ul className="list-disc list-inside mt-2 space-y-1">
+                    <li>事前にマイクとカメラの動作確認をしておくことをお勧めします</li>
+                    <li>快適な交流のため、安定したインターネット接続環境でご参加ください</li>
+                    <li>アバターを操作して他の参加者に近づくことで会話できます</li>
+                  </ul>
+                </div>
+              </AccordionContent>
+            </AccordionItem>
+
             <AccordionItem value="item-7">
               <AccordionTrigger className="text-lg font-medium">
                 対面会場での受付方法を教えてください。
