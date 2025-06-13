@@ -78,7 +78,7 @@ export default function SchedulePage() {
         </div>
 
         <a
-          href="/2025/コーチングコンバージ2025%20コンテンツ一覧表%20.pdf"
+          href="/2025/コーチングコンバージ2025%20コンテンツ一覧表.pdf"
           download="コーチングコンバージ2025-コンテンツ一覧表.pdf"
           className="inline-flex items-center gap-2 bg-secondary hover:bg-secondary/90 text-white px-4 py-2 rounded-md transition-colors"
         >
