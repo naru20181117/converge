@@ -466,6 +466,75 @@ export default function QuestionsPage() {
                 </p>
               </AccordionContent>
             </AccordionItem>
+
+            <AccordionItem value="item-cce-process">
+              <AccordionTrigger className="text-lg font-medium">
+                CCEを希望する場合に必要な手続きは？
+              </AccordionTrigger>
+              <AccordionContent className="space-y-4 pt-4">
+                <div className="space-y-6">
+                  <div className="p-4 border border-l-4 border-l-primary rounded bg-primary/5">
+                    <h3 className="font-medium text-primary">【CCE取得の流れ｜全体まとめ】</h3>
+                  </div>
+
+                  <div className="space-y-4">
+                    <h4 className="font-medium text-lg">1. 事前申請（全員必須）</h4>
+                    <p>CCEを取得したい人は全員、事前に申請が必要です。</p>
+                    <ul className="list-disc list-inside ml-4 space-y-1">
+                      <li>各プログラムのページから該当プログラムを選んで申請</li>
+                      <li>
+                        <a
+                          href="https://www.icf-events.org/event-calendar/?event_type=chapter_event&chap%5B%5D=543&date=#filters"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-primary hover:underline"
+                        >
+                          申請サイトはこちら
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div className="space-y-4">
+                    <h4 className="font-medium text-lg">2. 当日の参加要件とCCE発行条件</h4>
+
+                    <div className="space-y-4">
+                      <div className="p-4 bg-blue-50 rounded-lg border border-blue-200">
+                        <h5 className="font-medium text-blue-900">■ オフライン参加（最終日）</h5>
+                        <ul className="list-disc list-inside mt-2 space-y-1 text-blue-800">
+                          <li>プログラムの「冒頭から最後まで」参加すること</li>
+                          <li>冒頭と終了時に提示される「2つのキーワード」を取得</li>
+                          <li>キーワードを当日中に指定のGoogleフォームから提出する</li>
+                        </ul>
+                        <div className="mt-3">
+                          <a
+                            href="https://forms.gle/EDrVUfEbLYYQX5fg7"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-blue-700 hover:underline"
+                          >
+                            キーワード提出フォーム
+                          </a>
+                        </div>
+                        <p className="mt-2 text-sm text-blue-700">
+                          提出されたキーワードが正しければ、ICFジャパンよりCCEが発行されます
+                        </p>
+                      </div>
+
+                      <div className="p-4 bg-green-50 rounded-lg border border-green-200">
+                        <h5 className="font-medium text-green-900">■ Zoom参加</h5>
+                        <ul className="list-disc list-inside mt-2 space-y-1 text-green-800">
+                          <li>該当プログラムに冒頭から最後までZoomで参加すること</li>
+                          <li>
+                            Zoomの参加履歴をもとに、ICFジャパンがCCEを発行します（キーワード提出は不要）
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </AccordionContent>
+            </AccordionItem>
           </Accordion>
         </div>
         <p className="text-sm">
