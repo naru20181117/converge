@@ -79,7 +79,7 @@ export const firstDay: FirstDaySchedule = [
         title: 'コーチング・プラクティス（コーチング実践）',
         description: '参加者同士によるコーチング実践セッション',
         unit: 'CC 1.5単位',
-        note: '※17:30までの開催',
+        note: '対象：ACCを目指している方、ACC、PCC、MCCの方 ※17:30までの開催',
         bg: 'border-l-4 border-primary pl-3',
         level: '中級',
       },
