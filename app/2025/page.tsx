@@ -40,7 +40,10 @@ export default function HomePage() {
         </div>
       </div>
 
-      <CountdownTimer targetDate={new Date('2025-06-15T10:00:00')} />
+      <CountdownTimer
+        targetDate={new Date('2025-06-15T10:00:00')}
+        endDate={new Date('2025-06-21T18:00:00')}
+      />
 
       <section className="grid gap-6 md:grid-cols-2">
         <Card>
