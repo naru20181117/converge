@@ -48,12 +48,6 @@ const staffs: Staff[] = [
     message: 'コーチングLOVE高め',
   },
   {
-    name: '松丸 海太',
-    image: '/2025/staff/matsumaru.jpg',
-    url: 'https://www.brighty.site/maru',
-    message: 'コーチングを一緒に盛り上げましょう！',
-  },
-  {
     name: 'さいき さちこ',
     image: '/2025/staff/saiki.jpg',
     message: '現地ボランティアスタッフ担当頑張ります！',
