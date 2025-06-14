@@ -174,7 +174,9 @@ export default function SchedulePage() {
 
       <section className="mt-12 sm:mt-16 text-center py-8 sm:py-12 bg-gradient-to-br from-gray-50 via-primary/5 to-gray-50 rounded-2xl sm:rounded-3xl">
         <div className="max-w-2xl mx-auto space-y-4 sm:space-y-6 px-4">
-          <h2 className="text-2xl sm:text-3xl font-bold text-primary drop-shadow-md">チケット購入</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold text-primary drop-shadow-md">
+            チケット購入
+          </h2>
           <p className="text-base sm:text-lg text-gray-800 leading-relaxed">
             ICF Japan Coaching Converge 2025のチケットをご購入いただけます。
             <br className="hidden sm:block" />

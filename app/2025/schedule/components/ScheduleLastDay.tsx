@@ -28,16 +28,23 @@ export const ScheduleLastDay: React.FC<ScheduleLastDayProps> = ({ data, levelFil
               key={`last-day-session-${index}-${sessionIndex}`}
               className={`${sessionIndex > 0 ? 'border-t bg-muted/5' : ''}`}
             >
-              <div className="p-3 sm:p-4 grid grid-cols-[70px_1fr] sm:grid-cols-[90px_1fr] gap-2 sm:gap-3">
+              <div className="p-3 sm:p-4 grid grid-cols-[45px_1fr] sm:grid-cols-[90px_1fr] gap-2 sm:gap-3">
                 {/* 時間表示は最初のセッションのみ表示 */}
                 <div
-                  className={`text-xs sm:text-sm font-medium text-muted-foreground whitespace-nowrap ${sessionIndex > 0 ? 'opacity-0' : ''}`}
+                  className={`text-xs sm:text-sm font-medium text-muted-foreground ${sessionIndex > 0 ? 'opacity-0' : ''}`}
                 >
-                  {timeSlot.time}
+                  <div className="flex flex-col sm:block">
+                    <span className="block sm:inline">{timeSlot.time.split('-')[0]}</span>
+                    <span className="block sm:inline sm:before:content-['-'] text-center sm:text-left">
+                      {timeSlot.time.split('-')[1]}
+                    </span>
+                  </div>
                 </div>
                 <div className={session.bg || 'border-l-2 border-primary/70 pl-2 sm:pl-3'}>
                   <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-2">
-                    <h4 className="text-sm sm:text-base font-semibold leading-tight">{session.title}</h4>
+                    <h4 className="text-sm sm:text-base font-semibold leading-tight">
+                      {session.title}
+                    </h4>
                     <div className="flex flex-wrap gap-1">
                       {session.level && (
                         <span className="text-xs bg-green-100 text-green-800 px-2 py-0.5 rounded whitespace-nowrap">
@@ -52,10 +59,14 @@ export const ScheduleLastDay: React.FC<ScheduleLastDayProps> = ({ data, levelFil
                     </div>
                   </div>
                   {session.description && (
-                    <p className="text-xs sm:text-sm text-muted-foreground mt-2 leading-relaxed">{session.description}</p>
+                    <p className="text-xs sm:text-sm text-muted-foreground mt-2 leading-relaxed">
+                      {session.description}
+                    </p>
                   )}
                   {session.note && (
-                    <p className="text-xs text-muted-foreground mt-2 leading-relaxed bg-gray-50 p-2 rounded">{session.note}</p>
+                    <p className="text-xs text-muted-foreground mt-2 leading-relaxed bg-gray-50 p-2 rounded">
+                      {session.note}
+                    </p>
                   )}
                   {session.link && (
                     <a
