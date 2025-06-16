@@ -395,6 +395,9 @@ export default function QuestionsPage() {
                 <p>
                   コンバージ終了後1〜2週間で、参加申込いただいたメールアドレスにアーカイブリンクをお送りいたします。
                 </p>
+                <p>
+                  該当のチケットをお持ちの方は、同じ時間帯に開催されるすべてのセッションのアーカイブをご視聴いただける予定です。
+                </p>
               </AccordionContent>
             </AccordionItem>
 
