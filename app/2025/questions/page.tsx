@@ -629,21 +629,40 @@ export default function QuestionsPage() {
                   </div>
 
                   <div className="space-y-4">
-                    <h4 className="font-medium text-lg">1. 事前申請（全員必須）</h4>
-                    <p>CCEを取得したい人は全員、事前に申請が必要です。</p>
-                    <ul className="list-disc list-inside ml-4 space-y-1">
-                      <li>各プログラムのページから該当プログラムを選んで申請</li>
-                      <li>
-                        <a
-                          href="https://www.icf-events.org/event-calendar/?event_type=chapter_event&chap%5B%5D=543&date=#filters"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-primary hover:underline"
-                        >
-                          申請サイトはこちら
-                        </a>
-                      </li>
-                    </ul>
+                    <h4 className="font-medium text-lg">1. 事前申請について</h4>
+
+                    <div className="p-4 bg-amber-50 rounded-lg border border-amber-200">
+                      <p className="font-medium text-amber-900">
+                        重要：主催者によって手続きが異なります
+                      </p>
+                      <ul className="list-disc list-inside mt-2 space-y-2 text-amber-800">
+                        <li>
+                          <span className="font-medium">ICFジャパン主催のプログラム：</span>
+                          事前申請が必要です
+                        </li>
+                        <li>
+                          <span className="font-medium">その他の主催者のプログラム：</span>
+                          事前申請は不要、当日の手続きのみでOKです
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div className="mt-4">
+                      <p className="font-medium">ICFジャパン主催プログラムの事前申請方法：</p>
+                      <ul className="list-disc list-inside ml-4 space-y-1 mt-2">
+                        <li>各プログラムのページから該当プログラムを選んで申請</li>
+                        <li>
+                          <a
+                            href="https://www.icf-events.org/event-calendar/?event_type=chapter_event&chap%5B%5D=543&date=#filters"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-primary hover:underline"
+                          >
+                            申請サイトはこちら
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
 
                   <div className="space-y-4">
@@ -651,36 +670,53 @@ export default function QuestionsPage() {
 
                     <div className="space-y-4">
                       <div className="p-4 bg-blue-50 rounded-lg border border-blue-200">
-                        <h5 className="font-medium text-blue-900">■ オフライン参加（最終日）</h5>
+                        <h5 className="font-medium text-blue-900">
+                          ■ キーワード方式（主催者により採用）
+                        </h5>
                         <ul className="list-disc list-inside mt-2 space-y-1 text-blue-800">
                           <li>プログラムの「冒頭から最後まで」参加すること</li>
-                          <li>冒頭と終了時に提示される「2つのキーワード」を取得</li>
-                          <li>キーワードを当日中に指定のGoogleフォームから提出する</li>
+                          <li>セッション中の任意のタイミングで表示されるキーワードを取得</li>
+                          <li>指定された方法でキーワードを提出</li>
                         </ul>
-                        <div className="mt-3">
+                        <p className="mt-2 text-sm text-blue-700">
+                          ※ICFジャパン主催の最終日オフライン参加の場合は、冒頭と終了時の2つのキーワードを
                           <a
                             href="https://forms.gle/EDrVUfEbLYYQX5fg7"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-blue-700 hover:underline"
                           >
-                            キーワード提出フォーム
+                            こちらのフォーム
                           </a>
-                        </div>
-                        <p className="mt-2 text-sm text-blue-700">
-                          提出されたキーワードが正しければ、ICFジャパンよりCCEが発行されます
+                          から当日中に提出
                         </p>
                       </div>
 
                       <div className="p-4 bg-green-50 rounded-lg border border-green-200">
-                        <h5 className="font-medium text-green-900">■ Zoom参加</h5>
+                        <h5 className="font-medium text-green-900">
+                          ■ Zoom記録方式（主催者により採用）
+                        </h5>
                         <ul className="list-disc list-inside mt-2 space-y-1 text-green-800">
                           <li>該当プログラムに冒頭から最後までZoomで参加すること</li>
-                          <li>
-                            Zoomの参加履歴をもとに、ICFジャパンがCCEを発行します（キーワード提出は不要）
-                          </li>
+                          <li>氏名とZoomの入退室記録を照合してCCEを発行</li>
+                          <li>キーワード提出は不要</li>
                         </ul>
+                        <p className="mt-2 text-sm text-green-700">
+                          ※参加時は必ずフルネーム（英語表記）でご参加ください
+                        </p>
                       </div>
+                    </div>
+
+                    <div className="mt-4 p-4 bg-muted rounded-lg">
+                      <p className="font-medium">注意事項:</p>
+                      <ul className="list-disc list-inside mt-2 space-y-1">
+                        <li>
+                          主催者によってCCE発行の手続きが異なりますので、各プログラムの詳細をご確認ください
+                        </li>
+                        <li>
+                          すべての方式において、プログラムの最初から最後まで参加することが必須です
+                        </li>
+                      </ul>
                     </div>
                   </div>
                 </div>
