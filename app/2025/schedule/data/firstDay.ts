@@ -68,7 +68,6 @@ export const firstDay: FirstDaySchedule = [
       {
         title: 'クロージング',
         bg: 'border-l-4 border-secondary pl-3',
-        level: '全対象',
       },
     ],
   },

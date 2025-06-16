@@ -386,6 +386,145 @@ export default function QuestionsPage() {
                 <p>秋葉原UDXギャラリーの受付にて、お名前とチケット情報をご提示ください。</p>
               </AccordionContent>
             </AccordionItem>
+
+            <AccordionItem value="item-9">
+              <AccordionTrigger className="text-lg font-medium">
+                アーカイブ配信はいつ頃、どうやって公表されますか？
+              </AccordionTrigger>
+              <AccordionContent className="space-y-4 pt-4">
+                <p>
+                  コンバージ終了後1〜2週間で、参加申込いただいたメールアドレスにアーカイブリンクをお送りいたします。
+                </p>
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-11">
+              <AccordionTrigger className="text-lg font-medium">
+                写真撮影やSNS投稿は可能ですか？
+              </AccordionTrigger>
+              <AccordionContent className="space-y-4 pt-4">
+                <p>写っている方の許可を取ってからお願いします。SNS投稿は可能です。</p>
+                <p>
+                  SNSでのシェアの際は、
+                  <span className="font-medium text-primary">#コーチングコンバージ2025</span>
+                  でのシェアをよろしくお願いします！
+                </p>
+                <div className="mt-4 flex flex-wrap gap-3">
+                  <a
+                    href="https://x.com/search?q=%23%E3%82%B3%E3%83%BC%E3%83%81%E3%83%B3%E3%82%B0%E3%82%B3%E3%83%B3%E3%83%90%E3%83%BC%E3%82%B82025&src=typed_query"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-4 py-2 bg-black text-white rounded-lg hover:bg-gray-800 transition-colors text-sm"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                    </svg>
+                    X (Twitter) で検索
+                  </a>
+                  <a
+                    href="https://www.facebook.com/hashtag/%E3%82%B3%E3%83%BC%E3%83%81%E3%83%B3%E3%82%B0%E3%82%B3%E3%83%B3%E3%83%90%E3%83%BC%E3%82%B82025"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-sm"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                    </svg>
+                    Facebook で検索
+                  </a>
+                </div>
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-12">
+              <AccordionTrigger className="text-lg font-medium">
+                通訳や言語対応はありますか？
+              </AccordionTrigger>
+              <AccordionContent className="space-y-4 pt-4">
+                <p>通訳サービスは提供されません。</p>
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-13">
+              <AccordionTrigger className="text-lg font-medium">
+                （最終日）会場内での飲食は可能ですか？
+              </AccordionTrigger>
+              <AccordionContent className="space-y-4 pt-4">
+                <p>
+                  会場周辺に飲食店等がございます。また、UDX内のコンビニで購入されたものについては会場内で食べていただけます。
+                </p>
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-14">
+              <AccordionTrigger className="text-lg font-medium">
+                懇親会はありますか？
+              </AccordionTrigger>
+              <AccordionContent className="space-y-4 pt-4">
+                <p>
+                  懇親会・交流タイムを開催いたします（17:00〜18:00）。 詳細なスケジュールは
+                  <a href="/2025/schedule#lastday" className="text-primary hover:underline">
+                    こちらのページ
+                  </a>
+                  でご確認ください。
+                </p>
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-16">
+              <AccordionTrigger className="text-lg font-medium">
+                遅刻しての入室はできますか？
+              </AccordionTrigger>
+              <AccordionContent className="space-y-4 pt-4">
+                <p>
+                  基本的に遅刻での入室は可能ですが、一部のプログラムでは入室をお断りする場合があります。
+                  参加を予定されているセッションの開始時間に遅れないよう、お早めにお越しください。
+                </p>
+                <div className="mt-4 p-4 bg-muted rounded-lg">
+                  <p className="font-medium">ご注意:</p>
+                  <ul className="list-disc list-inside mt-2 space-y-1">
+                    <li>
+                      遅刻での入室の際は、他の参加者の迷惑にならないよう静かに入室してください
+                    </li>
+                    <li>
+                      CCE単位の取得を希望される方は、プログラムの最初から最後まで参加が必要です
+                    </li>
+                  </ul>
+                </div>
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-17">
+              <AccordionTrigger className="text-lg font-medium">
+                会場内でのゴミはどうしますか？
+              </AccordionTrigger>
+              <AccordionContent className="space-y-4 pt-4">
+                <p>
+                  会場で発生したゴミは、基本的にご自身での持ち帰りをお願いいたします。
+                  環境への配慮とイベント運営へのご協力をよろしくお願いします。
+                </p>
+                <div className="mt-4 p-4 bg-muted rounded-lg">
+                  <p className="font-medium">お願い:</p>
+                  <ul className="list-disc list-inside mt-2 space-y-1">
+                    <li>会場内にゴミ箱の設置はございません</li>
+                    <li>お弁当やお飲み物を持参される場合は、容器等の持ち帰りをお願いします</li>
+                    <li>環境に配慮した運営にご理解とご協力をお願いいたします</li>
+                  </ul>
+                </div>
+              </AccordionContent>
+            </AccordionItem>
           </Accordion>
         </div>
 
@@ -464,6 +603,15 @@ export default function QuestionsPage() {
                 <p>
                   CCE単位は、対象セッションに「開始から終了まで」参加された方のみが対象です。途中参加・途中退出の場合は単位付与対象外となります。
                 </p>
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-18">
+              <AccordionTrigger className="text-lg font-medium">
+                アーカイブでの参加にCCEは取得できますか？
+              </AccordionTrigger>
+              <AccordionContent className="space-y-4 pt-4">
+                <p>アーカイブでの参加ではCCE単位は取得できません。</p>
               </AccordionContent>
             </AccordionItem>
 
