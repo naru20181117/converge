@@ -255,6 +255,7 @@ const weekdaySessions: WeekdaySchedule[] = [
             title: 'CTIジャパン',
             description: 'Co-Activeモデルとは？',
             level: '全対象',
+            note: 'Co-Activeとは、「協働的」という意味を持つ造語であり、人が持つ本質的な特徴である、Being（どうあるのか）とDoing（何をするのか）の意味も込められています。コーチングをする上で、コーチのBeingとDoingそのどちらもがとても大切です。コーチのBeingが、コーチの関りやコーチングにどのような影響があるのかを体験します。',
           },
         ],
       },
