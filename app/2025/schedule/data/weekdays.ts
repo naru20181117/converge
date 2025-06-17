@@ -21,14 +21,12 @@ const weekdaySessions: WeekdaySchedule[] = [
             sub: '"For those who want to attend this English session, please register as a free ticket on Peatix event page too."',
             link: 'https://peatix.com/event/4398074/view',
             linkLabel: 'https://peatix.com/event/4398074/view',
-            bg: 'bg-yellow-50 border border-yellow-200 text-yellow-800',
             level: '中級',
           },
           {
             title: 'ICFジャパン',
             description: 'HRトップが語る人事戦略における エグゼクティブコーチング',
             note: 'グローバル企業のCHROを迎え、人事戦略におけるエグゼクティブコーチングのリアルに迫ります。コーチ・学習者必見の貴重な機会です。',
-            bg: 'border border-primary/30 bg-primary/5',
             level: '全対象',
           },
         ],
@@ -248,7 +246,6 @@ const weekdaySessions: WeekdaySchedule[] = [
               'プロフェッショナルシリーズ　コーチのための初耳学①　～～感情のしつけ方〜〜',
             unit: 'RD 1.0単位',
             note: 'コーチ自身の感情は、たとえ言葉や表情に出さなかったとしても、セッションに影響を及ぼし、クライアントの思考や行動に影響します。ここでは、コーチ自身が自分の感情とつながり、理解する大切さを学び実践します。さあ、自分への思いやりと関心を持って向き合うところから始めてみましょう。',
-            bg: 'border border-primary/30 bg-primary/5',
             level: '全対象',
           },
           {

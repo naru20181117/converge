@@ -5,7 +5,8 @@
       "Bash(pnpm type-check)",
       "Bash(pnpm lint-autofix:*)",
       "Bash(git add:*)",
-      "Bash(grep:*)"
+      "Bash(grep:*)",
+      "Bash(rg:*)"
     ],
     "deny": []
   }
