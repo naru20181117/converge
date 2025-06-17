@@ -685,7 +685,9 @@ export default function QuestionsPage() {
                         <ul className="list-disc list-inside mt-2 space-y-1 text-blue-800">
                           <li>プログラムの「冒頭から最後まで」参加すること</li>
                           <li>セッション中の任意のタイミングで表示されるキーワードを取得</li>
-                          <li>指定された方法でキーワードを提出</li>
+                          <li>
+                            最後に画面上に表示されるQRコードを開き、「キーワード」を入力してCCEファイルをダウンロード
+                          </li>
                         </ul>
                         <p className="mt-2 text-sm text-blue-700">
                           ※ICFジャパン主催の最終日オフライン参加の場合は、冒頭と終了時の2つのキーワードを
@@ -707,7 +709,7 @@ export default function QuestionsPage() {
                         </h5>
                         <ul className="list-disc list-inside mt-2 space-y-1 text-green-800">
                           <li>該当プログラムに冒頭から最後までZoomで参加すること</li>
-                          <li>氏名とZoomの入退室記録を照合してCCEを発行</li>
+                          <li>氏名とZoomの入退室記録を照合し、後日メールにてCCEファイルを送付</li>
                           <li>キーワード提出は不要</li>
                         </ul>
                         <p className="mt-2 text-sm text-green-700">
@@ -726,6 +728,37 @@ export default function QuestionsPage() {
                           すべての方式において、プログラムの最初から最後まで参加することが必須です
                         </li>
                       </ul>
+                    </div>
+
+                    <div className="mt-6 space-y-4">
+                      <h4 className="font-medium text-lg">3. コンテンツ別の参加要件</h4>
+
+                      <div className="space-y-3">
+                        <div className="p-4 bg-amber-50 rounded-lg border border-amber-200">
+                          <h5 className="font-medium text-amber-900">①土日コンテンツ</h5>
+                          <p className="text-amber-800 mt-1">キーワード方式・事前申請【必要】</p>
+                        </div>
+
+                        <div className="p-4 bg-purple-50 rounded-lg border border-purple-200">
+                          <h5 className="font-medium text-purple-900">
+                            ②平日コンテンツ(ICFジャパン主催)
+                          </h5>
+                          <p className="text-purple-800 mt-1">キーワード方式・事前申請【必要】</p>
+                        </div>
+
+                        <div className="p-4 bg-indigo-50 rounded-lg border border-indigo-200">
+                          <h5 className="font-medium text-indigo-900">
+                            ③平日コンテンツ(各スクール主催)
+                          </h5>
+                          <div className="mt-2 space-y-1">
+                            <p className="text-indigo-800">③-A: キーワード方式・事前申請【不要】</p>
+                            <p className="text-indigo-800">③-B: ZOOM記録方式・事前申請【不要】</p>
+                            <p className="text-sm text-indigo-700 mt-2">
+                              ※A/Bのどちらに該当するかは、当日ご案内いたします。
+                            </p>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
