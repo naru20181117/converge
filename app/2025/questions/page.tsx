@@ -312,22 +312,37 @@ export default function QuestionsPage() {
                   コーチング・コンバージ2025は、初日（6月15日）と最終日（6月21日）は終日オンラインで開催されます。
                   また、平日（6月16日〜20日）は夜間セッションがオンラインで行われます。
                 </p>
+
+                <div className="mt-4 p-4 bg-blue-50 rounded-lg border border-blue-200">
+                  <p className="font-medium text-blue-900">平日コンテンツについて</p>
+                  <p className="mt-2 text-blue-800">
+                    平日コンテンツは、参加者人数が多いためZoomの「ウェビナー形式」で行われます。
+                  </p>
+                  <ul className="list-disc list-inside mt-2 space-y-1 text-blue-800">
+                    <li>待機室はございません</li>
+                    <li>ブレイクアウトルームはございません</li>
+                    <li>
+                      リンクをクリックしたら「メールアドレス」と「名前」を入力後、すぐに入室する形となります
+                    </li>
+                    <li>Zoomの仕様上、入室後は名前の変更はできません</li>
+                  </ul>
+                  <div className="mt-3 p-3 bg-blue-100 rounded border border-blue-300">
+                    <p className="font-medium text-blue-900">CCEを希望される方へ</p>
+                    <p className="text-sm text-blue-800 mt-1">
+                      Zoomリンククリック直後の入力欄に、ICF申請時に入力されているものと同じ「名前」を入力の上、入室をお願いいたします。
+                    </p>
+                  </div>
+                </div>
+
                 <p>オンライン参加の手順は以下の通りです：</p>
                 <ol className="list-decimal list-inside space-y-3">
                   <li>
-                    イベント参加登録後、登録時のメールアドレスに参加用のZoomリンクが送信されます。
+                    イベント参加登録後、Peatix登録時のメールアドレスに参加用のZoomリンクが送信されます。
                   </li>
-                  <li>各セッションの開始時間の15分前からZoomミーティングに入室可能です。</li>
+                  <li>各セッションの開始時間の10分前からZoomミーティングに入室可能です。</li>
                   <li>安定したインターネット接続環境でご参加ください。</li>
                   <li>セッション中の質問は、Zoomのチャット機能を通じて行うことができます。</li>
                 </ol>
-                <div className="mt-4 p-4 bg-muted rounded-lg">
-                  <p className="font-medium">推奨環境:</p>
-                  <ul className="list-disc list-inside mt-2 space-y-1">
-                    <li>安定したインターネット接続（有線接続を推奨）</li>
-                    <li>ヘッドセットまたはイヤホン（音声品質向上のため）</li>
-                  </ul>
-                </div>
               </AccordionContent>
             </AccordionItem>
 
@@ -542,8 +557,6 @@ export default function QuestionsPage() {
                 CCE単位を取得することはできますか？
               </AccordionTrigger>
               <AccordionContent className="space-y-4 pt-4">
-                <p>単位取得ができるように調整中です。随時更新していくのでお待ちください。</p>
-
                 <div className="mt-4 p-4 bg-muted rounded-lg">
                   <p className="font-medium">CCEについて:</p>
                   <p className="mt-2 text-sm">
@@ -581,7 +594,6 @@ export default function QuestionsPage() {
                   </p>
                   <ul className="list-disc list-inside mt-2 space-y-2">
                     <li>フルネーム（英語表記）でのご参加</li>
-                    <li>ビデオをオンにしてご参加</li>
                     <li>プログラムの最初から最後まで継続してご参加</li>
                   </ul>
                 </div>
@@ -590,9 +602,6 @@ export default function QuestionsPage() {
                   <p className="font-medium">注意事項:</p>
                   <ul className="list-disc list-inside mt-2 space-y-1">
                     <li>上記条件を満たさない場合、CCE単位が付与されないことがあります。</li>
-                    <li>
-                      各セッションのCCE単位取得については、プログラムの担当者へご確認ください。
-                    </li>
                   </ul>
                 </div>
               </AccordionContent>
