@@ -686,7 +686,20 @@ export default function QuestionsPage() {
                           <li>プログラムの「冒頭から最後まで」参加すること</li>
                           <li>セッション中の任意のタイミングで表示されるキーワードを取得</li>
                           <li>
-                            最後に画面上に表示されるQRコードを開き、「キーワード」を入力してCCEファイルをダウンロード
+                            最後に画面上に表示されるQRコードまたはURLを開き、「キーワード」を入力してCCEファイルをダウンロード
+                          </li>
+                          <li>
+                            ダウンロードしたPDFに、ICF申請時と同じ氏名(ローマ字)をご自身で追記。
+                            <br />※
+                            <a
+                              href="https://www.ilovepdf.com/ja/edit-pdf"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="text-blue-700 hover:underline"
+                            >
+                              https://www.ilovepdf.com/ja/edit-pdf
+                            </a>{' '}
+                            などのフリーソフトをご利用ください。
                           </li>
                         </ul>
                         <p className="mt-2 text-sm text-blue-700">
@@ -710,6 +723,19 @@ export default function QuestionsPage() {
                         <ul className="list-disc list-inside mt-2 space-y-1 text-green-800">
                           <li>該当プログラムに冒頭から最後までZoomで参加すること</li>
                           <li>氏名とZoomの入退室記録を照合し、後日メールにてCCEファイルを送付</li>
+                          <li>
+                            ダウンロードしたPDFに、ICF申請時と同じ氏名(ローマ字)をご自身で追記。
+                            <br />※
+                            <a
+                              href="https://www.ilovepdf.com/ja/edit-pdf"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="text-green-700 hover:underline"
+                            >
+                              https://www.ilovepdf.com/ja/edit-pdf
+                            </a>{' '}
+                            などのフリーソフトをご利用ください。
+                          </li>
                           <li>キーワード提出は不要</li>
                         </ul>
                         <p className="mt-2 text-sm text-green-700">
