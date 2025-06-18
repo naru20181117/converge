@@ -688,22 +688,9 @@ export default function QuestionsPage() {
                           <li>
                             最後に画面上に表示されるQRコードまたはURLを開き、「キーワード」を入力してCCEファイルをダウンロード
                           </li>
-                          <li>
-                            ダウンロードしたPDFに、ICF申請時と同じ氏名(ローマ字)をご自身で追記。
-                            <br />※
-                            <a
-                              href="https://www.ilovepdf.com/ja/edit-pdf"
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="text-blue-700 hover:underline"
-                            >
-                              https://www.ilovepdf.com/ja/edit-pdf
-                            </a>{' '}
-                            などのフリーソフトをご利用ください。
-                          </li>
                         </ul>
                         <p className="mt-2 text-sm text-blue-700">
-                          ※ICFジャパン主催の最終日オフライン参加の場合は、冒頭と終了時の2つのキーワードを
+                          ※ICFジャパン主催の最終日6/21オフライン参加の場合は、冒頭と終了時の2つのキーワードを
                           <a
                             href="https://forms.gle/EDrVUfEbLYYQX5fg7"
                             target="_blank"
@@ -721,39 +708,22 @@ export default function QuestionsPage() {
                           ■ Zoom記録方式（主催者により採用）
                         </h5>
                         <ul className="list-disc list-inside mt-2 space-y-1 text-green-800">
-                          <li>該当プログラムに冒頭から最後までZoomで参加すること</li>
-                          <li>氏名とZoomの入退室記録を照合し、後日メールにてCCEファイルを送付</li>
+                          <li>該当プログラムに、冒頭から最後までZoomで参加すること</li>
                           <li>
-                            ダウンロードしたPDFに、ICF申請時と同じ氏名(ローマ字)をご自身で追記。
-                            <br />※
-                            <a
-                              href="https://www.ilovepdf.com/ja/edit-pdf"
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="text-green-700 hover:underline"
-                            >
-                              https://www.ilovepdf.com/ja/edit-pdf
-                            </a>{' '}
-                            などのフリーソフトをご利用ください。
+                            氏名とZoomの入退室記録を照合し、1ヶ月以内目安で、メールにてCCEファイルを送付
                           </li>
                           <li>キーワード提出は不要</li>
                         </ul>
-                        <p className="mt-2 text-sm text-green-700">
-                          ※参加時は必ずフルネーム（英語表記）でご参加ください
-                        </p>
+                        <div className="mt-2 text-sm text-green-700 space-y-1">
+                          <p>※参加時は必ずフルネーム（英語表記）でご参加ください。</p>
+                          <p>
+                            ※ZOOMウェビナーの仕様上、入室後の指名変更はできませんので、URLクリック直後の「アドレス」と「氏名」入力タイミングで、正しい氏名をご記入ください。
+                          </p>
+                          <p>
+                            ※1件1件、ZOOM記録との照合作業を行いますので、送付完了まで少々お時間をいただきます旨、何卒ご理解・ご了承ください。
+                          </p>
+                        </div>
                       </div>
-                    </div>
-
-                    <div className="mt-4 p-4 bg-muted rounded-lg">
-                      <p className="font-medium">注意事項:</p>
-                      <ul className="list-disc list-inside mt-2 space-y-1">
-                        <li>
-                          主催者によってCCE発行の手続きが異なりますので、各プログラムの詳細をご確認ください
-                        </li>
-                        <li>
-                          すべての方式において、プログラムの最初から最後まで参加することが必須です
-                        </li>
-                      </ul>
                     </div>
 
                     <div className="mt-6 space-y-4">
@@ -762,14 +732,20 @@ export default function QuestionsPage() {
                       <div className="space-y-3">
                         <div className="p-4 bg-amber-50 rounded-lg border border-amber-200">
                           <h5 className="font-medium text-amber-900">①土日コンテンツ</h5>
-                          <p className="text-amber-800 mt-1">キーワード方式・事前申請【必要】</p>
+                          <p className="text-amber-800 mt-1">ZOOM記録方式・事前申請【必要】</p>
+                          <p className="text-sm text-amber-700 mt-1">
+                            →事前申請の内容と、当日のZOOM記録で照合いたします。
+                          </p>
                         </div>
 
                         <div className="p-4 bg-purple-50 rounded-lg border border-purple-200">
                           <h5 className="font-medium text-purple-900">
                             ②平日コンテンツ(ICFジャパン主催)
                           </h5>
-                          <p className="text-purple-800 mt-1">キーワード方式・事前申請【必要】</p>
+                          <p className="text-purple-800 mt-1">ZOOM記録方式・事前申請【必要】</p>
+                          <p className="text-sm text-purple-700 mt-1">
+                            →事前申請の内容と、当日のZOOM記録で照合いたします。
+                          </p>
                         </div>
 
                         <div className="p-4 bg-indigo-50 rounded-lg border border-indigo-200">
@@ -779,9 +755,135 @@ export default function QuestionsPage() {
                           <div className="mt-2 space-y-1">
                             <p className="text-indigo-800">③-A: キーワード方式・事前申請【不要】</p>
                             <p className="text-indigo-800">③-B: ZOOM記録方式・事前申請【不要】</p>
-                            <p className="text-sm text-indigo-700 mt-2">
-                              ※A/Bのどちらに該当するかは、当日ご案内いたします。
-                            </p>
+                            <div className="text-sm text-indigo-700 mt-2 space-y-1">
+                              <p>※③A/Bのどちらに該当するかは、当日ご案内いたします。</p>
+                              <p>
+                                ※平日コンテンツ(ICFジャパン主催以外)のCCE取得に関するお問い合わせは、各主催スクールまでお願いいたします。
+                              </p>
+                            </div>
+                            <div className="text-sm text-indigo-700 mt-3 space-y-1">
+                              <p>●6/16(月)20:10-21:10 エムビーシーシー合同会社様</p>
+                              <p className="ml-4">
+                                <a
+                                  href="https://mbcc-c.com/contact"
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="text-indigo-700 hover:underline"
+                                >
+                                  https://mbcc-c.com/contact
+                                </a>
+                              </p>
+                              <p>●6/17(火)19:00-20:00 ホールシステムコーチング様</p>
+                              <p className="ml-4">
+                                <a
+                                  href="https://wsc-japan.com/contact.html"
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="text-indigo-700 hover:underline"
+                                >
+                                  https://wsc-japan.com/contact.html
+                                </a>
+                              </p>
+                              <p>●6/17(火)19:00-20:00 コーチングプラットフォーム様</p>
+                              <p className="ml-4">
+                                <a
+                                  href="https://coachingplatform.main.jp/contact/"
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="text-indigo-700 hover:underline"
+                                >
+                                  https://coachingplatform.main.jp/contact/
+                                </a>
+                              </p>
+                              <p>●6/17(火)19:00-20:00 CRR Global Japan様</p>
+                              <p className="ml-4">
+                                <a
+                                  href="https://crrglobaljapan.com/contact/"
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="text-indigo-700 hover:underline"
+                                >
+                                  https://crrglobaljapan.com/contact/
+                                </a>
+                              </p>
+                              <p>●6/18(水)19:00-20:00 ホールシステムコーチング様</p>
+                              <p className="ml-4">
+                                <a
+                                  href="https://wsc-japan.com/contact.html"
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="text-indigo-700 hover:underline"
+                                >
+                                  https://wsc-japan.com/contact.html
+                                </a>
+                              </p>
+                              <p>●6/18(水)20:10-21:10 コーチングプラスワン様</p>
+                              <p className="ml-4">
+                                <a
+                                  href="https://coachingplusone.com/inquiry"
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="text-indigo-700 hover:underline"
+                                >
+                                  https://coachingplusone.com/inquiry
+                                </a>
+                              </p>
+                              <p>●6/19(木)19:00-20:00 コーチングプラットフォーム様</p>
+                              <p className="ml-4">
+                                <a
+                                  href="https://coachingplatform.main.jp/contact/"
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="text-indigo-700 hover:underline"
+                                >
+                                  https://coachingplatform.main.jp/contact/
+                                </a>
+                              </p>
+                              <p>●6/19(木)20:10-21:10 コーチングプラスワン様</p>
+                              <p className="ml-4">
+                                <a
+                                  href="https://coachingplusone.com/inquiry"
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="text-indigo-700 hover:underline"
+                                >
+                                  https://coachingplusone.com/inquiry
+                                </a>
+                              </p>
+                              <p>●6/20(金)19:00-20:00 CRR Global Japan様</p>
+                              <p className="ml-4">
+                                <a
+                                  href="https://crrglobaljapan.com/contact/"
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="text-indigo-700 hover:underline"
+                                >
+                                  https://crrglobaljapan.com/contact/
+                                </a>
+                              </p>
+                              <p>●6/20(金)19:00-20:00 コーチングプラスワン様</p>
+                              <p className="ml-4">
+                                <a
+                                  href="https://coachingplusone.com/inquiry"
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="text-indigo-700 hover:underline"
+                                >
+                                  https://coachingplusone.com/inquiry
+                                </a>
+                              </p>
+                              <p>●6/20(金)20:10-21:10 コーチングプラスワン様</p>
+                              <p className="ml-4">
+                                <a
+                                  href="https://coachingplusone.com/inquiry"
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="text-indigo-700 hover:underline"
+                                >
+                                  https://coachingplusone.com/inquiry
+                                </a>
+                              </p>
+                            </div>
                           </div>
                         </div>
                       </div>
