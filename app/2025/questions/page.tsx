@@ -481,7 +481,7 @@ export default function QuestionsPage() {
               </AccordionTrigger>
               <AccordionContent className="space-y-4 pt-4">
                 <p>
-                  会場周辺に飲食店等がございます。また、UDX内のコンビニで購入されたものに限り、会場内で食べることができます。
+                  飲み物は可能です。持ち込みによる食事はご遠慮ください。ただし、イベントご参加の皆様は、UDX建物内のコンビニで購入されたものに限り、会場内で食べていただけます。その際、ゴミは必ずお持ち帰りください。（昼食は、会場周辺に飲食店等がございますので、ぜひそちらをご利用ください）
                 </p>
               </AccordionContent>
             </AccordionItem>
