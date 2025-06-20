@@ -481,7 +481,7 @@ export default function QuestionsPage() {
               </AccordionTrigger>
               <AccordionContent className="space-y-4 pt-4">
                 <p>
-                  会場周辺に飲食店等がございます。また、UDX内のコンビニで購入されたものについては会場内で食べていただけます。
+                  会場周辺に飲食店等がございます。また、UDX内のコンビニで購入されたものに限り、会場内で食べることができます。
                 </p>
               </AccordionContent>
             </AccordionItem>
@@ -537,7 +537,9 @@ export default function QuestionsPage() {
                   <p className="font-medium">お願い:</p>
                   <ul className="list-disc list-inside mt-2 space-y-1">
                     <li>会場内にゴミ箱の設置はございません</li>
-                    <li>お弁当やお飲み物を持参される場合は、容器等の持ち帰りをお願いします</li>
+                    <li>
+                      UDX内のコンビニで購入されたお弁当などを含め、容器等の持ち帰りをお願いします
+                    </li>
                     <li>環境に配慮した運営にご理解とご協力をお願いいたします</li>
                   </ul>
                 </div>
