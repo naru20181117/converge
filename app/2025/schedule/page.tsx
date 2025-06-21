@@ -54,7 +54,7 @@ export default function SchedulePage() {
           <Clock className="h-4 w-4 sm:h-5 sm:w-5 text-primary flex-shrink-0 mt-0.5 sm:mt-0" />
           <span className="font-bold text-sm sm:text-base leading-relaxed">
             <span className="text-primary">特典：</span>
-            一般・U24チケットは全セッションのアーカイブ視聴が可能です
+            一般・U24チケットをご購入の皆様は全セッションのアーカイブ視聴が可能です
           </span>
         </p>
       </div>
@@ -169,47 +169,24 @@ export default function SchedulePage() {
       </Accordion>
 
       <p className="text-xs sm:text-sm text-muted-foreground mt-6 sm:mt-8 italic leading-relaxed">
-        ※スケジュール詳細は、今後一部変更となる可能性がございます。何卒ご理解・ご了承いただけますと幸いです。
+        ※スケジュールは一部変更された場合がございました。ご理解・ご了承いただきありがとうございました。
       </p>
 
       <section className="mt-12 sm:mt-16 text-center py-8 sm:py-12 bg-gradient-to-br from-gray-50 via-primary/5 to-gray-50 rounded-2xl sm:rounded-3xl">
         <div className="max-w-2xl mx-auto space-y-4 sm:space-y-6 px-4">
           <h2 className="text-2xl sm:text-3xl font-bold text-primary drop-shadow-md">
-            チケット購入
+            ご参加ありがとうございました
           </h2>
           <p className="text-base sm:text-lg text-gray-800 leading-relaxed">
-            ICF Japan Coaching Converge 2025のチケットをご購入いただけます。
+            ICF Japan Coaching Converge 2025は盛況のうちに終了いたしました。
             <br className="hidden sm:block" />
-            <span className="sm:hidden"> </span>早期割引や複数日程参加の割引もございます。
+            <span className="sm:hidden"> </span>皆様のご参加とご協力に心より感謝申し上げます。
           </p>
           <div className="pt-2 sm:pt-4 flex flex-col items-center">
-            <a
-              href="https://converge2025.peatix.com/view"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-gradient-to-r from-primary to-secondary hover:opacity-90 transition-opacity text-white text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 rounded-full shadow-lg"
-            >
-              <span>チケットを購入する</span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="lucide lucide-ticket sm:w-6 sm:h-6"
-              >
-                <path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z" />
-                <path d="M13 5v2" />
-                <path d="M13 17v2" />
-                <path d="M13 11v2" />
-              </svg>
-            </a>
-            <p className="text-xs sm:text-sm text-muted-foreground mt-3 sm:mt-4 leading-relaxed">
-              Peatixサイトに移動し、ご希望の参加日程を選択してください
+            <p className="text-base sm:text-lg text-gray-700 leading-relaxed text-center">
+              アーカイブ配信については、
+              <br className="sm:hidden" />
+              準備が整い次第ご案内いたします。
             </p>
           </div>
         </div>

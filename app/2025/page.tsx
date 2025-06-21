@@ -4,7 +4,6 @@ import ReactPlayer from 'react-player'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 import { TitleWithBackground } from '@/components/TitleWithBackground'
-import { CountdownTimer } from '@/components/CountdownTimer'
 import { Clock, Monitor, MapPin, ExternalLink, ArrowRight } from 'lucide-react'
 import Link from 'next/link'
 
@@ -40,10 +39,10 @@ export default function HomePage() {
         </div>
       </div>
 
-      <CountdownTimer
-        targetDate={new Date('2025-06-15T10:00:00')}
-        endDate={new Date('2025-06-21T18:00:00')}
-      />
+      <div className="text-center py-8 bg-gradient-to-r from-primary/10 to-secondary/10 rounded-xl">
+        <h2 className="text-2xl font-bold text-primary mb-2">イベントは終了いたしました</h2>
+        <p className="text-gray-700">たくさんのご参加、誠にありがとうございました</p>
+      </div>
 
       <section className="grid gap-6 md:grid-cols-2">
         <Card>
@@ -60,7 +59,7 @@ export default function HomePage() {
                 </Link>
               </div>
             </div>
-            <p>日時：2025年6月15日（日）〜 6月21日（土）</p>
+            <p>日時：2025年6月15日（日）〜 6月21日（土）【終了】</p>
             <p>形式：ハイブリッド開催</p>
             <div className="grid gap-2 mt-3">
               <Link href="/2025/schedule#day1" className="block">
@@ -202,9 +201,11 @@ export default function HomePage() {
 
       <section className="text-center py-12 bg-gradient-to-br from-gray-50 via-primary/5 to-gray-50 rounded-3xl my-12">
         <div className="max-w-4xl mx-auto space-y-6 px-4">
-          <h2 className="text-4xl font-bold text-primary drop-shadow-md">チケット価格</h2>
+          <h2 className="text-4xl font-bold text-primary drop-shadow-md">
+            チケット販売は終了しました
+          </h2>
           <p className="text-lg text-gray-800 mb-6">
-            早期割引や会員割引をご利用いただけます。お早めのご購入がお得です。
+            多くの皆様にご参加いただき、心より感謝申し上げます。
           </p>
 
           <div className="overflow-x-auto">
@@ -331,54 +332,53 @@ export default function HomePage() {
                     適用外
                   </td>
                 </tr>
-                <tr className="bg-gray-50 border-b border-gray-200 hover:bg-primary/5 transition-colors">
+                <tr className="bg-gray-50 border-b border-gray-200 hover:bg-primary/5 transition-colors text-gray-400">
                   <td className="px-4 py-4 font-medium">
                     <div className="flex flex-col items-center justify-center gap-1">
-                      <span className="text-sm font-medium">【1日参加チケット】</span>
-                      <span>平日1日分のみ参加可能</span>
+                      <span className="text-xs px-1.5 py-0.5 bg-gray-500 text-white rounded">
+                        終了
+                      </span>
+                      <span className="text-sm font-medium line-through">【1日参加チケット】</span>
+                      <span className="line-through">平日1日分のみ参加可能</span>
                       <span className="text-xs text-gray-600 bg-gray-100 px-2 py-0.5 rounded">
                         ※アーカイブ配信なし
                       </span>
                     </div>
                   </td>
-                  <td className="px-4 py-4 text-center">前日 23:59</td>
-                  <td className="px-4 py-4 text-center font-bold">¥3,000</td>
-                  <td className="px-4 py-4 text-center font-bold text-gray-500">適用外</td>
+                  <td className="px-4 py-4 text-center line-through">前日 23:59</td>
+                  <td className="px-4 py-4 text-center font-bold line-through">¥3,000</td>
+                  <td className="px-4 py-4 text-center font-bold text-gray-500 line-through">
+                    適用外
+                  </td>
                 </tr>
-                <tr className="bg-white hover:bg-primary/5 transition-colors">
+                <tr className="bg-white hover:bg-primary/5 transition-colors text-gray-400">
                   <td className="px-4 py-4 font-medium">
                     <div className="flex flex-col items-center justify-center gap-1">
-                      <span className="text-sm font-medium">【1日参加チケット】</span>
-                      <span>最終日(6/21)のみ参加可能</span>
+                      <span className="text-xs px-1.5 py-0.5 bg-gray-500 text-white rounded">
+                        終了
+                      </span>
+                      <span className="text-sm font-medium line-through">【1日参加チケット】</span>
+                      <span className="line-through">最終日(6/21)のみ参加可能</span>
                       <span className="text-xs text-gray-600 bg-gray-100 px-2 py-0.5 rounded">
                         ※アーカイブ配信なし
                       </span>
                     </div>
                   </td>
-                  <td className="px-4 py-4 text-center">6/20 23:59</td>
-                  <td className="px-4 py-4 text-center font-bold">¥3,000</td>
-                  <td className="px-4 py-4 text-center font-bold text-gray-500">適用外</td>
+                  <td className="px-4 py-4 text-center line-through">6/20 23:59</td>
+                  <td className="px-4 py-4 text-center font-bold line-through">¥3,000</td>
+                  <td className="px-4 py-4 text-center font-bold text-gray-500 line-through">
+                    適用外
+                  </td>
                 </tr>
               </tbody>
             </table>
           </div>
 
-          <div className="mt-4 bg-red-50 p-4 rounded-lg border border-red-200">
-            <p className="font-medium text-red-800 mb-2">
-              【重要】1週間通しチケット（一般・U24）の販売終了について
-            </p>
+          <div className="mt-4 bg-green-50 p-4 rounded-lg border border-green-200">
+            <p className="font-medium text-green-800 mb-2">アーカイブ配信について</p>
             <p className="text-sm text-gray-700 leading-relaxed">
-              1週間通しで参加できるチケット（アーカイブ配信1ヶ月前後付き）は、6月8日をもって販売を締め切りました。
-            </p>
-          </div>
-
-          <div className="mt-4 bg-blue-50 p-4 rounded-lg border border-blue-200 text-left">
-            <p className="font-medium text-blue-800 mb-2">【現在販売中】1日参加チケットについて</p>
-            <p className="text-sm text-gray-700 leading-relaxed mb-2">
-              平日(6/16-20)と最終日(6/21)の1日参加チケットのみ、現在も販売しています。それぞれ、当日の前日23:59まで購入可能です。
-            </p>
-            <p className="text-sm text-gray-700 leading-relaxed">
-              ※1日参加チケットは、アーカイブ配信は視聴できません。CCE発行対象外となります。ICF会員割引は適用外となります。指定日付、指定コンテンツのみに参加可能です。
+              一般・U24チケットをご購入いただいた皆様には、アーカイブ配信をご用意しております。
+              配信準備が整い次第、ご登録いただいたメールアドレスにご案内いたします。
             </p>
           </div>
 
@@ -398,9 +398,13 @@ export default function HomePage() {
 
       <section className="text-center py-16 bg-gradient-to-br from-gray-50 via-primary/5 to-gray-50 rounded-3xl my-12">
         <div className="max-w-2xl mx-auto space-y-6 px-4">
-          <h2 className="text-4xl font-bold text-primary drop-shadow-md">参加登録</h2>
+          <h2 className="text-4xl font-bold text-primary drop-shadow-md">
+            ご参加ありがとうございました
+          </h2>
           <p className="text-lg text-gray-800 drop-shadow-sm">
-            チケットの購入、最新情報、クーポン受け取りはすべて公式LINEより可能です！
+            コーチング・コンバージ2025は盛況のうちに終了いたしました。
+            <br />
+            皆様のご参加とご協力に心より感謝申し上げます。
           </p>
           <div className="pt-4">
             <Button
@@ -414,7 +418,7 @@ export default function HomePage() {
                 rel="noopener noreferrer"
                 className="flex items-center gap-2"
               >
-                チケット購入はLINEから
+                今後の情報はLINEから
                 <ArrowRight className="h-5 w-5" />
               </a>
             </Button>

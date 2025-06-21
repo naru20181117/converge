@@ -1,6 +1,5 @@
 import { Card, CardContent } from '@/components/ui/card'
 import { TitleWithBackground } from '@/components/TitleWithBackground'
-import { Button } from '@/components/ui/button'
 
 export default function SponsorsPage() {
   return (
@@ -20,41 +19,16 @@ export default function SponsorsPage() {
       <section className="text-center py-16 bg-gradient-to-br from-primary/10 via-secondary/10 to-primary/10 rounded-3xl my-12">
         <div className="max-w-2xl mx-auto space-y-6 px-4">
           <h2 className="text-4xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-            スポンサー募集
+            スポンサー様へ感謝
           </h2>
           <p className="text-lg">
-            コーチング・コンバージ2025のスポンサーとして、共に新しいコーチングの未来を創造しませんか？
+            コーチング・コンバージ2025を支えていただいたスポンサーの皆様に、
+            <br />
+            心より感謝申し上げます。
           </p>
-          <div className="pt-4">
-            <Button
-              size="lg"
-              asChild
-              className="bg-gradient-to-r from-primary to-secondary hover:opacity-90 transition-opacity text-white text-lg px-8 py-6 shadow-lg"
-            >
-              <a
-                href="https://forms.gle/UyUgknsaoq1bHvgn6"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2"
-              >
-                スポンサーについて問い合わせる
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <path d="M5 12h14" />
-                  <path d="m12 5 7 7-7 7" />
-                </svg>
-              </a>
-            </Button>
-          </div>
+          <p className="text-base text-gray-700">
+            皆様のご支援により、素晴らしいイベントを開催することができました。
+          </p>
         </div>
       </section>
     </div>

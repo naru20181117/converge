@@ -14,7 +14,7 @@ export default function HomePage() {
       description:
         '世界最大のコーチング団体ICF日本支部が主催する、コーチング界最大規模のカンファレンス。ハイブリッド開催で、より多くの方々にご参加いただけます。',
       image: '/2025/converge-2025-サムネイル.png',
-      status: '開催予定',
+      status: '終了',
       link: '/2025',
       type: 'event',
     },

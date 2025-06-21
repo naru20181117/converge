@@ -254,42 +254,17 @@ export default function QuestionsPage() {
                 参加費の支払い方法について教えてください。
               </AccordionTrigger>
               <AccordionContent className="space-y-4 pt-4">
-                <p>コーチング・コンバージ2025のチケットは、Peatixサイトからご購入いただけます。</p>
-                <p>
-                  詳細な支払い方法や各種割引に関する情報は、チケット購入ページでご確認ください。
-                </p>
+                <p>コーチング・コンバージ2025のチケット販売は終了いたしました。</p>
+                <p>多くの皆様にご参加いただき、誠にありがとうございました。</p>
 
                 <div className="mt-6 p-6 bg-gradient-to-br from-gray-50 via-primary/5 to-gray-50 rounded-xl">
                   <div className="space-y-4 text-center">
-                    <h3 className="text-xl font-bold text-primary">チケット購入</h3>
-                    <div className="pt-2 flex flex-col items-center">
-                      <a
-                        href="https://converge2025.peatix.com/view"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 bg-gradient-to-r from-primary to-secondary hover:opacity-90 transition-opacity text-white text-lg px-6 py-3 rounded-full shadow-md"
-                      >
-                        <span>チケットを購入する</span>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="20"
-                          height="20"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          className="lucide lucide-ticket"
-                        >
-                          <path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z" />
-                          <path d="M13 5v2" />
-                          <path d="M13 17v2" />
-                          <path d="M13 11v2" />
-                        </svg>
-                      </a>
-                      <p className="text-sm text-muted-foreground mt-3">Peatixサイトに移動します</p>
-                    </div>
+                    <h3 className="text-xl font-bold text-primary">チケット販売は終了しました</h3>
+                    <p className="text-gray-700">
+                      イベントは盛況のうちに終了いたしました。
+                      <br />
+                      ご参加いただいた皆様、ありがとうございました。
+                    </p>
                   </div>
                 </div>
               </AccordionContent>
@@ -309,39 +284,39 @@ export default function QuestionsPage() {
               </AccordionTrigger>
               <AccordionContent className="space-y-4 pt-4">
                 <p>
-                  コーチング・コンバージ2025は、初日（6月15日）と最終日（6月21日）は終日オンラインで開催されます。
-                  また、平日（6月16日〜20日）は夜間セッションがオンラインで行われます。
+                  コーチング・コンバージ2025は、初日（6月15日）と最終日（6月21日）は終日オンラインで開催されました。
+                  また、平日（6月16日〜20日）は夜間セッションがオンラインで行われました。
                 </p>
 
                 <div className="mt-4 p-4 bg-blue-50 rounded-lg border border-blue-200">
                   <p className="font-medium text-blue-900">平日コンテンツについて</p>
                   <p className="mt-2 text-blue-800">
-                    平日コンテンツは、参加者人数が多いためZoomの「ウェビナー形式」で行われます。
+                    平日コンテンツは、参加者人数が多いためZoomの「ウェビナー形式」で行われました。
                   </p>
                   <ul className="list-disc list-inside mt-2 space-y-1 text-blue-800">
-                    <li>待機室はございません</li>
-                    <li>ブレイクアウトルームはございません</li>
+                    <li>待機室はございませんでした</li>
+                    <li>ブレイクアウトルームはございませんでした</li>
                     <li>
-                      リンクをクリックしたら「メールアドレス」と「名前」を入力後、すぐに入室する形となります
+                      リンクをクリックしたら「メールアドレス」と「名前」を入力後、すぐに入室する形となりました
                     </li>
-                    <li>Zoomの仕様上、入室後は名前の変更はできません</li>
+                    <li>Zoomの仕様上、入室後は名前の変更はできませんでした</li>
                   </ul>
                   <div className="mt-3 p-3 bg-blue-100 rounded border border-blue-300">
-                    <p className="font-medium text-blue-900">CCEを希望される方へ</p>
+                    <p className="font-medium text-blue-900">CCEを希望された方へ</p>
                     <p className="text-sm text-blue-800 mt-1">
-                      Zoomリンククリック直後の入力欄に、ICF申請時に入力されているものと同じ「名前」を入力の上、入室をお願いいたします。
+                      Zoomリンククリック直後の入力欄に、ICF申請時に入力されているものと同じ「名前」を入力いただきました。
                     </p>
                   </div>
                 </div>
 
-                <p>オンライン参加の手順は以下の通りです：</p>
+                <p>オンライン参加の手順は以下の通りでした：</p>
                 <ol className="list-decimal list-inside space-y-3">
                   <li>
-                    イベント参加登録後、Peatix登録時のメールアドレスに参加用のZoomリンクが送信されます。
+                    イベント参加登録後、Peatix登録時のメールアドレスに参加用のZoomリンクが送信されました。
                   </li>
-                  <li>各セッションの開始時間の10分前からZoomミーティングに入室可能です。</li>
-                  <li>安定したインターネット接続環境でご参加ください。</li>
-                  <li>セッション中の質問は、Zoomのチャット機能を通じて行うことができます。</li>
+                  <li>各セッションの開始時間の10分前からZoomミーティングに入室可能でした。</li>
+                  <li>安定したインターネット接続環境でご参加いただきました。</li>
+                  <li>セッション中の質問は、Zoomのチャット機能を通じて行うことができました。</li>
                 </ol>
               </AccordionContent>
             </AccordionItem>
@@ -352,10 +327,10 @@ export default function QuestionsPage() {
               </AccordionTrigger>
               <AccordionContent className="space-y-4 pt-4">
                 <p>
-                  オンライン交流タイムでは、バーチャル空間プラットフォーム「oVice」を使用します。
-                  oViceでは、参加者同士が自由に移動しながら自然な交流を楽しむことができます。
+                  オンライン交流タイムでは、バーチャル空間プラットフォーム「oVice」を使用しました。
+                  oViceでは、参加者同士が自由に移動しながら自然な交流を楽しむことができました。
                 </p>
-                <p>詳しい使い方については、以下のガイドをご確認ください：</p>
+                <p>oViceの使い方ガイド：</p>
                 <div className="mt-4 p-4 bg-gradient-to-br from-blue-50 via-blue-25 to-blue-50 rounded-lg border border-blue-200">
                   <div className="text-center space-y-3">
                     <h3 className="font-medium text-blue-900">oVice使い方ガイド</h3>
@@ -398,7 +373,7 @@ export default function QuestionsPage() {
                 対面会場での受付方法を教えてください。
               </AccordionTrigger>
               <AccordionContent className="space-y-4 pt-4">
-                <p>秋葉原UDXギャラリーの受付にて、お名前とチケット情報をご提示ください。</p>
+                <p>秋葉原UDXギャラリーの受付にて、お名前とチケット情報をご提示いただきました。</p>
               </AccordionContent>
             </AccordionItem>
 
@@ -408,7 +383,7 @@ export default function QuestionsPage() {
               </AccordionTrigger>
               <AccordionContent className="space-y-4 pt-4">
                 <p>
-                  コンバージ終了後1〜2週間で、参加申込いただいたメールアドレスにアーカイブリンクをお送りいたします。
+                  イベント終了後1〜2週間で、参加申込いただいたメールアドレスにアーカイブリンクをお送りいたします。
                 </p>
                 <p>
                   該当のチケットをお持ちの方は、同じ時間帯に開催されるすべてのセッションのアーカイブをご視聴いただける予定です。
@@ -421,7 +396,7 @@ export default function QuestionsPage() {
                 写真撮影やSNS投稿は可能ですか？
               </AccordionTrigger>
               <AccordionContent className="space-y-4 pt-4">
-                <p>写っている方の許可を取ってからお願いします。SNS投稿は可能です。</p>
+                <p>写っている方の許可を取ってからお願いしました。SNS投稿は可能でした。</p>
                 <p>
                   SNSでのシェアの際は、
                   <span className="font-medium text-primary">#コーチングコンバージ2025</span>
@@ -471,7 +446,7 @@ export default function QuestionsPage() {
                 通訳や言語対応はありますか？
               </AccordionTrigger>
               <AccordionContent className="space-y-4 pt-4">
-                <p>通訳サービスは提供されません。</p>
+                <p>通訳サービスは提供されませんでした。</p>
               </AccordionContent>
             </AccordionItem>
 
@@ -481,7 +456,7 @@ export default function QuestionsPage() {
               </AccordionTrigger>
               <AccordionContent className="space-y-4 pt-4">
                 <p>
-                  飲み物は可能です。持ち込みによる食事はご遠慮ください。ただし、イベントご参加の皆様は、UDX建物内のコンビニで購入されたものに限り、会場内で食べていただけます。その際、ゴミは必ずお持ち帰りください。（昼食は、会場周辺に飲食店等がございますので、ぜひそちらをご利用ください）
+                  飲み物は可能でした。持ち込みによる食事はご遠慮いただきました。ただし、イベントご参加の皆様は、UDX建物内のコンビニで購入されたものに限り、会場内で食べていただけました。その際、ゴミは必ずお持ち帰りいただきました。（昼食は、会場周辺に飲食店等をご利用いただきました）
                 </p>
               </AccordionContent>
             </AccordionItem>
@@ -492,7 +467,7 @@ export default function QuestionsPage() {
               </AccordionTrigger>
               <AccordionContent className="space-y-4 pt-4">
                 <p>
-                  懇親会・交流タイムを開催いたします（17:00〜18:00）。 詳細なスケジュールは
+                  懇親会・交流タイムを開催いたしました（17:00〜18:00）。 詳細なスケジュールは
                   <a href="/2025/schedule#lastday" className="text-primary hover:underline">
                     こちらのページ
                   </a>
